@@ -1,0 +1,4 @@
+# Wiki index
+
+- concepts/
+- decisions/

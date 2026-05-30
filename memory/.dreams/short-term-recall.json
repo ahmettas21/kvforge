@@ -1,0 +1,909 @@
+{
+  "version": 1,
+  "updatedAt": "2026-05-23T19:34:34.913Z",
+  "entries": {
+    "memory:memory/2026-05-11.md:18:38": {
+      "key": "memory:memory/2026-05-11.md:18:38",
+      "path": "memory/2026-05-11.md",
+      "startLine": 18,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "- izgetour AutoDev loop status: cron keeps querying NotebookLM for “next module” ideas, but OpenCode implementation is **blocked** until gate passes (`tsc`+`lint`). Each run appends a run log to `PLAN.md` + drops a NotebookLM note (AutoDev run timestamp). - Repo state sanity check (izgetour): running `npx tsc --noEmit` currently reports multiple TS errors (missing deps like recharts/react-i18next/react-icons/framer-motion/axios, missing `@/lib/supabase`, and some type mismatches), so any “zero TS errors” claim from other bots is not trusted without evidence. - CliGate health check (15:39 UTC): - Gateway `:18789` health endpoints returned 200 (`/health`, `/`, `/status`). - No `proxy-log.t",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-12T14:35:44.198Z",
+      "lastRecalledAt": "2026-05-14T05:05:23.989Z",
+      "queryHashes": [
+        "3cd0dadec4a5",
+        "461bdcc7e0e7",
+        "3f1991410f11"
+      ],
+      "recallDays": [
+        "2026-05-12",
+        "2026-05-13",
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "gateway",
+        "plan.md",
+        "lib/supabase",
+        "proxy-log.t",
+        "izgetour",
+        "autodev",
+        "loop",
+        "status"
+      ]
+    },
+    "memory:memory/2026-05-11.md:30:54": {
+      "key": "memory:memory/2026-05-11.md:30:54",
+      "path": "memory/2026-05-11.md",
+      "startLine": 30,
+      "endLine": 54,
+      "source": "memory",
+      "snippet": "- channel integration enabled: **Telegram** (DM policy: pairing; groups require mention) - Model/auth integrations: - OpenAI Codex provider via OAuth profile: `openai-codex:ilkerturk2025@gmail.com` - Plugin integrations (enabled): - `openai` (enabled) - `codex` (enabled) - `memory-core` (present) - `telegram` (present) - Automation: - Cron jobs active: `CliGate Auto-Recovery Check (every 10m)` + `izgetour Proje Kontrol (every 10m)` - Developer tools: - OpenCode installed: `/home/turk/.npm-global/bin/opencode` (v`1.14.41`) - NotebookLM skill for OpenCode installed (project-level): `/home/turk/projects/izgetour/.opencode/skills/nlm-skill` - NotebookLM CLI installed+authed:",
+      "recallCount": 5,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 5,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-12T14:35:44.198Z",
+      "lastRecalledAt": "2026-05-14T07:56:29.983Z",
+      "queryHashes": [
+        "3cd0dadec4a5",
+        "25f162767964",
+        "461bdcc7e0e7",
+        "3f1991410f11",
+        "08dfb00afa45"
+      ],
+      "recallDays": [
+        "2026-05-12",
+        "2026-05-13",
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "openai",
+        "model/auth",
+        "openai-codex",
+        "gmail.com",
+        "memory-core",
+        "auto-recovery",
+        "home/turk",
+        "npm-global/bin/opencode"
+      ]
+    },
+    "memory:memory/2026-05-11.md:1:19": {
+      "key": "memory:memory/2026-05-11.md:1:19",
+      "path": "memory/2026-05-11.md",
+      "startLine": 1,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "- Installed Supabase CLI locally (binary): `/home/turk/.local/bin/supabase` (v2.98.2). Note: CLI login/link requires Supabase access token; user only provided anon/service_role API keys. ## OpenClaw / NotebookLM / izgetour notes (2026-05-11) - Confirmed NotebookLM CLI is installed and authenticated on this machine: - `nlm` path: `/home/turk/.local/bin/nlm` - version: `0.6.6` - `nlm login --check`: Authentication valid - Account: `ilkerturk2025@gmail.com` - Notebooks found: `31` - Captured Google Docs + NotebookLM related links into: - `/home/turk/.openclaw/workspace/memory/google-docs-index-2026-05-11.md` - NotebookLM notebook IDs confirmed (nlm profile: default): - `İzge Tou",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 4,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-12T15:54:41.448Z",
+      "lastRecalledAt": "2026-05-14T07:56:29.983Z",
+      "queryHashes": [
+        "25f162767964",
+        "3221b1f0ffac",
+        "ff95f9414c7e",
+        "08dfb00afa45"
+      ],
+      "recallDays": [
+        "2026-05-12",
+        "2026-05-13",
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "home/turk",
+        "local/bin/supabase",
+        "v2.98.2",
+        "login/link",
+        "anon/service-role",
+        "local/bin/nlm",
+        "0.6.6",
+        "gmail.com"
+      ]
+    },
+    "memory:memory/2026-05-12.md:1:33": {
+      "key": "memory:memory/2026-05-12.md:1:33",
+      "path": "memory/2026-05-12.md",
+      "startLine": 1,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "# 2026-05-12 ## CliGate / OpenCode Session ### Stream Hatası Çözüldü - OpenCode -> CliGate isteği \"Stream must be set to true\" hatası alıyordu - Çözüm: `/home/turk/projects/cligate/src/direct-api.js` içindeki `sendMessage()` fonksiyonu `stream: false` ile çağırıyordu, `stream: true` olarak değiştirildi ve response stream'i non-stream'e parse edildi. - ✅ Çözüldü, CliGate yeniden başlatıldı. ### ChatGPT Rate Limit (Team Plan) - Rate limit dolu: `usage_limit_reached`, `plan_type: team`, resets ~15 Mayıs - OpenCode default model `cligate/gpt-5.2` -> `yuxor/claude-sonnet-4-6` olarak değiştirildi - izgetour pipeline cronjob'u da `yuxor/claude-sonnet-4-6`'ya güncellendi ### Skill Kullanım Matri",
+      "recallCount": 5,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 5,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-12T18:05:55.270Z",
+      "lastRecalledAt": "2026-05-14T08:00:51.887Z",
+      "queryHashes": [
+        "ae2f538c821e",
+        "1c1da62bbfc9",
+        "c11931c9546d",
+        "a6903e67dafc",
+        "251b3ed87f6f"
+      ],
+      "recallDays": [
+        "2026-05-12",
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "gpt",
+        "non-stream",
+        "usage-limit-reached",
+        "plan-type",
+        "cligate/gpt-5.2",
+        "yuxor/claude-sonnet-4-6",
+        "cligate",
+        "opencode"
+      ]
+    },
+    "memory:memory/2026-05-12.md:73:106": {
+      "key": "memory:memory/2026-05-12.md:73:106",
+      "path": "memory/2026-05-12.md",
+      "startLine": 73,
+      "endLine": 106,
+      "source": "memory",
+      "snippet": "- NotebookLM: Auth expired (skip — non-interactive cron) - ChatPRD: MCP mevcut degil (skip) - Degisen dosyalar: - src/components/PartyPlan.tsx (geliştirildi: locale prop, responsive, Turkce mock data) - tours/[slug]/page.tsx (PartyPlan servis detaylari altina eklendi) - flights/[slug]/page.tsx (PartyPlan ucus detay-sonrasi alana eklendi) - PLAN.md guncellendi # 2026-05-12 ## CliGate / OpenCode Session ### Stream Hatası Çözüldü - OpenCode -> CliGate isteği \"Stream must be set to true\" hatası alıyordu - Çözüm: `/home/turk/projects/cligate/src/direct-api.js` içindeki `sendMessage()` fonksiyonu `stream: false` ile çağırıyordu, `stream: true` olarak değiştirildi ve response stream'i non-s",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-12T21:13:31.707Z",
+      "lastRecalledAt": "2026-05-14T08:00:51.887Z",
+      "queryHashes": [
+        "a6903e67dafc",
+        "251b3ed87f6f"
+      ],
+      "recallDays": [
+        "2026-05-12",
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "non-interactive",
+        "src/components/partyplan.tsx",
+        "page.tsx",
+        "detay-sonrasi",
+        "plan.md",
+        "non-s",
+        "notebooklm",
+        "auth"
+      ]
+    },
+    "memory:memory/2026-05-12.md:188:218": {
+      "key": "memory:memory/2026-05-12.md:188:218",
+      "path": "memory/2026-05-12.md",
+      "startLine": 188,
+      "endLine": 218,
+      "source": "memory",
+      "snippet": "- [ ] Model tiering (deepseek-chat çok uygun, gerekmez) - [ ] Backup planı (.openclaw + workspace → git backup) ## 2026-05-12 ~21:12 UTC — Skill Creation: izgetour-ceo-planning **Action:** Notion + Linear CEO planning yapısı skill haline getirildi ve ClawHub'a yayınlandı. ### Yapılanlar 1. **Skill Creator** SKILL.md okundu, adımlar takip edildi 2. **Skill dizini:** `skills/izgetour-ceo-planning/` - `SKILL.md` — ana kullanım kılavuzu (mimari, işlemler, komut örnekleri) - `references/ids.md` — tüm Notion DB şemaları (property tipleri, select optionları), Linear team/proje/issue ID'leri, API notları - `scripts/dashboard.py` — CEO dashboard özeti için referans sorgu şablonu 3. **Claw",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-12T21:13:31.707Z",
+      "lastRecalledAt": "2026-05-12T21:13:31.707Z",
+      "queryHashes": [
+        "a6903e67dafc"
+      ],
+      "recallDays": [
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "backup",
+        "deepseek-chat",
+        "izgetour-ceo-planning",
+        "skill.md",
+        "skills/izgetour-ceo-planning",
+        "references/ids.md",
+        "team/proje/issue",
+        "scripts/dashboard.py"
+      ]
+    },
+    "memory:memory/2026-05-12.md:97:127": {
+      "key": "memory:memory/2026-05-12.md:97:127",
+      "path": "memory/2026-05-12.md",
+      "startLine": 97,
+      "endLine": 127,
+      "source": "memory",
+      "snippet": "- ClawHub'dan skill kurulumu: `clawhub install <slug>` ### ClawHub Login + Yeni Skill'ler - clawhub login @ahmettas21 - Yeni yüklenen skill'ler: - `opencode` (v1.2.2) - OpenCode AI skill - `claude` (v1.0.0) - Claude CLI skill - `notebook-lmskill-1-0-0` - NotebookLM skill (suspicious uyarısına rağmen force ile yüklendi) ### CliGate Sağlık Raporu Cron - CliGate Auto-Recovery Check (10 dkda 1) -> 2 saatte 1'e ayarlandı ### Membrane Durumu - CLI v1.18.0 kurulu, login aktif (ahmetilkerturk@gmail.com) - Bağlı servisler: Gmail, GitHub, Linear, Notion, Vercel, Google Drive, Railway, N8n.io - Diğerleri (Box, Figma, Supabase, WhatsApp, etc.) disconnected - `membrane act --connectionKey <servi",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-12T21:13:31.707Z",
+      "lastRecalledAt": "2026-05-12T21:13:31.707Z",
+      "queryHashes": [
+        "a6903e67dafc"
+      ],
+      "recallDays": [
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "v1.2.2",
+        "v1.0.0",
+        "notebook-lmskill-1-0-0",
+        "auto-recovery",
+        "v1.18.0",
+        "gmail.com",
+        "n8n.io",
+        "clawhub'dan"
+      ]
+    },
+    "memory:memory/2026-05-12.md:366:391": {
+      "key": "memory:memory/2026-05-12.md:366:391",
+      "path": "memory/2026-05-12.md",
+      "startLine": 366,
+      "endLine": 391,
+      "source": "memory",
+      "snippet": "#### Gelişme: CSV → Büyük Rehber - Rehber aslında 4700+ kişi (12k satır CSV) — parse edildi, dedupe edildi (4.568 benzersiz) - Kullanıcı onayı: isim+telefon olan herkes import edilsin #### Split Kararı - Kullanıcı talebi: kontakları 2 gruba ayır → iş kontakları Kişiler DB, diğerleri Ham Rehber DB - **`/tmp/split_contacts.py`** ile keyword matching - Yeni Notion DB oluşturuldu: **📋 Network — Ham Rehber** (`35e7f54b-79e1-81f3-9118-dd13c9f7812f`) #### Results - **Kişiler DB:** **688 iş kontağı** ✅ - Turizm/Seyahat 352, İş Dünyası 110, Profesyonel 92, Finans 51, Teknoloji 29, Gayrimenkul 24, Sağlık 18, Lojistik 8, İnşaat 4 - Her kontağa: isim, iletişim, sektör select, İlişki Tipi=Potansiy",
+      "recallCount": 6,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 6,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-13T12:24:39.814Z",
+      "lastRecalledAt": "2026-05-13T14:12:25.160Z",
+      "queryHashes": [
+        "9a75a37a7437",
+        "54b844411577",
+        "3417beb4987d",
+        "2ae2b5fdfae6",
+        "b8b3d44c223a",
+        "5dc67e2b3580"
+      ],
+      "recallDays": [
+        "2026-05-13"
+      ],
+      "conceptTags": [
+        "network",
+        "4.568",
+        "tmp/split-contacts.py",
+        "turizm/seyahat",
+        "gelişme",
+        "csv",
+        "büyük",
+        "rehber"
+      ]
+    },
+    "memory:memory/2026-05-12.md:343:372": {
+      "key": "memory:memory/2026-05-12.md:343:372",
+      "path": "memory/2026-05-12.md",
+      "startLine": 343,
+      "endLine": 372,
+      "source": "memory",
+      "snippet": "- Teklif Başlığı, Kişi/Firma, Tarih (date), Tutar (number), Durum (select: Taslak/İletildi/Görüşülüyor/Kabul/Red), Kalemler, Notlar 4. **🔧 Network — Projeler** (`35e7f54b-79e1-8183-95bc-c7cc71fcdfee`) - Proje Adı, Kişi/Firma, Aşama (select: Keşif/Planlama/Kurulum/Test/Devreye Alma/Destek/Tamamlandı), Başlangıç (date), Bitiş (date), Bütçe (number), Linear Proje ID, Durum, Notlar #### Linear Projeleri (IZG - `8aea2d61-c516-40d1-95d2-444707e4e0df`) | Proje | ID | State | |---|---|---| | 🧑‍🤝‍🧑 Network — Kişiler | `cc42d914-ccea-4d47-9c04-78e7de84f27f` | started | | 💼 Network — Teklifler | `8a0d37c6-f76e-470c-9e45-d4482999c22f` | planned | | 🔧 Network — Projeler | `6ee5cfd9-955c-4c0",
+      "recallCount": 5,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 5,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-13T12:24:39.814Z",
+      "lastRecalledAt": "2026-05-13T14:08:44.590Z",
+      "queryHashes": [
+        "9a75a37a7437",
+        "54b844411577",
+        "3417beb4987d",
+        "2ae2b5fdfae6",
+        "b8b3d44c223a"
+      ],
+      "recallDays": [
+        "2026-05-13"
+      ],
+      "conceptTags": [
+        "network",
+        "kişi/firma",
+        "alma/destek/tamamlandı",
+        "6ee5cfd9-955c-4c0",
+        "teklif",
+        "başlığı",
+        "kişi",
+        "firma"
+      ]
+    },
+    "memory:memory/2026-05-12.md:188:219": {
+      "key": "memory:memory/2026-05-12.md:188:219",
+      "path": "memory/2026-05-12.md",
+      "startLine": 188,
+      "endLine": 219,
+      "source": "memory",
+      "snippet": "- [ ] Model tiering (deepseek-chat çok uygun, gerekmez) - [ ] Backup planı (.openclaw + workspace → git backup) ## 2026-05-12 ~21:12 UTC — Skill Creation: izgetour-ceo-planning **Action:** Notion + Linear CEO planning yapısı skill haline getirildi ve ClawHub'a yayınlandı. ### Yapılanlar 1. **Skill Creator** SKILL.md okundu, adımlar takip edildi 2. **Skill dizini:** `skills/izgetour-ceo-planning/` - `SKILL.md` — ana kullanım kılavuzu (mimari, işlemler, komut örnekleri) - `references/ids.md` — tüm Notion DB şemaları (property tipleri, select optionları), Linear team/proje/issue ID'leri, API notları - `scripts/dashboard.py` — CEO dashboard özeti için referans sorgu şablonu 3. **Claw",
+      "recallCount": 9,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 9,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-13T12:24:39.814Z",
+      "lastRecalledAt": "2026-05-15T09:33:16.898Z",
+      "queryHashes": [
+        "9a75a37a7437",
+        "bc8369e1e9b9",
+        "5dc67e2b3580",
+        "ff95f9414c7e",
+        "acb65b5f8ec0",
+        "08dfb00afa45",
+        "c6ea50f3026d",
+        "26c4a74d7517",
+        "867835f2fb07"
+      ],
+      "recallDays": [
+        "2026-05-13",
+        "2026-05-14",
+        "2026-05-15"
+      ],
+      "conceptTags": [
+        "backup",
+        "deepseek-chat",
+        "izgetour-ceo-planning",
+        "skill.md",
+        "skills/izgetour-ceo-planning",
+        "references/ids.md",
+        "team/proje/issue",
+        "scripts/dashboard.py"
+      ]
+    },
+    "memory:memory/2026-05-12.md:324:347": {
+      "key": "memory:memory/2026-05-12.md:324:347",
+      "path": "memory/2026-05-12.md",
+      "startLine": 324,
+      "endLine": 347,
+      "source": "memory",
+      "snippet": "2. ClawHub'a yayınlandı, sonra güvenlik gerekçesiyle silindi 3. Brain dosyası güncellendi: `brain/notion/ceo-planning.md` ### Not - Skill izgetour'a özel (embedded ID'ler, DB schema'lar). Generic template istenirse ayrıca yapılabilir. ## 2026-05-12 ~21:40 UTC — CEO Planning → Network CRM & Large Rehber Import ### Network Müşteri Yönetimi Altyapısı (Notion + Linear) Membrane CLI reboot sonrası Notion ve Linear API'ları çalışıyor durumda. 4 adet Notion database + 3 Linear projesi kuruldu. #### Notion Databaseleri 1. **🧑‍🤝‍🧑 Network — Kişiler** (`35e7f54b-79e1-819e-8942-e1ea06adba5e`) - İsim, Firma, Pozisyon, İletişim, Sektör (select), İlişki Tipi (select: Tanıdık/Potansiyel/Müşteri/E",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-13T14:08:44.581Z",
+      "lastRecalledAt": "2026-05-13T14:12:25.160Z",
+      "queryHashes": [
+        "2ae2b5fdfae6",
+        "b8b3d44c223a",
+        "5dc67e2b3580"
+      ],
+      "recallDays": [
+        "2026-05-13"
+      ],
+      "conceptTags": [
+        "network",
+        "brain/notion/ceo-planning.md",
+        "tanıdık/potansiyel/müşteri/e",
+        "clawhub'a",
+        "yayınlandı",
+        "sonra",
+        "güvenlik",
+        "gerekçesiyle"
+      ]
+    },
+    "memory:memory/2026-05-12.md:306:332": {
+      "key": "memory:memory/2026-05-12.md:306:332",
+      "path": "memory/2026-05-12.md",
+      "startLine": 306,
+      "endLine": 332,
+      "source": "memory",
+      "snippet": "## 20:35 UTC - OpenClaw Referans Mimarileri Araştırması ### Topluluk Yapıları (brain/tech/openclaw-referans-mimariler.md) - codextech/openclaw-handbook, raulvidis/openclaw-multi-agent-kit, docs.openclaw.ai/showcase, codebridge.tech incelendi - **3 ana pattern:** Single Gateway (en yaygın), Orchestrator+Specialists (10 agent prod), Sub-Agent Delegation - **Öne çıkan kullanımlar:** PR→Telegram review, Slack auto-support, self-modifying agent, browser automation, multi-agent AI team - **Deployment:** VPS+systemd (en yaygın), Docker Compose (popüler), Tailscale Serve (bizde), Cloudflare Tunnel (public access için) - **Model cost optimization:** Tier'd model assignment — her agent tipine farklı",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-13T14:08:44.590Z",
+      "lastRecalledAt": "2026-05-13T14:08:44.590Z",
+      "queryHashes": [
+        "b8b3d44c223a"
+      ],
+      "recallDays": [
+        "2026-05-13"
+      ],
+      "conceptTags": [
+        "gateway",
+        "codextech/openclaw-handbook",
+        "docs.openclaw.ai/showcase",
+        "codebridge.tech",
+        "sub-agent",
+        "auto-support",
+        "self-modifying",
+        "multi-agent"
+      ]
+    },
+    "memory:memory/2026-05-12.md:166:196": {
+      "key": "memory:memory/2026-05-12.md:166:196",
+      "path": "memory/2026-05-12.md",
+      "startLine": 166,
+      "endLine": 196,
+      "source": "memory",
+      "snippet": "- Teknik dersler brain/tech/ altına kaydedildi # 2026-05-12 ...(previous content)... ## 20:35 UTC - OpenClaw Referans Mimarileri Araştırması ### Topluluk Yapıları (brain/tech/openclaw-referans-mimariler.md) - codextech/openclaw-handbook, raulvidis/openclaw-multi-agent-kit, docs.openclaw.ai/showcase, codebridge.tech incelendi - **3 ana pattern:** Single Gateway (en yaygın), Orchestrator+Specialists (10 agent prod), Sub-Agent Delegation - **Öne çıkan kullanımlar:** PR→Telegram review, Slack auto-support, self-modifying agent, browser automation, multi-agent AI team - **Deployment:** VPS+systemd (en yaygın), Docker Compose (popüler), Tailscale Serve (bizde), Cloudflare Tunnel (public access",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-13T18:56:16.187Z",
+      "lastRecalledAt": "2026-05-14T23:40:33.500Z",
+      "queryHashes": [
+        "c0604aca62bb",
+        "8f11e91bca07",
+        "9dded5ec611a"
+      ],
+      "recallDays": [
+        "2026-05-13",
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "gateway",
+        "brain/tech",
+        "codextech/openclaw-handbook",
+        "docs.openclaw.ai/showcase",
+        "codebridge.tech",
+        "sub-agent",
+        "auto-support",
+        "self-modifying"
+      ]
+    },
+    "memory:memory/2026-05-13.md:1:8": {
+      "key": "memory:memory/2026-05-13.md:1:8",
+      "path": "memory/2026-05-13.md",
+      "startLine": 1,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "cloudflare-izgetour.service ⟶ systemd, active (running) Tunnel: dd35fa01-2283-47b1-a0ee-b01a6b3a905b (yeni, yeniden oluşturuldu) Protocol: http2 (quic artık yok) Config: /home/turk/.cloudflared/config-izgetour.yml Engine: /home/turk/.local/bin/cloudflared v2026.5.0 Domain: izgetour.havaalanitransfer.gen.tr → localhost:3000 Edge: ist02, ist03, ist07, ist08 (4 bağlantı, İstanbul)",
+      "recallCount": 6,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 6,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-13T22:23:49.766Z",
+      "lastRecalledAt": "2026-05-15T09:33:16.898Z",
+      "queryHashes": [
+        "ff95f9414c7e",
+        "acb65b5f8ec0",
+        "08dfb00afa45",
+        "c6ea50f3026d",
+        "26c4a74d7517",
+        "867835f2fb07"
+      ],
+      "recallDays": [
+        "2026-05-13",
+        "2026-05-14",
+        "2026-05-15"
+      ],
+      "conceptTags": [
+        "cloudflare-izgetour.service",
+        "home/turk",
+        "cloudflared/config-izgetour.yml",
+        "local/bin/cloudflared",
+        "v2026.5.0",
+        "cloudflare",
+        "izgetour.service",
+        "systemd"
+      ]
+    },
+    "memory:memory/2026-05-12.md:212:244": {
+      "key": "memory:memory/2026-05-12.md:212:244",
+      "path": "memory/2026-05-12.md",
+      "startLine": 212,
+      "endLine": 244,
+      "source": "memory",
+      "snippet": "- 🎯 Strategic Goals — izgetour (`f49c5459-3015-40b8-9bce-da001a2edc77`) → started - 📊 OKRs — izgetour (`4fe7854a-f6a0-4653-9897-7267146cc190`) → started - 📋 Board — izgetour (`fe6d82a7-30b7-451d-bc66-5854c00535a5`) → planned ### Not - Skill izgetour'a özel (embedded ID'ler, DB schema'lar). Generic template istenirse ayrıca yapılabilir. # 2026-05-12 ## CliGate / OpenCode Session ### Stream Hatası Çözüldü - OpenCode -> CliGate isteği \"Stream must be set to true\" hatası alıyordu - Çözüm: `/home/turk/projects/cligate/src/direct-api.js` içindeki `sendMessage()` fonksiyonu `stream: false` ile çağırıyordu, `stream: true` olarak değiştirildi ve response stream'i non-stream'e parse edildi",
+      "recallCount": 5,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 5,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-13T22:23:49.766Z",
+      "lastRecalledAt": "2026-05-15T01:17:01.294Z",
+      "queryHashes": [
+        "ff95f9414c7e",
+        "acb65b5f8ec0",
+        "08dfb00afa45",
+        "251b3ed87f6f",
+        "c6ea50f3026d"
+      ],
+      "recallDays": [
+        "2026-05-13",
+        "2026-05-14",
+        "2026-05-15"
+      ],
+      "conceptTags": [
+        "non-stream",
+        "strategic",
+        "goals",
+        "izgetour",
+        "f49c5459",
+        "40b8",
+        "9bce",
+        "da001a2edc77"
+      ]
+    },
+    "memory:memory/2026-05-14.md:1:28": {
+      "key": "memory:memory/2026-05-14.md:1:28",
+      "path": "memory/2026-05-14.md",
+      "startLine": 1,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "-- flush: session compaction ## 2026-05-14 ### OpenCode Controller + İzgeTour Phase 2 - OpenCode Controller skill okundu, kullanıma hazır - OpenCode Build agent (`izge-oc` tmux session) halen çalışıyor — yuxor/claude-sonnet-4-6 ile - ChatPRD: npm paketi değil, sadece web üzerinde. OpenCode MCP'sine bağlamak için API key gerekli. Alternatif olarak Elif planlama yapacak + NotebookLM araştırma - NotebookLM kurulu (nlm CLI, auth = ilkerturk2025@gmail.com) - Araştırma tamamlandı: - IATA yolcu standartları: Adult(12+), Child(2-11), Infant(0-23 ay), infant <= adult, max 9 yolcu - Modern UI trendleri 2026: Bento grid, glassmorphism, dark mode, Inter/Outfit font, turkuaz+lacivert palette - Sek",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-14T07:56:29.983Z",
+      "lastRecalledAt": "2026-05-14T08:00:51.887Z",
+      "queryHashes": [
+        "08dfb00afa45",
+        "251b3ed87f6f"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "izge-oc",
+        "yuxor/claude-sonnet-4-6",
+        "gmail.com",
+        "2-11",
+        "0-23",
+        "inter/outfit",
+        "flush",
+        "compaction"
+      ]
+    },
+    "memory:memory/2026-05-12.md:144:174": {
+      "key": "memory:memory/2026-05-12.md:144:174",
+      "path": "memory/2026-05-12.md",
+      "startLine": 144,
+      "endLine": 174,
+      "source": "memory",
+      "snippet": "- ChatPRD MCP cron'da direkt çağrılamıyor: OpenCode MCP üzerinden yönlendirildi - opencode-controller skill'i ClawHub'dan kuruldu (karatla/opencode-controller v1.0.0) - Yeni direktifler: takvim, üye girişi, filtreler, formlar, UI güzelleştirme, follow/wishlist - Liste/detay sayfaları: Booking.com, Viator vb. karşılaştırmalı UI iyileştirmesi ## 18:21 UTC - izgetour AutoDev Run - **Modül:** PartyPlan (Sosyal Seyahat Grubu) wiring - Gate: OK (tsc OK, lint 0 error/58 warning) - NotebookLM: Auth expired (skip — non-interactive cron) - ChatPRD: MCP mevcut degil (skip) - Degisen dosyalar: - src/components/PartyPlan.tsx (geliştirildi: locale prop, responsive, Turkce mock data) - tours/[slug]/pa",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-14T23:40:33.500Z",
+      "lastRecalledAt": "2026-05-14T23:40:33.500Z",
+      "queryHashes": [
+        "9dded5ec611a"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "opencode-controller",
+        "karatla/opencode-controller",
+        "v1.0.0",
+        "follow/wishlist",
+        "liste/detay",
+        "booking.com",
+        "error/58",
+        "non-interactive"
+      ]
+    },
+    "memory:memory/2026-05-12.md:282:310": {
+      "key": "memory:memory/2026-05-12.md:282:310",
+      "path": "memory/2026-05-12.md",
+      "startLine": 282,
+      "endLine": 310,
+      "source": "memory",
+      "snippet": "- ChatPRD MCP cron'da direkt çağrılamıyor: OpenCode MCP üzerinden yönlendirildi - opencode-controller skill'i ClawHub'dan kuruldu (karatla/opencode-controller v1.0.0) - Yeni direktifler: takvim, üye girişi, filtreler, formlar, UI güzelleştirme, follow/wishlist - Liste/detay sayfaları: Booking.com, Viator vb. karşılaştırmalı UI iyileştirmesi ## 18:21 UTC - izgetour AutoDev Run - **Modül:** PartyPlan (Sosyal Seyahat Grubu) wiring - Gate: OK (tsc OK, lint 0 error/58 warning) - NotebookLM: Auth expired (skip — non-interactive cron) - ChatPRD: MCP mevcut degil (skip) - Degisen dosyalar: - src/components/PartyPlan.tsx (geliştirildi: locale prop, responsive, Turkce mock data) - tours/[slug]/pa",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-14T23:40:33.500Z",
+      "lastRecalledAt": "2026-05-14T23:40:33.500Z",
+      "queryHashes": [
+        "9dded5ec611a"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "opencode-controller",
+        "karatla/opencode-controller",
+        "v1.0.0",
+        "follow/wishlist",
+        "liste/detay",
+        "booking.com",
+        "error/58",
+        "non-interactive"
+      ]
+    },
+    "memory:memory/2026-05-14.md:68:95": {
+      "key": "memory:memory/2026-05-14.md:68:95",
+      "path": "memory/2026-05-14.md",
+      "startLine": 68,
+      "endLine": 95,
+      "source": "memory",
+      "snippet": "- `sw.js` version bump: v3 → v4 - `'/'` PRECACHE_URLS'den çıkarıldı (sadece `/offline`, `/manifest.webmanifest` kaldı) - SW güncellendiğinde otomatik temizlik + yeni cache ile sorun geçecek - **Dockerfile fix**: Builder stage'de `patches/` klasörü `npm install`'dan önce kopyalanacak şekilde sıra düzeltildi (postinstall script'i çalışsın diye) - **Final build + deploy**: Docker build başarılı, container yeniden başlatıldı - **Final test**: - `curl https://izgetour.havaalanitransfer.gen.tr/tours` → `<h1>Popular Tours</h1>` ✅ - Docker log: TypeError yok (eski log buffer'dan 2 adet kalmıştı, yeni istekler temiz) - `Bir hata oluştu` — hiçbir yerde yok ✅ ### Tüm Hatalar Çözüldü 1. ✅",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-15T01:17:01.294Z",
+      "lastRecalledAt": "2026-05-15T09:33:16.898Z",
+      "queryHashes": [
+        "c6ea50f3026d",
+        "26c4a74d7517",
+        "867835f2fb07"
+      ],
+      "recallDays": [
+        "2026-05-15"
+      ],
+      "conceptTags": [
+        "sw.js",
+        "precache-urls",
+        "manifest.webmanifest",
+        "version",
+        "bump",
+        "precache-urls'den",
+        "çıkarıldı",
+        "sadece"
+      ]
+    },
+    "memory:memory/2026-05-14.md:90:106": {
+      "key": "memory:memory/2026-05-14.md:90:106",
+      "path": "memory/2026-05-14.md",
+      "startLine": 90,
+      "endLine": 106,
+      "source": "memory",
+      "snippet": "- `docker build -t izgetour:latest .` (yeniden build) — **başarısız oldu** (SIGKILL) - `docker image prune -f` + tekrar build — **başarılı** - `docker run -d --name izgetour -p 3000:3000 izgetour:latest` - **Test**: - `curl localhost:3000` → `popular tours` ✅ - `docker logs izgetour 2>&1 | grep -i error` → **0 adet** ✅ - Docker error count: 0 (önceki log'larda 2 hata vardı, şimdi sıfır) - `curl https://izgetour.havaalanitransfer.gen.tr/` → `ANASAYFA` ✅ - `sw.js v4` doğrulandı - **Ders**: `docker compose up --force-recreate` çalışmamıştı, manuel stop+rm+rmi+run yapmak gerekiyor ## OpenCode Edit Bug (Build Agent) - OpenCode Build agent'ın find-and-replace mekanizması TSX dosya",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-15T01:17:01.294Z",
+      "lastRecalledAt": "2026-05-15T09:33:16.898Z",
+      "queryHashes": [
+        "c6ea50f3026d",
+        "26c4a74d7517",
+        "867835f2fb07"
+      ],
+      "recallDays": [
+        "2026-05-15"
+      ],
+      "conceptTags": [
+        "sw.js",
+        "force-recreate",
+        "find-and-replace",
+        "docker",
+        "izgetour:latest",
+        "yeniden",
+        "başarısız",
+        "oldu"
+      ]
+    },
+    "memory:memory/2026-05-14.md:46:71": {
+      "key": "memory:memory/2026-05-14.md:46:71",
+      "path": "memory/2026-05-14.md",
+      "startLine": 46,
+      "endLine": 71,
+      "source": "memory",
+      "snippet": "- **Test sonucu:** `curl https://izgetour.com/tours` → `<h1>Popular Tours</h1>` dönüyor, `Bir hata oluştu` yok - Docker log'da internal TypeError hala var ama **kullanıcı deneyimini etkilemiyor** - Brain'e kaydedildi: `brain/tech/nextjs16-metadata-$$typeof-bug.md`, `brain/tech/izgetour-tours-debug-hikayesi.md` ### Yeni Debug Skill'leri - `code-debug` — root cause analizi - `debug-system` — structured debugging - `NextJS` — Next.js routing/metadata patterns - `browser-network-inspector` — browser-side request inspection ### Airport Transfer Sayfası Beklemede - OpenCode yuxor limiti doldu, sabah UTC 21:01'de tetiklenmesi planlanmıştı ama bu oturumda el yapıldı. - Hatırlatma: İlker'e `airport",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-15T01:17:01.294Z",
+      "lastRecalledAt": "2026-05-15T09:33:16.898Z",
+      "queryHashes": [
+        "c6ea50f3026d",
+        "26c4a74d7517",
+        "867835f2fb07"
+      ],
+      "recallDays": [
+        "2026-05-15"
+      ],
+      "conceptTags": [
+        "network",
+        "izgetour.com/tours",
+        "brain/tech/nextjs16-metadata",
+        "typeof-bug.md",
+        "code-debug",
+        "debug-system",
+        "next.js",
+        "routing/metadata"
+      ]
+    },
+    "memory:memory/2026-05-15.md:1:25": {
+      "key": "memory:memory/2026-05-15.md:1:25",
+      "path": "memory/2026-05-15.md",
+      "startLine": 1,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "# 2026-05-15 ## ~01:00 UTC — İzgeTour Layout Analizi & Brain Kaydı ### Yapılan - Anasayfa (localhost:3000) detaylı analiz: HTML structure, component tree, CSS variables - **11 task tespit edildi** (3 kritik, 4 tasarım, 4 yeni özellik) - `--brand` CSS variable tanımlı değil — 17 component kullanıyor (#1 hata) - Hero'da MoodDestinationPicker gereksiz çift görünüm - SupportBubble loading spinner fix (zaten yapılmıştı, cron isolated session edit hatası) - Cron `izgetour-opencode-30min` güncellendi (11 task'ı içerecek şekilde) - Brain'e kaydedildi: `brain/tech/izgetour-layout-hatalari.md` - Cron resetlendi + tetiklendi ### Durum - Container ayakta (7e98d231a748, port 3000) - OpenCode tmux: `iz",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-15T07:33:13.820Z",
+      "lastRecalledAt": "2026-05-15T07:33:13.820Z",
+      "queryHashes": [
+        "26c4a74d7517"
+      ],
+      "recallDays": [
+        "2026-05-15"
+      ],
+      "conceptTags": [
+        "izgetour-opencode-30min",
+        "utc",
+        "i̇zgetour",
+        "layout",
+        "analizi",
+        "brain",
+        "kaydı",
+        "yapılan"
+      ]
+    },
+    "memory:memory/2026-05-15.md:1:35": {
+      "key": "memory:memory/2026-05-15.md:1:35",
+      "path": "memory/2026-05-15.md",
+      "startLine": 1,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "# 2026-05-15 ## ~01:00 UTC — İzgeTour Layout Analizi & Brain Kaydı ### Yapılan - Anasayfa (localhost:3000) detaylı analiz: HTML structure, component tree, CSS variables - **11 task tespit edildi** (3 kritik, 4 tasarım, 4 yeni özellik) - `--brand` CSS variable tanımlı değil — 17 component kullanıyor (#1 hata) - Hero'da MoodDestinationPicker gereksiz çift görünüm - SupportBubble loading spinner fix (zaten yapılmıştı, cron isolated session edit hatası) - Cron `izgetour-opencode-30min` güncellendi (11 task'ı içerecek şekilde) - Brain'e kaydedildi: `brain/tech/izgetour-layout-hatalari.md` - Cron resetlendi + tetiklendi ### Durum - Container ayakta, port 3000 - OpenCode tmux: `izge-oc` session'",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-15T09:33:16.898Z",
+      "lastRecalledAt": "2026-05-15T09:33:16.898Z",
+      "queryHashes": [
+        "867835f2fb07"
+      ],
+      "recallDays": [
+        "2026-05-15"
+      ],
+      "conceptTags": [
+        "izgetour-opencode-30min",
+        "izge-oc",
+        "utc",
+        "i̇zgetour",
+        "layout",
+        "analizi",
+        "brain",
+        "kaydı"
+      ]
+    },
+    "memory:memory/2026-05-15.md:19:22": {
+      "key": "memory:memory/2026-05-15.md:19:22",
+      "path": "memory/2026-05-15.md",
+      "startLine": 19,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "@@ -19,4 @@ (18 before, 179 after) ## ~07:33 UTC — İzgeTour AutoDev Cron: Tüm 11 task tamamlandı ### Bu run'da yapılanlar",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.79,
+      "maxScore": 0.79,
+      "firstRecalledAt": "2026-05-16T09:33:15.229Z",
+      "lastRecalledAt": "2026-05-16T09:33:15.229Z",
+      "queryHashes": [
+        "7e5f89792ab3"
+      ],
+      "recallDays": [
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "19,4",
+        "utc",
+        "i̇zgetour",
+        "autodev",
+        "cron",
+        "tüm",
+        "task",
+        "tamamlandı"
+      ]
+    },
+    "memory:memory/2026-05-11.md:16:19": {
+      "key": "memory:memory/2026-05-11.md:16:19",
+      "path": "memory/2026-05-11.md",
+      "startLine": 16,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "@@ -16,4 @@ (15 before, 35 after) - OpenCode↔NotebookLM integration: installed NotebookLM skill for OpenCode at project-level: - `/home/turk/projects/izgetour/.opencode/skills/nlm-skill` - izgetour AutoDev loop status: cron keeps querying NotebookLM for “next module” ideas, but OpenCode implementation is **blocked** until gate ...",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.77,
+      "maxScore": 0.77,
+      "firstRecalledAt": "2026-05-16T21:33:16.200Z",
+      "lastRecalledAt": "2026-05-16T21:33:16.200Z",
+      "queryHashes": [
+        "df2729fffd43"
+      ],
+      "recallDays": [
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "project-level",
+        "home/turk/projects/izgetour",
+        "opencode/skills/nlm-skill",
+        "16,4",
+        "opencode",
+        "notebooklm",
+        "integration",
+        "installed"
+      ]
+    },
+    "memory:memory/2026-05-12.md:11:14": {
+      "key": "memory:memory/2026-05-12.md:11:14",
+      "path": "memory/2026-05-12.md",
+      "startLine": 11,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "@@ -11,4 @@ (10 before, 377 after) - Rate limit dolu: `usage_limit_reached`, `plan_type: team`, resets ~15 Mayıs - OpenCode default model `cligate/gpt-5.2` -> `yuxor/claude-sonnet-4-6` olarak değiştirildi - izgetour pipeline cronjob'u da `yuxor/claude-sonnet-4-6`'ya güncellendi",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.73,
+      "maxScore": 0.73,
+      "firstRecalledAt": "2026-05-23T18:31:17.409Z",
+      "lastRecalledAt": "2026-05-23T18:31:17.409Z",
+      "queryHashes": [
+        "88cc0bdb2f63"
+      ],
+      "recallDays": [
+        "2026-05-23"
+      ],
+      "conceptTags": [
+        "gpt",
+        "usage-limit-reached",
+        "plan-type",
+        "cligate/gpt-5.2",
+        "yuxor/claude-sonnet-4-6",
+        "11,4",
+        "rate",
+        "limit"
+      ]
+    },
+    "memory:memory/2026-05-12.md:55:58": {
+      "key": "memory:memory/2026-05-12.md:55:58",
+      "path": "memory/2026-05-12.md",
+      "startLine": 55,
+      "endLine": 58,
+      "source": "memory",
+      "snippet": "@@ -55,4 @@ (54 before, 333 after) - Token expired → refresh edildi (16:07) ✅ - gpt-5.3-codex ve gpt-5.2 RATE_LIMITED (usage_limit_reached), Team plan - Kota reset: **~20:28 UTC** (sonra düzelir) - o3-mini desteklenmiyor (Codex modunda uyumsuz)",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.89,
+      "maxScore": 0.89,
+      "firstRecalledAt": "2026-05-23T19:34:34.913Z",
+      "lastRecalledAt": "2026-05-23T19:34:34.913Z",
+      "queryHashes": [
+        "ba6cc0f38ae6"
+      ],
+      "recallDays": [
+        "2026-05-23"
+      ],
+      "conceptTags": [
+        "gpt",
+        "gpt-5.3-codex",
+        "gpt-5.2",
+        "rate-limited",
+        "usage-limit-reached",
+        "o3-mini",
+        "55,4",
+        "token"
+      ]
+    }
+  }
+}

@@ -1,0 +1,3 @@
+# Sıradaki
+
+(auto)

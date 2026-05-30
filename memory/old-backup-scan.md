@@ -1,0 +1,390 @@
+# Old OpenClaw Backup Scan
+
+Last compacted run @ 2026-05-10 14:41:14 UTC
+
+## Scanned
+- /home/turk/.openclaw/workspace/backup-openclaw-old/workspace (files: 785, dirs: 290)
+- /home/turk/.openclaw-old (files: 45908, dirs: 4377)
+
+## Findings (secret-like patterns; values NOT recorded)
+### /home/turk/.openclaw/workspace/backup-openclaw-old/workspace
+- total hits: 512
+- files with hits: 123
+- key-hints (sample): API, API_KEY, CONFIG_TOKEN, MEILISEARCH_KEY, NEO4J_PASSWORD, SAPISID, SUPABASE_ACCESS_TOKEN, TOKEN_DIR, TOKEN_FILE
+- top files by hit count (sample):
+  - /home/turk/.openclaw/workspace/backup-openclaw-old/workspace/projects/hologateaway/konusmagecmisi.md (113)
+  - /home/turk/.openclaw/workspace/backup-openclaw-old/workspace/memory/2026-05-08.md (29)
+  - /home/turk/.openclaw/workspace/backup-openclaw-old/workspace/backups/2026-05-08T12-33-26Z/openclaw.json (19)
+  - /home/turk/.openclaw/workspace/backup-openclaw-old/workspace/skills/project-orchestrator/docs/guides/getting-started.md (19)
+  - /home/turk/.openclaw/workspace/backup-openclaw-old/workspace/state/sessions/agent%3Aclaude%3Aacp%3Ad3b1e36d-0ee2-44c7-ae0b-049e53267233%3Aoneshot%3Ae85bd4cf-0b14-4606-8380-e0ddd5557244.json (14)
+  - /home/turk/.openclaw/workspace/backup-openclaw-old/workspace/skills/project-orchestrator/docs/guides/multi-agent-workflow.md (14)
+  - /home/turk/.openclaw/workspace/backup-openclaw-old/workspace/chatprd-mcp-proxy.js (14)
+  - /home/turk/.openclaw/workspace/backup-openclaw-old/workspace/memory/.dreams/short-term-recall.json (11)
+  - /home/turk/.openclaw/workspace/backup-openclaw-old/workspace/state/sessions/agent%3Aclaude%3Aacp%3Aa5eff0d6-a68a-4e19-9c35-95f21ccc3ddd%3Aoneshot%3A4461d8d4-ee58-4cfe-b614-05cf40e08ea2.json (10)
+  - /home/turk/.openclaw/workspace/backup-openclaw-old/workspace/projects/hologateaway/src/holodb/llm/swarm_router.py (8)
+
+### /home/turk/.openclaw-old
+- total hits: 7260
+- files with hits: 389
+- key-hints (sample): 1PAPISID, 3PAPISID, ABV_WEB_PASSWORD, ADMIN_TOKEN, ANTHROPIC_API_KEY, ANTHROPIC_AUTH_TOKEN, ANTIGRAVITY_KEY, API, APISID, API_KEY, API_PROVIDER_INTERNAL, API_REFERENCE, API_TIMEOUT_MS, API_TOKEN, API_TOKEN_GOES_HERE, AUTH, AUTHENTICATION, AUTHORIZATION, AUTH_DIR, AUTH_JSON_PATH …
+- top files by hit count (sample):
+  - /home/turk/.openclaw-old/agents/main/sessions/c9a75e78-d0fb-4177-9be8-ef14687d6de5.jsonl.reset.2026-05-08T21-02-02.278Z (231)
+  - /home/turk/.openclaw-old/agents/main/sessions/c9a75e78-d0fb-4177-9be8-ef14687d6de5.checkpoint.464e1fb8-dcad-4f79-b7a9-d5051b0e8b37.jsonl (217)
+  - /home/turk/.openclaw-old/agents/planner/sessions/84bdfd76-857b-4dc0-b61e-8521c835a18d.jsonl (210)
+  - /home/turk/.openclaw-old/agents/planner/sessions/84bdfd76-857b-4dc0-b61e-8521c835a18d.jsonl.bak-352739-1778196783414 (210)
+  - /home/turk/.openclaw-old/completions/openclaw.zsh (203)
+  - /home/turk/.openclaw-old/completions/openclaw.fish (202)
+  - /home/turk/.openclaw-old/agents/planner/sessions/84bdfd76-857b-4dc0-b61e-8521c835a18d.jsonl.bak-328868-1778190133690 (201)
+  - /home/turk/.openclaw-old/agents/main/sessions/c9a75e78-d0fb-4177-9be8-ef14687d6de5.jsonl.bak-447345-1778263271909 (157)
+  - /home/turk/.openclaw-old/agents/main/sessions/c9a75e78-d0fb-4177-9be8-ef14687d6de5.jsonl.bak-447345-1778263299765 (157)
+  - /home/turk/.openclaw-old/agents/main/sessions/c9a75e78-d0fb-4177-9be8-ef14687d6de5.jsonl.bak-444821-1778260283125 (153)
+
+
+## Run: 2026-05-10 14:48:40 UTC
+**Targets:**
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace`
+- `/home/turk/.openclaw-old`
+
+**Tree:** 516 dirs, 2187 files (enumerated).
+**Text scan:** 994 files scanned (size≤2000000B, incremental).
+
+### New findings
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/gemini-cli-guide.md`:194 — authorization_header
+  - `- **Auth:** GitHub PAT (`Authorization: Bearer ghp_…..`)`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/railway-mcp-proxy.js`:7 — generic_secret_assignment
+  - `TOKEN = proc…KEN;`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/MEMORY.md`:65 — github_token
+  - `Token:** `…urk)`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/MEMORY.md`:105 — github_token
+  - `| GitHub PAT | `ghp_…BeYh` | ✅ |`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/MEMORY.md`:108 — openai_like_key
+  - `| Yuxor Proxy | `sk-0…583c` | ✅ |`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/TOOLS.md`:46 — github_token
+  - `Token: `ghp…eYh``
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/TOOLS.md`:46 — generic_secret_assignment
+  - `Token: `ghp…eYh``
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/TOOLS.md`:64 — generic_secret_assignment
+  - `Token: `~/.…son``
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/antigravity-proxy/api/[...path].js`:4 — generic_secret_assignment
+  - `API_KEY  = proc…cE';`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/reports/step7-railway-integration.md`:33 — generic_secret_assignment
+  - `Token: Acco…atı)`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/backups/2026-05-08T12-33-26Z/openclaw.json`:488 — openai_like_key
+  - `        "apiKey": "sk-0…583c",`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/backups/2026-05-08T12-33-26Z/openclaw.json`:520 — github_token
+  - `        "apiKey": "ghp_…BeYh",`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/backups/2026-05-08T12-33-26Z/openclaw.json`:595 — openai_like_key
+  - `        "apiKey": "sk-0…583c",`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/backups/2026-05-08T12-33-26Z/openclaw.json`:875 — github_token
+  - `          "GITH…OKEN": "ghp_…BeYh"`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/backups/2026-05-08T12-33-26Z/TOOLS.md`:46 — github_token
+  - `Token: `ghp…eYh``
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/backups/2026-05-08T12-33-26Z/TOOLS.md`:46 — generic_secret_assignment
+  - `Token: `ghp…eYh``
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/backups/2026-05-08T12-33-26Z/TOOLS.md`:64 — generic_secret_assignment
+  - `Token: `~/.…son``
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/memory/google.md`:16 — generic_secret_assignment
+  - `Token: `~/.…son``
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/memory/notion.md`:8 — generic_secret_assignment
+  - `Token: `ntn…2vY``
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/memory/2026-05-08.md`:15 — openai_like_key
+  - `- Key: `sk-2…6998``
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/memory/2026-05-08.md`:87 — openai_like_key
+  - `- Key: `sk-2…6998``
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/memory/2026-05-08.md`:221 — openai_like_key
+  - `- Key: `sk-2…6998``
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/memory/2026-05-08.md`:412 — openai_like_key
+  - `- Key: `sk-2…6998``
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/memory/secrets.md`:9 — github_token
+  - `| **GitHub (userclawturk)** | ghp_…BeYh |`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/memory/github.md`:7 — github_token
+  - `Token: `ghp…eYh``
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/memory/github.md`:7 — generic_secret_assignment
+  - `Token: `ghp…eYh``
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/memory/.dreams/short-term-recall.json`:197 — openai_like_key
+  - `      "snippet": "| **Antigravity** | ❌ \"accounts exhausted\" → ✅ çalışıyor | Geçici Google auth sorunu, sonra düzeldi | | **OpenRouter** | ✅ Çalışıyor | Llama 4 Maverick testi başarılı | | **Ollama** | ❌ Servis kapalı | Önemli değil, pasif | ### 2. DeepSeek API Key - Key: `sk-2…6998` - `openclaw.json` → `models.providers.deepseek.apiKey` - Test: başarılı, yanıt alınıyor ### 3. Ngrok + Antigravity Dışarı Açıldı → ❌ Ngrok KAPATILDI - **Authtoken:** `3DRb…LPPT` — TOOLS.md'ye eklendi - **Public URL:** `https://slap…look.ngrok-free.dev` - **Systemd servis:** `ngrok-antigravity.service` (enabled, user) → **DURDURULDU + DEVRE DIŞI**",`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/memory/.dreams/short-term-recall.json`:228 — openai_like_key
+  - `      "snippet": "# Session Log — 8 Mayıs 2026 (Güncellendi) ## 🔧 Yapılan Değişiklikler ### 1. LLM API Test & Onarımlar | API | Durum | Çözüm | |-----|-------|-------| | **Yuxor Proxy** | ❌ 429 Rate Limit | Günlük 800 limit doldu, reset 00:00 UTC | | **DeepSeek** | ❌ apiKey yok → ✅ eklendi | `sk-20b2...6998` eklendi, test: çalışıyor | | **Antigravity** | ❌ \"accounts exhausted\" → ✅ çalışıyor | Geçici Google auth sorunu, sonra düzeldi | | **OpenRouter** | ✅ Çalışıyor | Llama 4 Maverick testi başarılı | | **Ollama** | ❌ Servis kapalı | Önemli değil, pasif | ### 2. DeepSeek API Key - Key: `sk-2…6998` - `openclaw.json` → `models.providers.deepseek.apiKey` - Test: başarılı, yanıt alını",`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/memory/tools/vercel.md`:31 — authorization_header
+  - `  Authorization: Bearer vcp_…x...`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/memory/tools/deepseek.md`:34 — authorization_header
+  - `  -H "Authorization: Bearer $DEE…_KEY" \`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/memory/tools/notion.md`:29 — authorization_header
+  - `  Authorization: Bearer ntn_…1...`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/memory/tools/supabase.md`:25 — generic_secret_assignment
+  - `apikey: sb_p…..."`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/memory/tools/supabase.md`:29 — generic_secret_assignment
+  - `apikey: sb_s…..."`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/state/sessions/agent%3Aclaude%3Aacp%3A1e636bc1-04d1-4b3b-881e-f5667d653b0f%3Aoneshot%3A7a96f5dc-081e-4474-8044-d1fea16e15dc.json`:117 — generic_secret_assignment
+  - `api_key = requ…..."`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/state/sessions/agent%3Aclaude%3Aacp%3A1e636bc1-04d1-4b3b-881e-f5667d653b0f%3Aoneshot%3A7a96f5dc-081e-4474-8044-d1fea16e15dc.json`:119 — generic_secret_assignment
+  - `api_key = requ…..."`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/state/sessions/agent%3Aclaude%3Aacp%3Aa64a0a94-1d41-420f-b38c-4c4c53ea99ad%3Aoneshot%3Ade4337ab-be2b-4ff2-b216-fa7945bf6d89.json`:339 — generic_secret_assignment
+  - `api_key = requ…..."`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/state/sessions/agent%3Aclaude%3Aacp%3Aa64a0a94-1d41-420f-b38c-4c4c53ea99ad%3Aoneshot%3Ade4337ab-be2b-4ff2-b216-fa7945bf6d89.json`:341 — generic_secret_assignment
+  - `api_key = requ…..."`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/state/sessions/agent%3Aclaude%3Aacp%3Aa64a0a94-1d41-420f-b38c-4c4c53ea99ad%3Aoneshot%3Ade4337ab-be2b-4ff2-b216-fa7945bf6d89.json`:348 — generic_secret_assignment
+  - `api_key: str)…5\t"`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/state/sessions/agent%3Aclaude%3Aacp%3Aa64a0a94-1d41-420f-b38c-4c4c53ea99ad%3Aoneshot%3Ade4337ab-be2b-4ff2-b216-fa7945bf6d89.json`:350 — generic_secret_assignment
+  - `api_key: str)…5\t"`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/projects/hologateaway/scripts/emir2_mini_test.py`:7 — generic_secret_assignment
+  - `api_key="dev…y"):`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/projects/hologateaway/scripts/emir2_mini_test.py`:9 — generic_secret_assignment
+  - `api_key = REDACTED`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/projects/hologateaway/scripts/holo_cli.py`:200 — generic_secret_assignment
+  - `api_key=args…key,`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/projects/hologateaway/scripts/emir2_improved_test.py`:27 — generic_secret_assignment
+  - `api_key="dev…y"):`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/projects/hologateaway/scripts/field_test_runner.py`:8 — generic_secret_assignment
+  - `api_key="dev…y"):`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/projects/hologateaway/scripts/field_test_runner.py`:10 — generic_secret_assignment
+  - `api_key = REDACTED`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/projects/hologateaway/scripts/holo_indexer.py`:53 — generic_secret_assignment
+  - `api_key="dev…y"):`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/projects/hologateaway/scripts/holo_indexer.py`:55 — generic_secret_assignment
+  - `api_key = REDACTED`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/projects/hologateaway/scripts/holo_indexer.py`:317 — authorization_header
+  - `        "cn_api_key": "Gateway varsayılan API anahtarı: dev-local-key. config.yaml auth bölümünde tanımlı. Header: Authorization: Bearer dev-…-key",`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/projects/hologateaway/reports/gw2_docker_smoke_test.md`:38 — authorization_header
+  - `  -H "Authorization: Bearer dev-…-key" \`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/projects/hologateaway/reports/gw2_docker_smoke_test.md`:50 — authorization_header
+  - `  -H "Authorization: Bearer dev-…-key" \`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/projects/hologateaway/reports/gw2_docker_smoke_test.md`:72 — authorization_header
+  - `curl -H "Authorization: Bearer dev-…-key" http://localhost:5000/v1/documents`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/projects/hologateaway/raw/sessions/session_2026-04-27_gw1_hologateway.md`:95 — authorization_header
+  - `  -H "Authorization: Bearer dev-…-key" \`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/projects/hologateaway/src/holodb/gateway/config.py`:112 — generic_secret_assignment
+  - `api_key = api_…[7:]`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/projects/hologateaway/src/holodb/gateway/server.py`:42 — generic_secret_assignment
+  - `api_key = requ… '')`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/projects/hologateaway/src/holodb/gateway/static/index.html`:231 — generic_secret_assignment
+  - `apiKey = docu…ey';`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/projects/hologateaway/holo-mcp-server/server.py`:18 — generic_secret_assignment
+  - `API_KEY = dev-…-key`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/projects/hologateaway/docs/HOLO_GATEWAY_QUICKSTART.md`:31 — authorization_header
+  - `  -H "Authorization: Bearer dev-…-key" \`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/projects/hologateaway/docs/HOLO_GATEWAY_QUICKSTART.md`:56 — authorization_header
+  - `  -H "Authorization: Bearer dev-…-key" \`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/projects/hologateaway/docs/HOLO_GATEWAY_QUICKSTART.md`:70 — authorization_header
+  - `curl -H "Authorization: Bearer dev-…-key" http://localhost:5000/v1/documents`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/projects/hologateaway/docs/HOLO_GATEWAY_QUICKSTART.md`:76 — authorization_header
+  - `curl -H "Authorization: Bearer dev-…-key" http://localhost:5000/v1/storage/info`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/skills/project-context-sync/scripts/update-context.sh`:202 — authorization_header
+  - `            -H "Authorization: Bearer $GAT…OKEN" \`
+- `/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/docs/tum-dokumanlar/vercel.md`:28 — generic_secret_assignment
+  - `Token: vcp_…'de)`
+- `/home/turk/.openclaw-old/agents/planner/agent/auth-profiles.json`:5 — openai_like_key
+  - `    "deepseek": "sk-0…583c",`
+- `/home/turk/.openclaw-old/agents/planner/agent/auth-profiles.json`:6 — openai_like_key
+  - `    "anthropic": "sk-0…583c",`
+- `/home/turk/.openclaw-old/agents/planner/agent/auth-profiles.json`:7 — openai_like_key
+  - `    "custom": "sk-0…583c",`
+- `/home/turk/.openclaw-old/agents/planner/agent/auth-profiles.json`:8 — github_token
+  - `    "github-models": "ghp_…BeYh"`
+- `/home/turk/.openclaw-old/agents/main/sessions/sessions.json`:542 — generic_secret_assignment
+  - `token: `Djd…s>",`
+- `/home/turk/.openclaw-old/agents/main/sessions/sessions.json`:564 — generic_secret_assignment
+  - `token: `Djd…s>",`
+- `/home/turk/.openclaw-old/identity/device.json`:5 — private_key_block
+  - `  "privateKeyPem": "-----BEGIN PRIVATE KEY-----\nMC4…jFx0/\n-----END PRIVATE KEY-----\n",`
+- `/home/turk/.openclaw-old/workspace/gemini-cli-guide.md`:194 — authorization_header
+  - `- **Auth:** GitHub PAT (`Authorization: Bearer ghp_…..`)`
+- `/home/turk/.openclaw-old/workspace/railway-mcp-proxy.js`:7 — generic_secret_assignment
+  - `TOKEN = proc…KEN;`
+- `/home/turk/.openclaw-old/workspace/MEMORY.md`:65 — github_token
+  - `Token:** `…urk)`
+- `/home/turk/.openclaw-old/workspace/MEMORY.md`:105 — github_token
+  - `| GitHub PAT | `ghp_…BeYh` | ✅ |`
+- `/home/turk/.openclaw-old/workspace/MEMORY.md`:108 — openai_like_key
+  - `| Yuxor Proxy | `sk-0…583c` | ✅ |`
+- `/home/turk/.openclaw-old/workspace/TOOLS.md`:46 — github_token
+  - `Token: `ghp…eYh``
+- `/home/turk/.openclaw-old/workspace/TOOLS.md`:46 — generic_secret_assignment
+  - `Token: `ghp…eYh``
+- `/home/turk/.openclaw-old/workspace/TOOLS.md`:64 — generic_secret_assignment
+  - `Token: `~/.…son``
+- `/home/turk/.openclaw-old/workspace/antigravity-proxy/api/[...path].js`:4 — generic_secret_assignment
+  - `API_KEY  = proc…cE';`
+- `/home/turk/.openclaw-old/workspace/reports/step7-railway-integration.md`:33 — generic_secret_assignment
+  - `Token: Acco…atı)`
+- `/home/turk/.openclaw-old/workspace/backups/2026-05-08T12-33-26Z/openclaw.json`:488 — openai_like_key
+  - `        "apiKey": "sk-0…583c",`
+- `/home/turk/.openclaw-old/workspace/backups/2026-05-08T12-33-26Z/openclaw.json`:520 — github_token
+  - `        "apiKey": "ghp_…BeYh",`
+- `/home/turk/.openclaw-old/workspace/backups/2026-05-08T12-33-26Z/openclaw.json`:595 — openai_like_key
+  - `        "apiKey": "sk-0…583c",`
+- `/home/turk/.openclaw-old/workspace/backups/2026-05-08T12-33-26Z/openclaw.json`:875 — github_token
+  - `          "GITH…OKEN": "ghp_…BeYh"`
+- `/home/turk/.openclaw-old/workspace/backups/2026-05-08T12-33-26Z/TOOLS.md`:46 — github_token
+  - `Token: `ghp…eYh``
+- `/home/turk/.openclaw-old/workspace/backups/2026-05-08T12-33-26Z/TOOLS.md`:46 — generic_secret_assignment
+  - `Token: `ghp…eYh``
+- `/home/turk/.openclaw-old/workspace/backups/2026-05-08T12-33-26Z/TOOLS.md`:64 — generic_secret_assignment
+  - `Token: `~/.…son``
+- `/home/turk/.openclaw-old/workspace/memory/google.md`:16 — generic_secret_assignment
+  - `Token: `~/.…son``
+- `/home/turk/.openclaw-old/workspace/memory/notion.md`:8 — generic_secret_assignment
+  - `Token: `ntn…2vY``
+- `/home/turk/.openclaw-old/workspace/memory/2026-05-08.md`:15 — openai_like_key
+  - `- Key: `sk-2…6998``
+- `/home/turk/.openclaw-old/workspace/memory/2026-05-08.md`:87 — openai_like_key
+  - `- Key: `sk-2…6998``
+- `/home/turk/.openclaw-old/workspace/memory/2026-05-08.md`:221 — openai_like_key
+  - `- Key: `sk-2…6998``
+- `/home/turk/.openclaw-old/workspace/memory/2026-05-08.md`:412 — openai_like_key
+  - `- Key: `sk-2…6998``
+- `/home/turk/.openclaw-old/workspace/memory/secrets.md`:9 — github_token
+  - `| **GitHub (userclawturk)** | ghp_…BeYh |`
+- `/home/turk/.openclaw-old/workspace/memory/github.md`:7 — github_token
+  - `Token: `ghp…eYh``
+- `/home/turk/.openclaw-old/workspace/memory/github.md`:7 — generic_secret_assignment
+  - `Token: `ghp…eYh``
+- `/home/turk/.openclaw-old/workspace/memory/.dreams/short-term-recall.json`:197 — openai_like_key
+  - `      "snippet": "| **Antigravity** | ❌ \"accounts exhausted\" → ✅ çalışıyor | Geçici Google auth sorunu, sonra düzeldi | | **OpenRouter** | ✅ Çalışıyor | Llama 4 Maverick testi başarılı | | **Ollama** | ❌ Servis kapalı | Önemli değil, pasif | ### 2. DeepSeek API Key - Key: `sk-2…6998` - `openclaw.json` → `models.providers.deepseek.apiKey` - Test: başarılı, yanıt alınıyor ### 3. Ngrok + Antigravity Dışarı Açıldı → ❌ Ngrok KAPATILDI - **Authtoken:** `3DRb…LPPT` — TOOLS.md'ye eklendi - **Public URL:** `https://slap…look.ngrok-free.dev` - **Systemd servis:** `ngrok-antigravity.service` (enabled, user) → **DURDURULDU + DEVRE DIŞI**",`
+- `/home/turk/.openclaw-old/workspace/memory/.dreams/short-term-recall.json`:228 — openai_like_key
+  - `      "snippet": "# Session Log — 8 Mayıs 2026 (Güncellendi) ## 🔧 Yapılan Değişiklikler ### 1. LLM API Test & Onarımlar | API | Durum | Çözüm | |-----|-------|-------| | **Yuxor Proxy** | ❌ 429 Rate Limit | Günlük 800 limit doldu, reset 00:00 UTC | | **DeepSeek** | ❌ apiKey yok → ✅ eklendi | `sk-20b2...6998` eklendi, test: çalışıyor | | **Antigravity** | ❌ \"accounts exhausted\" → ✅ çalışıyor | Geçici Google auth sorunu, sonra düzeldi | | **OpenRouter** | ✅ Çalışıyor | Llama 4 Maverick testi başarılı | | **Ollama** | ❌ Servis kapalı | Önemli değil, pasif | ### 2. DeepSeek API Key - Key: `sk-2…6998` - `openclaw.json` → `models.providers.deepseek.apiKey` - Test: başarılı, yanıt alını",`
+- `/home/turk/.openclaw-old/workspace/memory/tools/vercel.md`:31 — authorization_header
+  - `  Authorization: Bearer vcp_…x...`
+- `/home/turk/.openclaw-old/workspace/memory/tools/deepseek.md`:34 — authorization_header
+  - `  -H "Authorization: Bearer $DEE…_KEY" \`
+- `/home/turk/.openclaw-old/workspace/memory/tools/notion.md`:29 — authorization_header
+  - `  Authorization: Bearer ntn_…1...`
+- `/home/turk/.openclaw-old/workspace/memory/tools/supabase.md`:25 — generic_secret_assignment
+  - `apikey: sb_p…..."`
+- `/home/turk/.openclaw-old/workspace/memory/tools/supabase.md`:29 — generic_secret_assignment
+  - `apikey: sb_s…..."`
+- `/home/turk/.openclaw-old/workspace/state/sessions/agent%3Aclaude%3Aacp%3A1e636bc1-04d1-4b3b-881e-f5667d653b0f%3Aoneshot%3A7a96f5dc-081e-4474-8044-d1fea16e15dc.json`:117 — generic_secret_assignment
+  - `api_key = requ…..."`
+- `/home/turk/.openclaw-old/workspace/state/sessions/agent%3Aclaude%3Aacp%3A1e636bc1-04d1-4b3b-881e-f5667d653b0f%3Aoneshot%3A7a96f5dc-081e-4474-8044-d1fea16e15dc.json`:119 — generic_secret_assignment
+  - `api_key = requ…..."`
+- `/home/turk/.openclaw-old/workspace/state/sessions/agent%3Aclaude%3Aacp%3Aa64a0a94-1d41-420f-b38c-4c4c53ea99ad%3Aoneshot%3Ade4337ab-be2b-4ff2-b216-fa7945bf6d89.json`:339 — generic_secret_assignment
+  - `api_key = requ…..."`
+- `/home/turk/.openclaw-old/workspace/state/sessions/agent%3Aclaude%3Aacp%3Aa64a0a94-1d41-420f-b38c-4c4c53ea99ad%3Aoneshot%3Ade4337ab-be2b-4ff2-b216-fa7945bf6d89.json`:341 — generic_secret_assignment
+  - `api_key = requ…..."`
+- `/home/turk/.openclaw-old/workspace/state/sessions/agent%3Aclaude%3Aacp%3Aa64a0a94-1d41-420f-b38c-4c4c53ea99ad%3Aoneshot%3Ade4337ab-be2b-4ff2-b216-fa7945bf6d89.json`:348 — generic_secret_assignment
+  - `api_key: str)…5\t"`
+- `/home/turk/.openclaw-old/workspace/state/sessions/agent%3Aclaude%3Aacp%3Aa64a0a94-1d41-420f-b38c-4c4c53ea99ad%3Aoneshot%3Ade4337ab-be2b-4ff2-b216-fa7945bf6d89.json`:350 — generic_secret_assignment
+  - `api_key: str)…5\t"`
+- `/home/turk/.openclaw-old/workspace/projects/hologateaway/scripts/emir2_mini_test.py`:7 — generic_secret_assignment
+  - `api_key="dev…y"):`
+- `/home/turk/.openclaw-old/workspace/projects/hologateaway/scripts/emir2_mini_test.py`:9 — generic_secret_assignment
+  - `api_key = REDACTED`
+- `/home/turk/.openclaw-old/workspace/projects/hologateaway/scripts/holo_cli.py`:200 — generic_secret_assignment
+  - `api_key=args…key,`
+- `/home/turk/.openclaw-old/workspace/projects/hologateaway/scripts/emir2_improved_test.py`:27 — generic_secret_assignment
+  - `api_key="dev…y"):`
+- `/home/turk/.openclaw-old/workspace/projects/hologateaway/scripts/field_test_runner.py`:8 — generic_secret_assignment
+  - `api_key="dev…y"):`
+- `/home/turk/.openclaw-old/workspace/projects/hologateaway/scripts/field_test_runner.py`:10 — generic_secret_assignment
+  - `api_key = REDACTED`
+- `/home/turk/.openclaw-old/workspace/projects/hologateaway/scripts/holo_indexer.py`:53 — generic_secret_assignment
+  - `api_key="dev…y"):`
+- `/home/turk/.openclaw-old/workspace/projects/hologateaway/scripts/holo_indexer.py`:55 — generic_secret_assignment
+  - `api_key = REDACTED`
+- `/home/turk/.openclaw-old/workspace/projects/hologateaway/scripts/holo_indexer.py`:317 — authorization_header
+  - `        "cn_api_key": "Gateway varsayılan API anahtarı: dev-local-key. config.yaml auth bölümünde tanımlı. Header: Authorization: Bearer dev-…-key",`
+- `/home/turk/.openclaw-old/workspace/projects/hologateaway/reports/gw2_docker_smoke_test.md`:38 — authorization_header
+  - `  -H "Authorization: Bearer dev-…-key" \`
+- `/home/turk/.openclaw-old/workspace/projects/hologateaway/reports/gw2_docker_smoke_test.md`:50 — authorization_header
+  - `  -H "Authorization: Bearer dev-…-key" \`
+- `/home/turk/.openclaw-old/workspace/projects/hologateaway/reports/gw2_docker_smoke_test.md`:72 — authorization_header
+  - `curl -H "Authorization: Bearer dev-…-key" http://localhost:5000/v1/documents`
+- `/home/turk/.openclaw-old/workspace/projects/hologateaway/raw/sessions/session_2026-04-27_gw1_hologateway.md`:95 — authorization_header
+  - `  -H "Authorization: Bearer dev-…-key" \`
+- `/home/turk/.openclaw-old/workspace/projects/hologateaway/src/holodb/gateway/config.py`:112 — generic_secret_assignment
+  - `api_key = api_…[7:]`
+- `/home/turk/.openclaw-old/workspace/projects/hologateaway/src/holodb/gateway/server.py`:42 — generic_secret_assignment
+  - `api_key = requ… '')`
+- `/home/turk/.openclaw-old/workspace/projects/hologateaway/src/holodb/gateway/static/index.html`:231 — generic_secret_assignment
+  - `apiKey = docu…ey';`
+- `/home/turk/.openclaw-old/workspace/projects/hologateaway/holo-mcp-server/server.py`:18 — generic_secret_assignment
+  - `API_KEY = dev-…-key`
+- `/home/turk/.openclaw-old/workspace/projects/hologateaway/docs/HOLO_GATEWAY_QUICKSTART.md`:31 — authorization_header
+  - `  -H "Authorization: Bearer dev-…-key" \`
+- `/home/turk/.openclaw-old/workspace/projects/hologateaway/docs/HOLO_GATEWAY_QUICKSTART.md`:56 — authorization_header
+  - `  -H "Authorization: Bearer dev-…-key" \`
+- `/home/turk/.openclaw-old/workspace/projects/hologateaway/docs/HOLO_GATEWAY_QUICKSTART.md`:70 — authorization_header
+  - `curl -H "Authorization: Bearer dev-…-key" http://localhost:5000/v1/documents`
+- `/home/turk/.openclaw-old/workspace/projects/hologateaway/docs/HOLO_GATEWAY_QUICKSTART.md`:76 — authorization_header
+  - `curl -H "Authorization: Bearer dev-…-key" http://localhost:5000/v1/storage/info`
+- `/home/turk/.openclaw-old/workspace/skills/project-context-sync/scripts/update-context.sh`:202 — authorization_header
+  - `            -H "Authorization: Bearer $GAT…OKEN" \`
+- `/home/turk/.openclaw-old/workspace/docs/tum-dokumanlar/vercel.md`:28 — generic_secret_assignment
+  - `Token: vcp_…'de)`
+
+> Note: Secrets are redacted/masked by design.
+## Run @ 2026-05-10 15:38:27 UTC
+
+### Scanned
+- /home/turk/.openclaw/workspace/backup-openclaw-old/workspace — files: 785, dirs: 290
+- /home/turk/.openclaw-old — files: 45915, dirs: 4377
+- TOTAL — files: 46700, dirs: 4667
+
+### Incremental content review
+- Candidate files: 32017
+- Changed/new candidates processed: 400 (cap 400)
+
+### New learnings (high-signal snippets, redacted)
+- /home/turk/.openclaw-old/identity/device-auth.json
+  - "operator.pairing",
+- /home/turk/.openclaw-old/devices/paired.json
+  - "operator.pairing",
+- /home/turk/.openclaw-old/agents/main/sessions/sessions.json
+  - "sessionFile": "/home/turk/.openclaw/agents/main/sessions/REDACTED.jsonl",
+- /home/turk/.openclaw-old/agents/main/sessions/bdffa4c0-c9a2-4248-a635-179a5716ee01.trajectory-path.json
+  - "traceSchema": "REDACTED",
+- /home/turk/.openclaw-old/logs/config-health.json
+  - "/home/turk/.openclaw/openclaw.json": {
+- /home/turk/.openclaw-old/plugins/installs.json
+  - "warning": "DO NOT EDIT. This file is generated by OpenClaw from plugin manifests, install records, and config policy. Use `openclaw plugins registry --refresh`, `openclaw plugins install/update/unins
+- /home/turk/.openclaw-old/openclaw.json
+  - "gateway": {
+- /home/turk/.openclaw-old/logs/config-audit.jsonl
+  - {"ts":"2026-05-04T18:28:37.605Z","source":"config-io","event":"config.write","configPath":"/home/turk/.openclaw/openclaw.json","pid":20333,"ppid":19990,"cwd":"/home/turk","argv":["/usr/bin/node","/hom
+- /home/turk/.openclaw-old/logs/stability/openclaw-stability-2026-05-10T02-16-14-492Z-641258-gateway.startup_failed.json
+  - "reason": "gateway.startup_failed",
+- /home/turk/.openclaw-old/logs/stability/openclaw-stability-2026-05-10T02-16-06-165Z-641231-gateway.startup_failed.json
+  - "reason": "gateway.startup_failed",
+- /home/turk/.openclaw-old/logs/stability/openclaw-stability-2026-05-10T02-15-57-930Z-641168-gateway.startup_failed.json
+  - "reason": "gateway.startup_failed",
+- /home/turk/.openclaw-old/logs/stability/openclaw-stability-2026-05-10T02-15-49-696Z-641141-gateway.startup_failed.json
+  - "reason": "gateway.startup_failed",
+
+### Potential secrets detected (locations only; values redacted)
+- /home/turk/.openclaw-old/openclaw.json.full-backup-before-cleanup-20260510_000153
+  - line 166 (openai_like):         "apiKey": "sk-0…583c",
+  - line 285 (openai_like):         "apiKey": "sk-0…583c",
+- /home/turk/.openclaw-old/openclaw.json.backup.20260509_231038
+  - line 184 (openai_like):         "apiKey": "sk-0…583c",
+  - line 256 (openai_like):         "apiKey": "sk-0…583c",
+- /home/turk/.openclaw/workspace/backup-openclaw-old/workspace/memory/.dreams/short-term-recall.json
+  - line 197 (openai_like):       "snippet": "| **Antigravity** | ❌ \"accounts exhausted\" → ✅ çalışıyor | Geçici Google auth sorunu, sonra düzeldi | | **OpenRouter** | ✅ Çalışıyor | Llama 4 Maverick testi başarılı | | **Ollama** | ❌ Servis kapalı | Önemli değil, pasi
+  - line 228 (openai_like):       "snippet": "# Session Log — 8 Mayıs 2026 (Güncellendi) ## 🔧 Yapılan Değişiklikler ### 1. LLM API Test & Onarımlar | API | Durum | Çözüm | |-----|-------|-------| | **Yuxor Proxy** | ❌ 429 Rate Limit | Günlük 800 limit doldu, reset 00:
+- /home/turk/.openclaw-old/workspace/memory/.dreams/short-term-recall.json
+  - line 197 (openai_like):       "snippet": "| **Antigravity** | ❌ \"accounts exhausted\" → ✅ çalışıyor | Geçici Google auth sorunu, sonra düzeldi | | **OpenRouter** | ✅ Çalışıyor | Llama 4 Maverick testi başarılı | | **Ollama** | ❌ Servis kapalı | Önemli değil, pasi
+  - line 228 (openai_like):       "snippet": "# Session Log — 8 Mayıs 2026 (Güncellendi) ## 🔧 Yapılan Değişiklikler ### 1. LLM API Test & Onarımlar | API | Durum | Çözüm | |-----|-------|-------| | **Yuxor Proxy** | ❌ 429 Rate Limit | Günlük 800 limit doldu, reset 00:
+- /home/turk/.openclaw/workspace/backup-openclaw-old/workspace/MEMORY.md
+  - line 108 (openai_like): | Yuxor Proxy | `sk-0…583c` | ✅ |
+- /home/turk/.openclaw-old/workspace/MEMORY.md
+  - line 108 (openai_like): | Yuxor Proxy | `sk-0…583c` | ✅ |
+- /home/turk/.openclaw/workspace/backup-openclaw-old/workspace/memory/2026-05-08.md
+  - line 15 (openai_like): - Key: `sk-2…6998`
+  - line 87 (openai_like): - Key: `sk-2…6998`
+  - line 221 (openai_like): - Key: `sk-2…6998`
+  - line 412 (openai_like): - Key: `sk-2…6998`
+- /home/turk/.openclaw-old/workspace/memory/2026-05-08.md
+  - line 15 (openai_like): - Key: `sk-2…6998`
+  - line 87 (openai_like): - Key: `sk-2…6998`
+  - line 221 (openai_like): - Key: `sk-2…6998`
+  - line 412 (openai_like): - Key: `sk-2…6998`
+- /home/turk/.openclaw/workspace/backup-openclaw-old/workspace/backups/2026-05-08T12-33-26Z/openclaw.json
+  - line 488 (openai_like):         "apiKey": "sk-0…583c",
+  - line 595 (openai_like):         "apiKey": "sk-0…583c",
+- /home/turk/.openclaw-old/workspace/backups/2026-05-08T12-33-26Z/openclaw.json
+  - line 488 (openai_like):         "apiKey": "sk-0…583c",
+  - line 595 (openai_like):         "apiKey": "sk-0…583c",
+- /home/turk/.openclaw-old/agents/planner/agent/auth-profiles.json
+  - line 5 (openai_like):     "deepseek": "sk-0…583c",
+  - line 6 (openai_like):     "anthropic": "sk-0…583c",
+  - line 7 (openai_like):     "custom": "sk-0…583c",
+

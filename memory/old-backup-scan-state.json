@@ -1,0 +1,2460 @@
+{
+  "fileIndex": {
+    "/home/turk/.openclaw-old/agents/main/agent/models.json": {
+      "mtime": 1778375969,
+      "sig": "68b480e41d7fc1f33f0b4c36ccee606ca9778ba620f02797488a6a124486d8cd",
+      "size": 5065
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/007e2634-fda2-46bf-9763-3eefd2b15cef.trajectory-path.json": {
+      "mtime": 1778248317,
+      "sig": "10fd949bb665a82cc91bd59e8036a497ae94015548a655e4e477a235652a93ae",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/014f8d70-0f2a-4234-b165-514ea0d6f0fe.trajectory-path.json": {
+      "mtime": 1778353177,
+      "sig": "b43466d2a37a6995b57c19d0b14e437c63450834e6396704213f6fe478091121",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/04b8e984-3480-42bf-ac39-7b496b98eb8a.trajectory-path.json": {
+      "mtime": 1778350995,
+      "sig": "6dd7dbdeb4d7cccfcad256246d655a58d1163daff794dd0a79f9cae80f6461d2",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/05af33a3-82a3-4c20-adbf-21e22b5b11df.trajectory-path.json": {
+      "mtime": 1778275840,
+      "sig": "c452c69022cd3a92b81a4b89328b51b671c1733d5162af93b09dbd84ba1101bd",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/05b5d6d4-4e7e-4302-8fd0-c0574e87b3bc.trajectory-path.json": {
+      "mtime": 1778360539,
+      "sig": "fb718f65b6bf817966c0976752a48ea7f09f01bc577b604096e9679ab791cfb5",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/0604a75f-558d-4dd3-b56a-cbd19676d097.trajectory-path.json": {
+      "mtime": 1778350912,
+      "sig": "13e306f099dba5bf97ec6d8fe54c79e665e14f2ff61df3c92d8780ec954cc203",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/089a36d2-e2e6-4ede-bacc-4446b1ccd770.trajectory-path.json": {
+      "mtime": 1778351596,
+      "sig": "49b4a7394e98134adb516cefb3aaf05bb1b70443be572fb17ac7f82ddade8a8c",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/08adbd93-f045-4bd5-b43c-85f4f57151ac.trajectory-path.json": {
+      "mtime": 1778378596,
+      "sig": "22edb432a9c81413cd183c6f0ae241db8dad4c710126d3e5e7b00e2f06ba2bd3",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/09b8898b-0a8b-4f06-bdac-f1cd8003d560.trajectory-path.json": {
+      "mtime": 1778340773,
+      "sig": "55466fc9c09171937de5d7748c568ce903605724ef19c0c1e6cd4d059aaa2099",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/0fba9643-049e-49ca-8619-70f03075c474.trajectory-path.json": {
+      "mtime": 1778339944,
+      "sig": "2337efd7121f2d32c5ffdd8927250a295c07b7ee897affe19abb72dd8ebcab4e",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/14b60582-f542-451c-b8e1-df62f9bc64b6.trajectory-path.json": {
+      "mtime": 1778375271,
+      "sig": "874112da8246720624585912865713bfb7e15808fdb4eb8792a9172ba2e242fe",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/1669ec2e-a2fa-4e5e-a849-0d7248da2b4c.trajectory-path.json": {
+      "mtime": 1778364162,
+      "sig": "cff22d597a8187d19c669285d5d25068267d69286b97b956275bb57d993d5622",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/1901d738-8563-4e3a-97fc-9254b0547e86.trajectory-path.json": {
+      "mtime": 1778376607,
+      "sig": "63d32741cc3985a73c71b17dcc2262e1e776866afb5a8f269fe0624ef70eae55",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/1dac1322-36ed-4c94-9fb0-1723f4c85619.trajectory-path.json": {
+      "mtime": 1778365838,
+      "sig": "ef0630b4b830108ccd346ba8166ef957f4739349fd9cdfbfd640c0a9b007b0bc",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/1f3b74a6-a2a4-4fc5-94ba-85e41e250381.trajectory-path.json": {
+      "mtime": 1778375273,
+      "sig": "94588246fd78cd132d579521b5896e62d0e8c97ca2f8b015e0e1493726037953",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/214bd248-e4c8-46df-b98e-d17b22b90435.trajectory-path.json": {
+      "mtime": 1778346726,
+      "sig": "cd86d7761e0eca6a40931cb99e7b0878d0c1d22a4252039a9819e9eeb64090ad",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/242ebb10-2db0-4eba-89c4-8f065e6c88db.trajectory-path.json": {
+      "mtime": 1778367138,
+      "sig": "3002bafe9dbb1567d41321ae58883f58148dd9858cc7a08b1de7b1bc863e6001",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/24526213-7023-4c70-b7ca-8a5bad8a9bc5.trajectory-path.json": {
+      "mtime": 1778341297,
+      "sig": "23b404141e94036eb92d201898a80633fa88cd6d5fe3b967b0e4ffcdf12cbb69",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/25f33d31-9e3e-465a-bd9d-53a72b1a09b0.trajectory-path.json": {
+      "mtime": 1778338583,
+      "sig": "182b66b1cd0c69d5c10c3de70718e44753cebd1fce203b1ec124e9932abb3aaa",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/261762fd-e6e8-4cd8-ad48-ca0d21c2a5d1.trajectory-path.json": {
+      "mtime": 1778340581,
+      "sig": "8e37135f15859c4354a7f65d3607544e3de09d6bb7f5eaae903c412b52d6ed05",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/27a7ae9c-aa54-43da-9383-122f2585ea60.trajectory-path.json": {
+      "mtime": 1778338159,
+      "sig": "b0543a5f6f696d8572113c2681b5b2133c0fc675623e3fa1fb980c29a5961eb2",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/2a2b2a9a-bb5a-4007-912e-e0acef2b6963.trajectory-path.json": {
+      "mtime": 1778295617,
+      "sig": "52989d84b3eb3d86c183d22cdb3caaf591836b43f8cb300940a244330ec404f3",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/2bffdb53-c59d-4a04-adc0-dc61988b294e.trajectory-path.json": {
+      "mtime": 1778371109,
+      "sig": "167cf34918d5e6987e2b856e19e0ca1399e2b0e56ee283b3c97f152f56a89692",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/2fad800e-037b-42e7-81a9-da893f87cd04.trajectory-path.json": {
+      "mtime": 1778282010,
+      "sig": "bc1f09db25dfb105c3da981806f5221006285f8b5855cf4403001ec2716a4687",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/2fccc6df-6a6a-4df3-9a1d-b4c93b927d93.trajectory-path.json": {
+      "mtime": 1778379218,
+      "sig": "4185401afab83573e85c23456f09cebde44637bf397800f4311156f54d916a40",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/2fe41753-ba99-481e-8819-863a6c6827e2.trajectory-path.json": {
+      "mtime": 1778346126,
+      "sig": "1e5efb395703d6b7860372cb5190e6769330135c26f28f4deb18883d95286979",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/39436099-d86e-431b-8f0b-2c6bb1b88094.trajectory-path.json": {
+      "mtime": 1778349112,
+      "sig": "03aa36064b475592c1a142a4b823c2c2a9ad00f55e268cbb2ef84d1985f75b64",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/3de0398c-0a86-45ac-b8e7-8ca981ee1087.trajectory-path.json": {
+      "mtime": 1778377187,
+      "sig": "9ce07b5249b0a71d664cbb87af7d53f3ae0f315f8051a52703c7a1b5f4d3f947",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/41e56a5a-1f01-43a7-8be4-a78d5545f7ee.trajectory-path.json": {
+      "mtime": 1778348213,
+      "sig": "9a3da2f3f4419dfbdc9e7dda374f0389787593e7d6ecb83be5643d84cb21e85d",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/44633ef9-4eb1-4ef6-a20f-8957a5adb7b9.trajectory-path.json": {
+      "mtime": 1778344390,
+      "sig": "af30e458b970b96015d4a7d9a8ce7bd5c3f6fa8be88e039347ae570fb324d1e1",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/45961d22-a4db-4a00-9797-a4fccc5fbfc2.trajectory-path.json": {
+      "mtime": 1778349183,
+      "sig": "4be52d02aa03b2afad4fb16fc443c9927d5390309b88cac37d296bf6f7d44df5",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/45efbae8-1ffe-4053-a0d9-936ef153d481.trajectory-path.json": {
+      "mtime": 1778352112,
+      "sig": "0f26404a820ce1e5058c9eb468fe86fbb4f1e1931d27b9cf585a31002af0629a",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/4c2bd3bf-c8f0-4d93-b542-364030ae9f09.trajectory-path.json": {
+      "mtime": 1778376483,
+      "sig": "5427a3831f0713d6ac7a087d90d5237c593d54e0687c9af7e7f3594559194301",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/4d4ad511-d791-4f33-aaa8-622fb5272911.trajectory-path.json": {
+      "mtime": 1778373804,
+      "sig": "99c124b72dad456c593818c0d311e14dbb8905352eac6d0cfadd1aaa91b5b7a0",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/4fa89213-3706-4833-996f-67562e3a72c9.trajectory-path.json": {
+      "mtime": 1778344927,
+      "sig": "7d1bb454f17c75a67baaa8e0f5c5b50161d75b6b5aeb4af95abcd357c9b22ad0",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/55398e63-423c-40d0-985a-e410717a3a6e.trajectory-path.json": {
+      "mtime": 1778342667,
+      "sig": "c3420b202da2515b28673747056fff20c2c4e36884e1ea85f5a85173336173e8",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/596aaee4-e271-433e-b321-2d87d811da31.trajectory-path.json": {
+      "mtime": 1778346939,
+      "sig": "d4b2b9e268730ab73d659949e6e8599b8974d861e95603f60b9fca2f5c438865",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/5aca6d0f-902f-45f7-81be-17cdc24b5e08.trajectory-path.json": {
+      "mtime": 1778356857,
+      "sig": "dc6012a461b4e4a1555fd7c2113828386df1faec46c9b2dacd594ba966edcbfc",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/5c98a75a-f662-4514-bc5a-ab0034242685.trajectory-path.json": {
+      "mtime": 1778364089,
+      "sig": "037eb2df6e766eaeacfaba3df9b1b44f6133ffc8757f513af06695523144e26c",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/5decc20d-c127-4bce-9c74-3f957ff856d1.trajectory-path.json": {
+      "mtime": 1778356775,
+      "sig": "a9f85152680d2e44b91cd8dbc7ad9c61e6d6199a324797fcb3e162e56bcfd102",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/5fd9be7e-e070-4894-8b38-82fa474ed6cc.trajectory-path.json": {
+      "mtime": 1778341132,
+      "sig": "e11809a3eba3e4b392a7eae97640b220324df369a901a8b9f8fae65a388564dd",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/6035511a-3994-4e03-a8ca-9741ae347d07.trajectory-path.json": {
+      "mtime": 1778374978,
+      "sig": "00cebec165bc886d22c4d3003cdfcb43afe9ee2d8e4deb810c6abe30c0914d93",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/67e30584-64b5-4047-b370-4699a00208cd.trajectory-path.json": {
+      "mtime": 1778343697,
+      "sig": "0c4cac7a502be7d191e942a01c068ff3c5ef56da5fe5ecce2ed94703fcb1c6a0",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/6cbadb84-e09c-4166-aaa7-f67c1a847123.trajectory-path.json": {
+      "mtime": 1778353093,
+      "sig": "b21b5b9adfdac30bd34eb5c34a4874e1663464834d663230b5629dd979a9f0c2",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/717ef8a0-f9c2-42da-908a-5ce00a879787.trajectory-path.json": {
+      "mtime": 1778351512,
+      "sig": "522e23e595f78ff3f95a2e2c0d8a4cc1e5fc2427ea6111b791e8355bf84cacda",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/7271dfe5-0e7b-44b5-9485-4fc061a08cb5.trajectory-path.json": {
+      "mtime": 1778273986,
+      "sig": "a6ce5ac2bc1ed9355bf18f61172a6b07d44793a50874966da5a026d47c65fece",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/729094c3-5fc0-4509-8f0d-6c1ee704a820.trajectory-path.json": {
+      "mtime": 1778349784,
+      "sig": "1bccf92543dd65d2b3c1c3e99654baee576e15d3e5411bc37ab22c8b5400956f",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/73e03efa-52ae-49fd-aa04-ebfacd132bc0.trajectory-path.json": {
+      "mtime": 1778323717,
+      "sig": "69f1ab86b81c8b058d8e8cebde25d2ee35e81e2d65fc696d88a560277973f73a",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/7638cd37-75aa-4739-a2fd-2348380c0d27.trajectory-path.json": {
+      "mtime": 1778342497,
+      "sig": "f29baf782956465330b67e62d3b8a2921f3c97e22fa1d39d01efb42608968a39",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/7ac53d0f-b584-41a6-976e-622b70f5606c.trajectory-path.json": {
+      "mtime": 1778274981,
+      "sig": "69dd035faa4dff125237c20432c6490650971f357348d39fcf8bb9f182fa9d85",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/7ead2e49-2e2f-46fd-a054-ff44f10f0a81.trajectory-path.json": {
+      "mtime": 1778341897,
+      "sig": "c03630cc560641ee7f2ae22dedb525f04203c020a2bda8a1f98527336535a19d",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/8187df29-55a5-4881-868d-4764e6b3e51f.trajectory-path.json": {
+      "mtime": 1778347589,
+      "sig": "0ca0486efc73bd7054851f5ec95f0fc57f52b89eee6acf92f4f0c1979247531e",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/83d5564a-399b-4fff-a18a-bd3144da0417.trajectory-path.json": {
+      "mtime": 1778348552,
+      "sig": "45ed377d9718f3ed9a538424a9ed89ad376515161239843bde9e88e1b91afaf2",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/84eb075c-7a43-4179-972f-b7b9e6a427c7.trajectory-path.json": {
+      "mtime": 1778375306,
+      "sig": "87b4c7741035892be2346a0f80e60f26f87a2482c48e4d29dd2ae3a0f3af59fe",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/8929ce83-58de-4f19-95a4-ebb0ccc66f58.trajectory-path.json": {
+      "mtime": 1778329197,
+      "sig": "4c1d0296b45290ffbed5df93a15c0b78548aa231ae4da262d2026004b402579a",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/8b73b391-25ec-44dc-87b2-51aab271af54.trajectory-path.json": {
+      "mtime": 1778339556,
+      "sig": "20e034acee8da0e0d1b3eb4347758af9e51559096563bfea8a288097e3c10199",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/8baa0c4d-bf37-4331-b557-2ea691cde773.trajectory-path.json": {
+      "mtime": 1778346340,
+      "sig": "659ca487d80c8928bf967b3dd9a80d9e2c988733c9fc22d260081cb518546127",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/8df01fb4-9171-4d5b-a9d9-9f915569d31c.trajectory-path.json": {
+      "mtime": 1778337021,
+      "sig": "847798539cc6d6e3899da0be692023e338a7d5ae27b555d33a4b03b0f9ab8454",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/a1609db6-4188-4eab-813c-3dc3dc1f14a9.trajectory-path.json": {
+      "mtime": 1778337974,
+      "sig": "b418a0a6c1b1c1035882c4b0ef7d5d344a655baa9ae6f188de6a584270ee78f3",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/a46b8a82-5828-468f-996e-363bf13605fc.trajectory-path.json": {
+      "mtime": 1778274374,
+      "sig": "d3f6c8598f529d34328780266fd589b7fb2573f62530a556f5af3def48734fc4",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/a73c2eba-a9d6-4cdb-94df-98e207517612.trajectory-path.json": {
+      "mtime": 1778378125,
+      "sig": "a66474f2e335de5c844828913342416f5abd02b3ae289c6b88679049441d2b2e",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/a81cfa21-b4c2-46e8-84ae-738997f453b1.trajectory-path.json": {
+      "mtime": 1778340211,
+      "sig": "b2cca4966b8e82bc97b2a7c70ae1340166e46de72184c451984f6ecda3a5b893",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/b329341f-ae97-4435-97ab-e5ff7080b3ca.trajectory-path.json": {
+      "mtime": 1778365894,
+      "sig": "3d0a8799ccf4a9c96961e34bf74694138c8ea201c468e9a28f5181f87315d87b",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/b38e1fbf-09d5-4f55-a39a-1d4106a43b98.trajectory-path.json": {
+      "mtime": 1778347326,
+      "sig": "e6fdc9593017534e1eaa6ed82cced334a2142a7c31c20ccead9e3353e32ec37a",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/b42e15bb-a2fe-4c5c-a96c-e728c166a186.trajectory-path.json": {
+      "mtime": 1778343097,
+      "sig": "62fcfce22fdb85403e1ed6864a54aab91fae1dfa23d0814f7f4830b589cad8f9",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/b4ac65bc-4d52-4a24-9ee8-f474f05a86ec.trajectory-path.json": {
+      "mtime": 1778374790,
+      "sig": "f280395be1b7b78a552eb76b53b366adac6a5eadde41c7c093dd7d91f7b72795",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/bc3b3fd3-b967-4740-ad59-8859e9b54c68.trajectory-path.json": {
+      "mtime": 1778375853,
+      "sig": "270343d55317f9175c3f6141af0991a3d61b834c783e3aa21d5c340cf43b4005",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/bdffa4c0-c9a2-4248-a635-179a5716ee01.trajectory-path.json": {
+      "mtime": 1778379557,
+      "sig": "c5d085606e8a93b1694fdfbab151be85eebd486ac5a11d42dbfa2283436f8e25",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/c1eb6a1c-bced-4a68-b152-5cbc2779fc54.trajectory-path.json": {
+      "mtime": 1778340156,
+      "sig": "799a7170a4263541f7ab32e0e420cd4d3385a363b6c4f8287797de7b926980cb",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/c8ff9d97-fe3c-485b-8e24-083edcba6709.trajectory-path.json": {
+      "mtime": 1778369979,
+      "sig": "d32fe5288c8be0560bece476e82d8cb101f9c3666697eeb772c19610980dcaa4",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/c9a75e78-d0fb-4177-9be8-ef14687d6de5.trajectory-path.json": {
+      "mtime": 1778273383,
+      "sig": "f8c804720bd118b12f8bfe50691149efa6aafc5db5d04ed36cf086c4ed859cf1",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/ccc6a608-fac5-40dd-88c5-0078295af621.trajectory-path.json": {
+      "mtime": 1778342251,
+      "sig": "a60fbed22ec8714c763be02ed311731ebde6749481e8214616bb0b4e19da2a71",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/d36f2af5-921d-494a-bde0-1a04c5414175.trajectory-path.json": {
+      "mtime": 1778352196,
+      "sig": "1a99c84d980cafccd9864f7a7bfb2fd19d1f1bd26243c2750997d91d77b9208a",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/d40fed79-4be0-4948-8a88-b7cf48732eff.trajectory-path.json": {
+      "mtime": 1778375845,
+      "sig": "ce5c9ab7c8a4e09db40023441f2c2ee9416fc2a4547d4f453c3035e9abe4692a",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/d5506c44-f150-490b-b185-01c2a08b0a0a.trajectory-path.json": {
+      "mtime": 1778350312,
+      "sig": "41eabfd8160c00b31a14c461dc14053f0607708523b153767ab1d39fad4e87f4",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/d6a683b2-ecff-4894-9f5c-055d024ef3dc.trajectory-path.json": {
+      "mtime": 1778374617,
+      "sig": "54f91e2f7fb017350386a5c02fcd27db11706b1662282c7dc5ab91d86492fb86",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/e0b25301-0582-4377-a975-f95e941a3b6a.trajectory-path.json": {
+      "mtime": 1778377508,
+      "sig": "eaea235be6577676bc057fb9bce8bc90ed0a02c7cb12972ca47e909b0d0e969b",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/e52b580b-74bb-4cc5-a7ed-6aa5fd377caf.trajectory-path.json": {
+      "mtime": 1778349713,
+      "sig": "a72832a4075885385de833e8baca23f7164f71ce975d1951e0053fd4a240f10f",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/e8a184c5-67df-4cdf-9982-9adfa60b71d7.trajectory-path.json": {
+      "mtime": 1778338359,
+      "sig": "90f63b55a871780ad91991833fb153edc2b5313e376aa8f111e49ab323b4f4d8",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/ea34bc74-996b-4d0c-99b4-3b47c3a46907.trajectory-path.json": {
+      "mtime": 1778341723,
+      "sig": "b41b6b68b8204b73b578b4847b76acc298eec9bfa585826b9a3532137259c412",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/eaba443f-6231-4540-b552-98fb8cbafee4.trajectory-path.json": {
+      "mtime": 1778340954,
+      "sig": "c3df49a05ab075998bac7b215a6a4c91c5411ab2d222807188750a756f27c307",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/eb09d675-fd7e-4001-bcb5-51c31b64dbdc.trajectory-path.json": {
+      "mtime": 1778339111,
+      "sig": "6a117cc4aa118d66783ff47a99e88de8d83ce4fc133062eddbd09a1c4e5eb523",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/efab9c08-6acc-490d-9efe-4db09f2d8ef5.trajectory-path.json": {
+      "mtime": 1778350396,
+      "sig": "0994bfa478b5b4901dd552edd32039b5db641556742f8332c7c6b03d59d40efe",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/f291688b-ed27-4212-b415-3f6fd1ecae2a.trajectory-path.json": {
+      "mtime": 1778360457,
+      "sig": "16eaaaa329ebdb8df52d47616d71b5218a06250b1118653c4a47ea30ac659620",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/f49c16b3-2219-46a5-84ca-13e7e17071a9.trajectory-path.json": {
+      "mtime": 1778328205,
+      "sig": "7d49ade0a725e67e5850e0a53c6812ce468e3382f45095ea45bca65cf6add7cf",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/f6be2a2a-ceb3-4db6-a49c-a11dd4f45090.trajectory-path.json": {
+      "mtime": 1778374659,
+      "sig": "b9522c628f72bd2703037c84cdcc8a769c1c7ba62739444fbd347b79dd94c823",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/f75f246d-cf26-4a85-a788-120d3a7d8994.trajectory-path.json": {
+      "mtime": 1778345527,
+      "sig": "887546e009de702cef967fb70861e86cfd3c9cec5f50e9d69e3e8b234390e628",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/fb7ff889-5453-4e3b-ba96-de9d8705928c.trajectory-path.json": {
+      "mtime": 1778347926,
+      "sig": "dfb2efaf1da3bf6984ee4fedf975692c74b3b4b84b16b9617e99771ac16e83ca",
+      "size": 244
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/sessions.json": {
+      "mtime": 1778379714,
+      "sig": "a0fbf8846e9e06ad5760201daa0edad0843c111385e1beb06da19ddc61e062a4",
+      "size": 127129
+    },
+    "/home/turk/.openclaw-old/agents/main/sessions/sessions.json.telegram-sent-messages.json": {
+      "mtime": 1778378613,
+      "sig": "9e99c93b5c6a476f3e128c28670cb6be495524e81a7d2105ed42196bfdec020f",
+      "size": 1716
+    },
+    "/home/turk/.openclaw-old/agents/planner/agent/auth-profiles.json": {
+      "mtime": 1778207543,
+      "sig": "9402a5a9e435aae3047bc79d207b4a6a52bd0ef687c2de0190cecbd14edb6937",
+      "size": 599
+    },
+    "/home/turk/.openclaw-old/agents/planner/agent/models.json": {
+      "mtime": 1778371796,
+      "sig": "319d5d3952cc6f12981ac479b7e21dc9f36d73d40aef1f1853fb719e73e3576a",
+      "size": 2312
+    },
+    "/home/turk/.openclaw-old/agents/planner/sessions/1838b09a-dc8f-44a1-9b71-c5c423c34de2.trajectory-path.json": {
+      "mtime": 1778247023,
+      "sig": "9c2e6792649eebc37cb8e20b3f611755312364059daad705b55e956edf34967c",
+      "size": 247
+    },
+    "/home/turk/.openclaw-old/agents/planner/sessions/4608d0ed-3ea6-43c5-ba13-e19f4bbc606f.trajectory-path.json": {
+      "mtime": 1778207772,
+      "sig": "b045105f20cdee572c4e0dd9741f17422aff70aa0b6d3d4591e4f9fd59377aa6",
+      "size": 247
+    },
+    "/home/turk/.openclaw-old/agents/planner/sessions/7ee73a04-91f8-4e23-8011-1c6a932142a4.trajectory-path.json": {
+      "mtime": 1778197488,
+      "sig": "ebce6a474d4f35abb2c36c60ad2ca24e1a5bbe43c7a4ade483b23a1756b78e04",
+      "size": 247
+    },
+    "/home/turk/.openclaw-old/agents/planner/sessions/84bdfd76-857b-4dc0-b61e-8521c835a18d.trajectory-path.json": {
+      "mtime": 1778196783,
+      "sig": "8088732355c399a9324934b89a9bba0bde1b8c33b810d556dfdb0b5d24e4af36",
+      "size": 247
+    },
+    "/home/turk/.openclaw-old/agents/planner/sessions/c203d534-0254-4d1e-b711-7e3d1db87702.trajectory-path.json": {
+      "mtime": 1778189166,
+      "sig": "78100b501c7976c2fae573b4e6d784e90ae8f7d248524af20c99828a7e2383ac",
+      "size": 247
+    },
+    "/home/turk/.openclaw-old/agents/planner/sessions/sessions.json": {
+      "mtime": 1778247023,
+      "sig": "566dab7eabc1d6374c824a95b7d636292796e7cb1e113b100c42f0c35e4796b0",
+      "size": 43951
+    },
+    "/home/turk/.openclaw-old/code-agent-goal-tasks.json": {
+      "mtime": 1778247025,
+      "sig": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "size": 2
+    },
+    "/home/turk/.openclaw-old/cron/jobs-state.json": {
+      "mtime": 1778378613,
+      "sig": "d4c604fc4a6d3b28884cbae1c6f8384ec1ac8ba14f17c424a8ce3edb42fe0a90",
+      "size": 3868
+    },
+    "/home/turk/.openclaw-old/cron/jobs.json": {
+      "mtime": 1778370970,
+      "sig": "cb2695d8cfb5c6a37b5a7b631f900173f593bcc649fb2873108daeb4ca3fbda5",
+      "size": 5204
+    },
+    "/home/turk/.openclaw-old/devices/paired.json": {
+      "mtime": 1778379840,
+      "sig": "3060e2df752faaa72755c55d091577ffa1b4e12cc8beaf5d292def4b01d8d7b2",
+      "size": 2407
+    },
+    "/home/turk/.openclaw-old/exec-approvals.json": {
+      "mtime": 1778371127,
+      "sig": "dabb67d234c369eb08c5c0bb155d86793a94a44a1aa51b894733f5c25e701e5c",
+      "size": 835
+    },
+    "/home/turk/.openclaw-old/identity/device-auth.json": {
+      "mtime": 1778379840,
+      "sig": "b7522b16cb65e78027ccb7f849855151dc2cd6b48e032615bd855654ad3cf639",
+      "size": 461
+    },
+    "/home/turk/.openclaw-old/logs/config-audit.jsonl": {
+      "mtime": 1778379377,
+      "sig": "afc5f7d24877065afaa03c9bb69aa51d8bd1260249606e67c4a7d030508f8316",
+      "size": 85223
+    },
+    "/home/turk/.openclaw-old/logs/config-health.json": {
+      "mtime": 1778379388,
+      "sig": "bc77a66d1c2c57afe073dde76d51fcb46841e009efc401ea8c181bef91a75959",
+      "size": 1038
+    },
+    "/home/turk/.openclaw-old/logs/stability/openclaw-stability-2026-05-09T16-22-00-723Z-598107-gateway.startup_failed.json": {
+      "mtime": 1778343720,
+      "sig": "c99c83bee401642f4bf0f9ffd6c316b5b3dfdce6122f931cad3e04e41b629614",
+      "size": 711
+    },
+    "/home/turk/.openclaw-old/logs/stability/openclaw-stability-2026-05-09T16-22-08-947Z-598135-gateway.startup_failed.json": {
+      "mtime": 1778343728,
+      "sig": "1a9d1aa5e8b4f59bcd71ca7a4c0f7e5caa0d62662b05c9322142545207b6a7e7",
+      "size": 711
+    },
+    "/home/turk/.openclaw-old/logs/stability/openclaw-stability-2026-05-09T16-22-17-188Z-598168-gateway.startup_failed.json": {
+      "mtime": 1778343737,
+      "sig": "67102e7b50d4e6dec05234225a3aabe1ee73f58d1e388b358070a9afcfe6877e",
+      "size": 711
+    },
+    "/home/turk/.openclaw-old/logs/stability/openclaw-stability-2026-05-09T16-22-25-625Z-598221-gateway.startup_failed.json": {
+      "mtime": 1778343745,
+      "sig": "b181d20de93a86cd55d06969cd98a993a54731a0f1b396b5cc96f1c7c3c92e04",
+      "size": 711
+    },
+    "/home/turk/.openclaw-old/logs/stability/openclaw-stability-2026-05-10T00-24-09-374Z-629636-gateway.startup_failed.json": {
+      "mtime": 1778372649,
+      "sig": "d6df4c9c3be85c21f1325a194fdf5a72b692e0b0efbc4d60fbd65ef907cdb3ca",
+      "size": 897
+    },
+    "/home/turk/.openclaw-old/logs/stability/openclaw-stability-2026-05-10T00-24-12-569Z-629651-gateway.startup_failed.json": {
+      "mtime": 1778372652,
+      "sig": "9eb1fd8c34062f7918faf8396d7991a03c03976416de3d30d4e750b39181e6ca",
+      "size": 897
+    },
+    "/home/turk/.openclaw-old/logs/stability/openclaw-stability-2026-05-10T00-24-20-867Z-629678-gateway.startup_failed.json": {
+      "mtime": 1778372660,
+      "sig": "d5c3a15de95beb54ad1212df6bbc2bbe16cae1fcad8b46ea0858a941a56c4006",
+      "size": 897
+    },
+    "/home/turk/.openclaw-old/logs/stability/openclaw-stability-2026-05-10T00-24-29-349Z-629741-gateway.startup_failed.json": {
+      "mtime": 1778372669,
+      "sig": "e3fef77d3e7b507691acf3fc7fa3902c62d9d35687e8ef5a01bb418764658b40",
+      "size": 897
+    },
+    "/home/turk/.openclaw-old/logs/stability/openclaw-stability-2026-05-10T00-33-06-020Z-631081-gateway.startup_failed.json": {
+      "mtime": 1778373186,
+      "sig": "9106d0a10e157fb01c2e9a47b811b32de1f60885b4a07e7614d5269e5c3ea760",
+      "size": 932
+    },
+    "/home/turk/.openclaw-old/logs/stability/openclaw-stability-2026-05-10T00-33-09-316Z-631096-gateway.startup_failed.json": {
+      "mtime": 1778373189,
+      "sig": "fcca186f86cc78ae1a036385407a61b327b43a195614225b89f6cd33d031aedc",
+      "size": 932
+    },
+    "/home/turk/.openclaw-old/logs/stability/openclaw-stability-2026-05-10T00-33-17-555Z-631125-gateway.startup_failed.json": {
+      "mtime": 1778373197,
+      "sig": "26610de5cca9c7d479499de61d204bc7497df9a9f5092a7e780ceeeb824a0fc1",
+      "size": 932
+    },
+    "/home/turk/.openclaw-old/logs/stability/openclaw-stability-2026-05-10T00-33-25-868Z-631185-gateway.startup_failed.json": {
+      "mtime": 1778373205,
+      "sig": "b6799dcc46b948ddd10e386ca240266bd476683db6e97f30c86c104cff53682a",
+      "size": 932
+    },
+    "/home/turk/.openclaw-old/logs/stability/openclaw-stability-2026-05-10T01-30-55-978Z-637379-gateway.startup_failed.json": {
+      "mtime": 1778376655,
+      "sig": "2ec3d32f5e26c89a18da19131c6bd3c283a8c83ecf3d8973585701cb215d4b04",
+      "size": 679
+    },
+    "/home/turk/.openclaw-old/logs/stability/openclaw-stability-2026-05-10T01-31-47-618Z-637531-gateway.startup_failed.json": {
+      "mtime": 1778376707,
+      "sig": "f652826601e40f3dac68c6ba8059c1395804584602d771a43460148a9ee6731f",
+      "size": 679
+    },
+    "/home/turk/.openclaw-old/logs/stability/openclaw-stability-2026-05-10T01-45-50-089Z-639171-gateway.startup_failed.json": {
+      "mtime": 1778377550,
+      "sig": "df4231df02eff68deb681a64fd04b44382d1df8695894f6c7380f25bd0a5b38c",
+      "size": 820
+    },
+    "/home/turk/.openclaw-old/logs/stability/openclaw-stability-2026-05-10T02-15-46-561Z-641126-gateway.startup_failed.json": {
+      "mtime": 1778379346,
+      "sig": "58444e2c56204666a1ca90f378ddd5b9121aa702b7fd9da4ddb0d66eadbd77a4",
+      "size": 714
+    },
+    "/home/turk/.openclaw-old/logs/stability/openclaw-stability-2026-05-10T02-15-49-696Z-641141-gateway.startup_failed.json": {
+      "mtime": 1778379349,
+      "sig": "19f0d74aaa59dd8e32f589dd89afe3c61a03e703a9a8ab645695954a63c2b634",
+      "size": 714
+    },
+    "/home/turk/.openclaw-old/logs/stability/openclaw-stability-2026-05-10T02-15-57-930Z-641168-gateway.startup_failed.json": {
+      "mtime": 1778379357,
+      "sig": "88417e1c2e3dd5f9b133ca5e06c49b67268c110f332c5547c6822e475b17832c",
+      "size": 714
+    },
+    "/home/turk/.openclaw-old/logs/stability/openclaw-stability-2026-05-10T02-16-06-165Z-641231-gateway.startup_failed.json": {
+      "mtime": 1778379366,
+      "sig": "ca2550078e0157f36d1f63cc849e2868f22b00155ac34687861f20cb9bca731a",
+      "size": 714
+    },
+    "/home/turk/.openclaw-old/logs/stability/openclaw-stability-2026-05-10T02-16-14-492Z-641258-gateway.startup_failed.json": {
+      "mtime": 1778379374,
+      "sig": "b79c20169d6c6f894f62ffa1e5af539f3d4d9154310b4796565327786f518f3c",
+      "size": 714
+    },
+    "/home/turk/.openclaw-old/media/inbound/message---8189c3ea-0713-49ea-8ed1-8f302419c46c.txt": {
+      "mtime": 1778377347,
+      "sig": "75ec3695d850f03799e1238f9ebe7f531bb4394f11650b7a0e984ba6d241cc60",
+      "size": 36447
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/.bin/node-edge-tts": {
+      "mtime": 1778188776,
+      "sig": "1503583a770dc00ee42d1fbad036d3a37547e7c55c57ef9890796de90015e89a",
+      "size": 1933
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/.package-lock.json": {
+      "mtime": 1778366385,
+      "sig": "0ddcfea54a116e167485ccee37c110b4826d8315b3a8fc2c11ab365d4aac25ce",
+      "size": 293986
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/@anthropic-ai/claude-agent-sdk-linux-x64-musl/LICENSE.md": {
+      "mtime": 1778188776,
+      "sig": "8ce94b9478bb9868f9641f818e06cd722fbe55d4c22e2d2ed11971b20146173a",
+      "size": 147
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/@anthropic-ai/claude-agent-sdk-linux-x64-musl/README.md": {
+      "mtime": 1778188776,
+      "sig": "7f9d541dcd8c680e4b44d8a7e4159e46ddaa1db94af1760655d2970921a9b086",
+      "size": 165
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/@anthropic-ai/claude-agent-sdk-linux-x64-musl/package.json": {
+      "mtime": 1778188776,
+      "sig": "af6348f7707b16b888d7d8428bc33aff4e52bf6c9a3eb99db978a278fff804f2",
+      "size": 291
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/@mariozechner/clipboard-linux-x64-musl/README.md": {
+      "mtime": 1778366381,
+      "sig": "e357623d8ecd287d6d374bfffe5139ec7c6a55e245b8bad8df1b009e7838d240",
+      "size": 123
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/@mariozechner/clipboard-linux-x64-musl/clipboard.linux-x64-musl.node": {
+      "mtime": 1778366381,
+      "sig": "5b91583b4a4efdef44ea1debca1370385f1b29a16832badf68bbc66a7de407c2",
+      "size": 2599736
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/@mariozechner/clipboard-linux-x64-musl/package.json": {
+      "mtime": 1778366381,
+      "sig": "698a8e6a040e79e9e2c4791c9a85112327c00536dce8b7a271d9ee6644f4a2cd",
+      "size": 411
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/@napi-rs/canvas-linux-x64-musl/README.md": {
+      "mtime": 1778366381,
+      "sig": "35e1248e7defd8cdfa18464965d12e6ac626667b9f6d5ad096a232818e1be0da",
+      "size": 107
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/@napi-rs/canvas-linux-x64-musl/package.json": {
+      "mtime": 1778366381,
+      "sig": "5199c41a525ec15defe339789e6f7d5291911fe25041debccc829f4e46a889f1",
+      "size": 822
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/@napi-rs/canvas-linux-x64-musl/skia.linux-x64-musl.node": {
+      "mtime": 1778366383,
+      "sig": "be0d23924540c74722c68280cdceac562d675d895b0a46382526de572a077c6a",
+      "size": 29754136
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/node-edge-tts/bin.js": {
+      "mtime": 1778188776,
+      "sig": "1503583a770dc00ee42d1fbad036d3a37547e7c55c57ef9890796de90015e89a",
+      "size": 1933
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/plugin-config-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "54cab2dcba6a6874769fd815449bb63119f7b46892b42ab26c9b152221712aa5",
+      "size": 59
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/plugin-entry.d.ts": {
+      "mtime": 1778188767,
+      "sig": "cd7b5914faabaea4ccb10a667fe9eb868f810399794ac7f03bc806b297d1be85",
+      "size": 50
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/plugin-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "33603933b9551e6dfb514f27c65d6f380603ea630965be1647be6cbf689b1ad8",
+      "size": 52
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/plugin-test-api.d.ts": {
+      "mtime": 1778188767,
+      "sig": "2e5fdf29833b0d959eceec92316f990483c95a1902ae17396d200d9d524b5526",
+      "size": 53
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/plugin-test-contracts.d.ts": {
+      "mtime": 1778188767,
+      "sig": "98665dcd02f13fac97e011f2c172cdc6704d4e5314df07460a474cc58f93344a",
+      "size": 59
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/plugin-test-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "1d31d218981062b88862b17f601e8161ee6693cb389fefc9afe78f8c44606247",
+      "size": 57
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/poll-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "399279c6eb257f51c2da8563fdd06d70fe7a9c7cb1fca70f210380990cc4910d",
+      "size": 50
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/process-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "119667a3baf5952ae1b9e7cefbe98f1b903c3ad681946d5a9a46540bb720fc91",
+      "size": 53
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/provider-auth-login.d.ts": {
+      "mtime": 1778188767,
+      "sig": "2a459a74acf79a90020d46bf16e20f167d0ca73f3e8d636edf96f7430527717c",
+      "size": 57
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/provider-auth-result.d.ts": {
+      "mtime": 1778188767,
+      "sig": "0c33180b5017c96b9c03028d73e559b85a2148a1056519bba4b6a1aacd3bcc9f",
+      "size": 58
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/provider-auth-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "a7f006851c0af38d83b5daa49ef215e6f6b68c361fc02b26d7a1a9476bcb395b",
+      "size": 59
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/provider-catalog-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "333abdbcbe2bb97365f2ba617221d191e5f9e8869410dcd6a4040b98ce368d14",
+      "size": 62
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/provider-catalog-shared.d.ts": {
+      "mtime": 1778188767,
+      "sig": "d4b9a1fb57f1679f934f5289d8751cb968e4e5818cccf84d4d47fea976ada63c",
+      "size": 61
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/provider-entry.d.ts": {
+      "mtime": 1778188767,
+      "sig": "c41d7a0005721829223cf89695baa0cd119014f4bf09c0195aa8aa8abf4d6957",
+      "size": 52
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/provider-env-vars.d.ts": {
+      "mtime": 1778188767,
+      "sig": "0e3c3670db883cd174b77c0e0d8f6ea1457002fc5e8d40577632799d763418a3",
+      "size": 55
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/provider-http-test-mocks.d.ts": {
+      "mtime": 1778188767,
+      "sig": "30bfda1850784accc3b7616623d767cefdbe0692006e92a3bfc434d8ce7a7774",
+      "size": 62
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/provider-http.d.ts": {
+      "mtime": 1778188767,
+      "sig": "23eda30824969330600256bc41c52398aa19697dc47fd20c0e0f7a5010f7cb9d",
+      "size": 51
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/provider-model-shared.d.ts": {
+      "mtime": 1778188767,
+      "sig": "5588c724bcd2e16f8a8e1d13688cc8d80efea33210942b88c375b6d185f61d80",
+      "size": 59
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/provider-model-types.d.ts": {
+      "mtime": 1778188767,
+      "sig": "97ba6fe3693a83524abb3121804eb7fb4db834cbe10372d10a8a4983893bab25",
+      "size": 58
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/provider-onboard.d.ts": {
+      "mtime": 1778188767,
+      "sig": "569716750fdc50d906e57d41aeb22290c235604893ece324d67f5a097f1b5d91",
+      "size": 54
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/provider-selection-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "e06d00f568e4b94846479956c2e98446a81a8103311a235c89a5614d12975f69",
+      "size": 64
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/provider-setup.d.ts": {
+      "mtime": 1778188767,
+      "sig": "cf20a7fd1864ee06ac94b26ecc573fc6df780a8fc21f96df00a8d28e7eb794cd",
+      "size": 52
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/provider-stream-family.d.ts": {
+      "mtime": 1778188767,
+      "sig": "c11fce7b0f67496b995dc7856ee263328e1aeb46c2cb1367bc10fbe3239f58c2",
+      "size": 60
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/provider-stream-shared.d.ts": {
+      "mtime": 1778188767,
+      "sig": "53525733a16297fb9df2c4b0b9d0643c1a5e0d91e9316405841f6fc6011f138b",
+      "size": 60
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/provider-stream.d.ts": {
+      "mtime": 1778188767,
+      "sig": "1f12445e33b5df8b19e221ee300a2e1edffd7e45333beed850405a88750b362b",
+      "size": 53
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/provider-test-contracts.d.ts": {
+      "mtime": 1778188767,
+      "sig": "94af1b3d719f3a902cb369e8268ad5256acd66e419f145d9e8f343ee475f7907",
+      "size": 61
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/provider-tools.d.ts": {
+      "mtime": 1778188767,
+      "sig": "3c095054535e1c697d85be56a6366775353116e4a0725ae6873856b95ae82356",
+      "size": 52
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/provider-transport-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "d4d5ce4cd734061b79b3e737772c38e18e51d4d1c4a19c049897fd3aa03f20eb",
+      "size": 64
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/provider-usage.d.ts": {
+      "mtime": 1778188767,
+      "sig": "2a113646e8ab2d2b0a34bb18cbd0ff1a65ac28e5ee84157c5aa84bfee53f930c",
+      "size": 52
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/provider-web-fetch-contract.d.ts": {
+      "mtime": 1778188767,
+      "sig": "9b760213c5a12182becd516f1c0ab7d8eb1a59a1ba6574335625045026a07c7c",
+      "size": 65
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/provider-web-fetch.d.ts": {
+      "mtime": 1778188767,
+      "sig": "dc1b2e13c43ec16803f0b1e615e36a391b03d28398924c7808e67a81cd39718f",
+      "size": 56
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/provider-web-search-config-contract.d.ts": {
+      "mtime": 1778188767,
+      "sig": "d77f820b0895378ed3d020ef9fe2130bbdd94f9ef474e6da9eca6f7947da48a7",
+      "size": 73
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/provider-web-search-contract.d.ts": {
+      "mtime": 1778188767,
+      "sig": "6c802997a2c5f029ee99265ae038f33513985004ea52262b75ec553b3a287a83",
+      "size": 66
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/provider-web-search.d.ts": {
+      "mtime": 1778188767,
+      "sig": "13b867d0d147932a9638edc1255fd3528317d0d81b2402c151f89d2ce49911b0",
+      "size": 57
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/provider-zai-endpoint.d.ts": {
+      "mtime": 1778188767,
+      "sig": "1b2e7daf3bad07359eaa119c1ebc0f24ffe1429f9c25236706a219b555f7519f",
+      "size": 59
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/proxy-capture.d.ts": {
+      "mtime": 1778188767,
+      "sig": "cb1b119ada8611bc5dc9b4c028629c4274cd05cc67ce1173bd818b6232dcd83f",
+      "size": 51
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/qa-runner-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "37f41a314caffbc1dceee45e1de2ccbef19a7d87555514219306d4c1be5e1712",
+      "size": 55
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/realtime-transcription.d.ts": {
+      "mtime": 1778188767,
+      "sig": "06dff9fbd151870214522379163aabef443cd1c436df0fb9a643b7268bf30c93",
+      "size": 60
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/realtime-voice.d.ts": {
+      "mtime": 1778188767,
+      "sig": "7c8206a76eefa2adec897138f838009d65b293ea895bb660ce926652e727c0c0",
+      "size": 52
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/reply-chunking.d.ts": {
+      "mtime": 1778188767,
+      "sig": "3d7e3dfbf08ccdd366a226839cfeabfd1bb47b855555b7abf6bc68da98ecaba1",
+      "size": 52
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/reply-dedupe.d.ts": {
+      "mtime": 1778188767,
+      "sig": "aeece45bd618d41ce8009caac43b3b99104e100dfb48e3742389d54b1c80a3a9",
+      "size": 50
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/reply-dispatch-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "1b9b3e3c95edc3478a931d93dcf3a28d906e80acaea1bb2bc5c8c3d9cdb3d5d1",
+      "size": 60
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/reply-history.d.ts": {
+      "mtime": 1778188767,
+      "sig": "85f7791f7cd7e06ede8a119d3148c6f54b6b942519312685964e02c77691af30",
+      "size": 51
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/reply-reference.d.ts": {
+      "mtime": 1778188767,
+      "sig": "506d6f975aa085da9550f757ebbf1c5e6892b3a933feb8adb35e41890d41dd21",
+      "size": 53
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/reply-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "e15bcfa8d1ac6b2ca5dcb23b47b5cced176390243758a9548b337b7ba7384c78",
+      "size": 51
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/request-url.d.ts": {
+      "mtime": 1778188767,
+      "sig": "7b0fb9180513c05fe01ccde9eb0fceaf22722da80bc12a9ecfb2c629860bd7b9",
+      "size": 49
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/response-limit-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "aeb016c993b430629e5005df5cc5d2adafab86e24fcea19bce8974e5b5fdb713",
+      "size": 60
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/retry-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "642b01380fedcb7e766b2b9c3ad50ad9c6a706893824595052d4bd3a14a0e39a",
+      "size": 51
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/routing.d.ts": {
+      "mtime": 1778188767,
+      "sig": "3d9e15bf5a582f20faf5c5cb8d1844e2f1531e6676dacf8cd0aa1d4430fc5396",
+      "size": 45
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/run-command.d.ts": {
+      "mtime": 1778188767,
+      "sig": "711f427aaa0fa42b7aea13e42da03b503ce3458b15c32a6657c14c414c11afc5",
+      "size": 49
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/runtime-config-snapshot.d.ts": {
+      "mtime": 1778188767,
+      "sig": "af501743005ec744b4985ee967c28957c220fc41d2d417e8c8466d47afd90426",
+      "size": 61
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/runtime-doctor.d.ts": {
+      "mtime": 1778188767,
+      "sig": "bed3b729b7d1e174654c1d7b10cda8da8a8e3018c0dea7e4da5651230a064256",
+      "size": 52
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/runtime-env.d.ts": {
+      "mtime": 1778188767,
+      "sig": "362d222c922411e56fb66042414c7182e523e47401dc6f1b55e0064740a146df",
+      "size": 49
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/runtime-fetch.d.ts": {
+      "mtime": 1778188767,
+      "sig": "3228b659a66d5991436a4361c7d46805332772d47367f8c2438767bc868ef355",
+      "size": 51
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/runtime-group-policy.d.ts": {
+      "mtime": 1778188767,
+      "sig": "d64e8bd223af2c8e14fcee7526111756785e5e34ab336102627dd50f03842b3b",
+      "size": 58
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/runtime-logger.d.ts": {
+      "mtime": 1778188767,
+      "sig": "8f84779221cd5fce244b209a87c3e6586d96f81a9030e565a6524cb8ceff3082",
+      "size": 52
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/runtime-secret-resolution.d.ts": {
+      "mtime": 1778188767,
+      "sig": "3a6f34dddfb05bf8dba55eaf5f76bd1dbd8e6795f2bf5dd7a5b880ebde1b5f28",
+      "size": 63
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/runtime-store.d.ts": {
+      "mtime": 1778188767,
+      "sig": "27c81fcf5155c1020f04f0fec065b9782013bdb20a01f7ae4a8205efdaab90c9",
+      "size": 51
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "a0411300bc0fc2937835ef6cf09c8bfa42875a6c27c8a115eef2076d064a8aeb",
+      "size": 45
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/sandbox.d.ts": {
+      "mtime": 1778188767,
+      "sig": "fb0c390672e6fb57e79d56c143fb5f3056409d3a1fb8577d4ae5aa2cba8d5a20",
+      "size": 45
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/secret-input-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "990c1d1772bf5f42f6e306f4d84e1d2e7b684b3fcb16e0d218df9074fc54383c",
+      "size": 58
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/secret-input.d.ts": {
+      "mtime": 1778188767,
+      "sig": "793c24a064ee01712398e13cc7afc8e7a16a8de52c525749bddcb7a512e386cc",
+      "size": 50
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/secret-ref-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "2fd96b55706922d03b5b92360b492c6144702515cfd0212665e9fbe5c1351598",
+      "size": 56
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/secure-random-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "47198b80be7bbb167a603a93828de9957f81b5862c578b5b0fc28e6ba99be542",
+      "size": 59
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/security-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "90e7eddba996f810909170c6022d9d040457ac22625fa0b0edba07bf9c62bb00",
+      "size": 54
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/self-hosted-provider-setup.d.ts": {
+      "mtime": 1778188767,
+      "sig": "0a3bc9e3faec1de28e54f34b8d8a9292ab3d1e85b165cadb6c09e8593976dba4",
+      "size": 64
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/session-binding-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "0e1d2bec36234b843424cc4dc00df4fbaeffd1aa2263835397a3c2f97e4d0a53",
+      "size": 61
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/session-key-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "794872cc66d200f6c7bbd3a5b0637dff04f371f539ed93e2760300375bfe423f",
+      "size": 57
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/session-store-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "b024b5a2e057e5c48215eda184dbe9422a443e9156a32f84f42e0496c716b3e0",
+      "size": 59
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/session-transcript-hit.d.ts": {
+      "mtime": 1778188767,
+      "sig": "ce6a1d4dacdd0833345f3048c6e0f9e97511b668d61f5dc1fe69df91fb87e810",
+      "size": 60
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/session-visibility.d.ts": {
+      "mtime": 1778188767,
+      "sig": "b9d411be11ae2ad76167e3ea6c1f164083afcd5835302e8486856c63ae9799c4",
+      "size": 56
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/setup-adapter-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "1dfa0238dd269d5b62b1ea56228066b9acd898913d8b7722d7b781d6d5aa9ed6",
+      "size": 59
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/setup-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "a5f61e043e8907609c552d33d3fbef538c2141392efbbbb4f3d9c596267f926b",
+      "size": 51
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/setup-tools.d.ts": {
+      "mtime": 1778188767,
+      "sig": "4efd79ddee79729f9aebfd958b382006e1be7f74d9d0d04863b9ef6e6f2aaabe",
+      "size": 49
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/setup.d.ts": {
+      "mtime": 1778188767,
+      "sig": "afdfb1a1ede8527de6ec5eba1fd79fc255b272193cd34cec03a0251a5af9081c",
+      "size": 43
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/simple-completion-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "b3a3e5a40891f579ddc0daa5947f1ca766b0f608159a7ca84d96d6127b7cb0f3",
+      "size": 63
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/skill-commands-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "03a464dda67d818c0fed319b790525f7d6859f3807fb7ea994bd5ec4e780cf22",
+      "size": 60
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/skills-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "533e076dece0f128e225c1a97b32c36e5bfbb4e2144ef4009b80ba7673426308",
+      "size": 52
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/speech.d.ts": {
+      "mtime": 1778188767,
+      "sig": "30d5a61354741808d3be885fa472e828ad4ede3908f88397c1d990fe5db1c2aa",
+      "size": 44
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/ssrf-dispatcher.d.ts": {
+      "mtime": 1778188767,
+      "sig": "789a115836b2769c7ef5183c61a1253bea3e7c9a86e313d06a46f5717cbd34eb",
+      "size": 53
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/ssrf-policy.d.ts": {
+      "mtime": 1778188767,
+      "sig": "75cac43554c7d59c6da1a224899b4261693898dd4a11e335dc172188a7745848",
+      "size": 49
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/status-helpers.d.ts": {
+      "mtime": 1778188767,
+      "sig": "a1b78d062b54a24088552b805c4748ac2ab8418d5d3342556e4583dc27f03f76",
+      "size": 52
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/string-coerce-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "d943d5eebf6df76e05a0eca0114a14727cb9ba03df594baafd2a694dcec04e71",
+      "size": 59
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/string-normalization-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "fceeb44d78068e45e0f2655c910a546cb80990e88457edf144d66fb9aea3ecda",
+      "size": 66
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/system-event-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "bc5bd70dbb59304b75fdb4bf0a6d88add30dec6290cd930d0f14e40569c164ad",
+      "size": 58
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/talk-config-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "e3b67658eb6830cf088b2caab73d7cf7bae4ecb2c7c94078a33672ce39b17c04",
+      "size": 57
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/target-resolver-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "417fa44c2b8d233eb2118187f9dbec16d11b6e7084ebd79465ade236fff1e3e6",
+      "size": 61
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/telegram-account.d.ts": {
+      "mtime": 1778188767,
+      "sig": "dc0901fc7371882585ee27de6c14d33439cf066edbabd8cff933fb8c3d8bbf32",
+      "size": 54
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/telegram-command-config.d.ts": {
+      "mtime": 1778188767,
+      "sig": "fa79c889ee8f8bd02ef19bcc6652960fcc20fe85af4bc32bfdf18cbaea07002d",
+      "size": 61
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/temp-path.d.ts": {
+      "mtime": 1778188767,
+      "sig": "14c94c3afd2b186189cfd5ad407d0ac33eda593e559196fe1e404356da12ff0a",
+      "size": 47
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/test-env.d.ts": {
+      "mtime": 1778188767,
+      "sig": "1af6ab5792c1371e57911ec3853cbd414addb54e1e099eda6f16d88a0c7b64aa",
+      "size": 46
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/test-node-mocks.d.ts": {
+      "mtime": 1778188767,
+      "sig": "27ee4b3a0cb909b5a0cfab009c3d6e8cf3a2ee163ffb2c9f97b75169bcf9c4c3",
+      "size": 53
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/testing.d.ts": {
+      "mtime": 1778188767,
+      "sig": "820c322c2a8e4227f047f20d0bc54a5294d1a5c5093e6aeec3dba66d041f12e3",
+      "size": 45
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/text-autolink-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "40b8a50c223c417b02266143aecae933f20e29461a2675a7a05fd655602340cd",
+      "size": 59
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/text-chunking.d.ts": {
+      "mtime": 1778188767,
+      "sig": "40ee45325b6177abaaf9dac3318391523ac1dc2ba4eb036b2a2fce54582f258e",
+      "size": 51
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/text-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "5f54e8a55b4783a9ce9b03ee6cdb0fbefa436e1f6423a8613dee611701e91f58",
+      "size": 50
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/thread-bindings-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "f80c73a51c8476fec007af4c48bc9794ae90e142f863b3acac3b8432e70f3fa9",
+      "size": 61
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/time-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "bd49e2eaa14becdeea3a8b06167c403dbecb5d3254a7da469d4816ab63973cf7",
+      "size": 50
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/tool-payload.d.ts": {
+      "mtime": 1778188767,
+      "sig": "ef3db96256cfbc1430e59bb7a850caa8f24eab1dc415ef8bdd958822a5e0f80d",
+      "size": 50
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/tool-send.d.ts": {
+      "mtime": 1778188767,
+      "sig": "0a7e8cb5a067aef502a9049b3403712a9931375474f67e918b573e2f922090a2",
+      "size": 47
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/transport-ready-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "f5c11d4be290345a6c2b4e3f2c31e21ec66cf3ffe6cc516f3f05002bf3fa0885",
+      "size": 61
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/tts-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "7b2331bef57d6c8c1c360dd3d52ce632775690d993e831b0d49350e7455dfd82",
+      "size": 49
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/video-generation-core.d.ts": {
+      "mtime": 1778188767,
+      "sig": "af4b4a633e984b403535434ddf60fc89315910606ffe8cdeb7e9841b404a9fec",
+      "size": 59
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/video-generation-runtime.d.ts": {
+      "mtime": 1778188767,
+      "sig": "572df328fc79c2e33452791a745fff914633b6ea6cf774246ef3f4055aad34cb",
+      "size": 62
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/video-generation.d.ts": {
+      "mtime": 1778188767,
+      "sig": "767f990af9443219774febccd7abb7b970d34d0ad5296ba64fd15b46af091963",
+      "size": 54
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/web-content-extractor.d.ts": {
+      "mtime": 1778188767,
+      "sig": "c607519b930fcb0001880e2780b5c7441dd6a6b485ae7ca4d7e37b635244a558",
+      "size": 59
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/web-media.d.ts": {
+      "mtime": 1778188767,
+      "sig": "33aceee55c78152341d9b9ecde7612f6fa05c56fc40fa67f09757bcd68b15777",
+      "size": 47
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/webhook-ingress.d.ts": {
+      "mtime": 1778188767,
+      "sig": "e612c9ba85898f15cd135c069bd3980b71fd21814d30bde0e9547268c0458d3f",
+      "size": 53
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/webhook-path.d.ts": {
+      "mtime": 1778188767,
+      "sig": "706612ad9ca0c6ad6aca11ace04cf5f59266a3a9e2a5d711a85d5fd3093f5e98",
+      "size": 50
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/webhook-request-guards.d.ts": {
+      "mtime": 1778188767,
+      "sig": "2e9fd852efdcea29162ac91b10039ed7c05023af0b6946d983f9d10039960578",
+      "size": 60
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/webhook-targets.d.ts": {
+      "mtime": 1778188767,
+      "sig": "3ac5dc688d28327bc618d29955e703b3f6203e518930d11251cc20a14a60be03",
+      "size": 53
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/windows-spawn.d.ts": {
+      "mtime": 1778188767,
+      "sig": "e624c4c1677abb0a3eda4618f0c03e3c9e9c0a4eeb4fe376ef36a06e516920d0",
+      "size": 51
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/zalouser.d.ts": {
+      "mtime": 1778188767,
+      "sig": "b467366a7ce6db5c2f7a4b04a62783dc5a95f92ef437e0615e29f8a301845bcc",
+      "size": 46
+    },
+    "/home/turk/.openclaw-old/npm/node_modules/openclaw/dist/plugin-sdk/zod.d.ts": {
+      "mtime": 1778188767,
+      "sig": "3a125cfba47614a2ed8b1c4f01457dc5009c70abef6c96485154d6af05a3c941",
+      "size": 41
+    },
+    "/home/turk/.openclaw-old/npm/package-lock.json": {
+      "mtime": 1778366384,
+      "sig": "0e540d17905b735f74b2e6c16898396c95e1f0c29827d205a4f4bfd56a8214f2",
+      "size": 326088
+    },
+    "/home/turk/.openclaw-old/npm/package.json": {
+      "mtime": 1778366384,
+      "sig": "9be2aaf405de75c108c538ba51d0adecee2f6d0eea032aab12695b9f25470df4",
+      "size": 116
+    },
+    "/home/turk/.openclaw-old/openclaw.json": {
+      "mtime": 1778379377,
+      "sig": "8d66880b1285b92630412969a08586a9b6aa2d7af4039b18a2a5542fbae1599c",
+      "size": 7009
+    },
+    "/home/turk/.openclaw-old/openclaw.json.backup.20260509_231038": {
+      "mtime": 1778368238,
+      "sig": "bea65f72d2a49f35e030cee5785789bd5d7d22ae21593f3e55d999ad69708e61",
+      "size": 18048
+    },
+    "/home/turk/.openclaw-old/openclaw.json.full-backup-before-cleanup-20260510_000153": {
+      "mtime": 1778371313,
+      "sig": "83c191aee2eceb4f6215c7090ec7b7ea5df854bc9a8b9fbee2786910a47ab3c5",
+      "size": 19199
+    },
+    "/home/turk/.openclaw-old/openclaw.json.full_backup": {
+      "mtime": 1778247035,
+      "sig": "afae89faad9c61861a71f4cd4a0607318a425e37b3d89d9266eb1d2b7d682779",
+      "size": 1674
+    },
+    "/home/turk/.openclaw-old/plugins/installs.json": {
+      "mtime": 1778379381,
+      "sig": "9194f5c0753a907a1ced59d8282d25eddce6e6599c57298d071798eed84c525f",
+      "size": 125140
+    },
+    "/home/turk/.openclaw-old/subagents/runs.json": {
+      "mtime": 1778339355,
+      "sig": "5ff32375060c5bc6079d4dd7339974b6cb593c5abfcfa1c69f02e35213a2fabe",
+      "size": 33
+    },
+    "/home/turk/.openclaw-old/telegram/update-offset-default.json": {
+      "mtime": 1778379555,
+      "sig": "7c7a71629c6b810c0712f91d5853ea2257eabb4686a0609ad9c7f5aeacfb7d08",
+      "size": 73
+    },
+    "/home/turk/.openclaw-old/update-check.json": {
+      "mtime": 1778340615,
+      "sig": "74b4653b3f5baec56c2da436db09a70a4493417eac8a4e4286e809b7eaa66d82",
+      "size": 187
+    },
+    "/home/turk/.openclaw-old/workspace/.clawhub/lock.json": {
+      "mtime": 1778285497,
+      "sig": "9028539807fb9440d6889b0174704f0e589dfc226f0a188ee9d094c36ff20ec2",
+      "size": 805
+    },
+    "/home/turk/.openclaw-old/workspace/.codebase-intelligence/.index_cache.json": {
+      "mtime": 1778194539,
+      "sig": "75452c7cc0cd21b93cef68aa21522a2550c27eca74520c6a114b270c9cf9cea6",
+      "size": 116221
+    },
+    "/home/turk/.openclaw-old/workspace/.codebase-intelligence/indexer.py": {
+      "mtime": 1778194505,
+      "sig": "e8c742a94c853d3e664a779f7a8f96dfc843c45a86d7086bd520b6a2e4f22f00",
+      "size": 8145
+    },
+    "/home/turk/.openclaw-old/workspace/.codebase-intelligence/main.py": {
+      "mtime": 1778194523,
+      "sig": "f226a7e432aad26a151416a1ceee921548e869bad89b66a7581fdf50ac6eed0e",
+      "size": 1110
+    },
+    "/home/turk/.openclaw-old/workspace/.vercel/README.txt": {
+      "mtime": 1778279552,
+      "sig": "f5d1ed0f5032ae128931f46459b5faa1af6319fc2dfb3e7a5fe54a84bf93dbd6",
+      "size": 520
+    },
+    "/home/turk/.openclaw-old/workspace/.vercel/project.json": {
+      "mtime": 1778279552,
+      "sig": "e810c28d7ec1e227d8966216883b1752f9cdf1e4fac4fcd3a35f5b15fe644cfb",
+      "size": 114
+    },
+    "/home/turk/.openclaw-old/workspace/AGENTS.md": {
+      "mtime": 1778370114,
+      "sig": "15a9029fe5f260498b0ea3857003330adbb6307cc795442ce4e07d8c19849a80",
+      "size": 28150
+    },
+    "/home/turk/.openclaw-old/workspace/MEMORY.md": {
+      "mtime": 1778328333,
+      "sig": "bfeaed271666faaf70371b43c9cae9edebc160d7aa5d3d2f7f87c412ff7b3a1a",
+      "size": 11241
+    },
+    "/home/turk/.openclaw-old/workspace/TOOLS.md": {
+      "mtime": 1778339318,
+      "sig": "9b01171d85eb2de26a85a121e427371114424933133d71f47e461ae1a300e54b",
+      "size": 7152
+    },
+    "/home/turk/.openclaw-old/workspace/antigravity-proxy/.vercel/README.txt": {
+      "mtime": 1778256739,
+      "sig": "f5d1ed0f5032ae128931f46459b5faa1af6319fc2dfb3e7a5fe54a84bf93dbd6",
+      "size": 520
+    },
+    "/home/turk/.openclaw-old/workspace/antigravity-proxy/.vercel/project.json": {
+      "mtime": 1778256739,
+      "sig": "c79522280efd93061c78a26b8122a5472513a2c1ee7b07d32b0a428fd84759a6",
+      "size": 122
+    },
+    "/home/turk/.openclaw-old/workspace/antigravity-proxy/api/[...path].js": {
+      "mtime": 1778256534,
+      "sig": "27d4d03746b8fd63999e29145891cc4878868a4322ae4294ae34795869e709c6",
+      "size": 1117
+    },
+    "/home/turk/.openclaw-old/workspace/antigravity-proxy/package.json": {
+      "mtime": 1778249090,
+      "sig": "0ee4b55876551fb6a15baba37db10d80755e282d50aac00c30af1cf598578218",
+      "size": 75
+    },
+    "/home/turk/.openclaw-old/workspace/antigravity-proxy/vercel.json": {
+      "mtime": 1778249177,
+      "sig": "7157d194916fe3f46cabfad246ddae698944896402ed89f134913dc5301e3254",
+      "size": 83
+    },
+    "/home/turk/.openclaw-old/workspace/backups/2026-05-08T12-33-26Z/TOOLS.md": {
+      "mtime": 1778243612,
+      "sig": "a0a42057c5d0849afe1ee4529d50977705d0dab10438e2f516aa4e8372fd289b",
+      "size": 6048
+    },
+    "/home/turk/.openclaw-old/workspace/backups/2026-05-08T12-33-26Z/credentials/telegram-default-allowFrom.json": {
+      "mtime": 1778243614,
+      "sig": "a062926a336f58de682b52a104a9d7f0fcb573de3e10d5c896c4f9b328369a3a",
+      "size": 57
+    },
+    "/home/turk/.openclaw-old/workspace/backups/2026-05-08T12-33-26Z/credentials/telegram-pairing.json": {
+      "mtime": 1778243614,
+      "sig": "0acc80db40f45b5e408387c3f710ffacff957b9f5e170667a07c7f29f1b6d1fc",
+      "size": 37
+    },
+    "/home/turk/.openclaw-old/workspace/backups/2026-05-08T12-33-26Z/openclaw.json": {
+      "mtime": 1778243610,
+      "sig": "d741ec63c1ccbc50d88682f7d7f081fa4aed38723481a0b188ee6c831f17ca82",
+      "size": 21330
+    },
+    "/home/turk/.openclaw-old/workspace/cligate_res.txt": {
+      "mtime": 1778329069,
+      "sig": "b82753b8a7c35193067aecd1c0cf4f91ca75def633a7e31780f8e79db7b07171",
+      "size": 168
+    },
+    "/home/turk/.openclaw-old/workspace/docs/DOKUMANLAR.md": {
+      "mtime": 1778271920,
+      "sig": "97e0654e71913d8e006116c9fa4ac09a243e3e212bcc8d00661244e1e311ff05",
+      "size": 3044
+    },
+    "/home/turk/.openclaw-old/workspace/docs/tum-dokumanlar/00-README.md": {
+      "mtime": 1778268827,
+      "sig": "11924621f22042d2934c43b1619c91d2242b67cfed50b2fcbceccce935029b9a",
+      "size": 794
+    },
+    "/home/turk/.openclaw-old/workspace/docs/tum-dokumanlar/agents.md": {
+      "mtime": 1778271747,
+      "sig": "cde94ec7fab43f9134066705de8c7b951ca3bc757561860b3a9db4cb684391b4",
+      "size": 1132
+    },
+    "/home/turk/.openclaw-old/workspace/docs/tum-dokumanlar/aile.md": {
+      "mtime": 1778271820,
+      "sig": "7b6bfbcf9e3bc0572e9a78495b158419c20017d322633609f7b86092babc4d02",
+      "size": 414
+    },
+    "/home/turk/.openclaw-old/workspace/docs/tum-dokumanlar/ben-ve-karakterim.md": {
+      "mtime": 1778272717,
+      "sig": "cb91889911742b365af1d27f72f9d7b3d3ad05e07ade35d6e91308b1c870d358",
+      "size": 871
+    },
+    "/home/turk/.openclaw-old/workspace/docs/tum-dokumanlar/calisanlar.md": {
+      "mtime": 1778271784,
+      "sig": "72a9eb5ba2efa6feb8998a36455f7099bd4d2532407ec7523c9b898eeaae4248",
+      "size": 712
+    },
+    "/home/turk/.openclaw-old/workspace/docs/tum-dokumanlar/cevre-network.md": {
+      "mtime": 1778271773,
+      "sig": "7f9867e02bedcd3a9c44f916fed887ab8ae49b264f7a281da5193c0599173e46",
+      "size": 586
+    },
+    "/home/turk/.openclaw-old/workspace/docs/tum-dokumanlar/chatprd.md": {
+      "mtime": 1778271872,
+      "sig": "1c7b3e59eafe74b889c2a20f63469878c9d26d9268e5e355665c836ef4be0c72",
+      "size": 794
+    },
+    "/home/turk/.openclaw-old/workspace/docs/tum-dokumanlar/docker.md": {
+      "mtime": 1778271859,
+      "sig": "bd812bbda9b912c6e710336a3ae663723318bf3a93c16e0edc6b49252fa523db",
+      "size": 1030
+    },
+    "/home/turk/.openclaw-old/workspace/docs/tum-dokumanlar/github.md": {
+      "mtime": 1778271888,
+      "sig": "bc11990678e894e6307cf2b17ba29d531156ac06721720f6c01a5029c75003dc",
+      "size": 1477
+    },
+    "/home/turk/.openclaw-old/workspace/docs/tum-dokumanlar/harcamalarim.md": {
+      "mtime": 1778271810,
+      "sig": "81429eb00852ff29379ead0dd4f85ddfbbcc1502b40ddb391181c73e598b9718",
+      "size": 492
+    },
+    "/home/turk/.openclaw-old/workspace/docs/tum-dokumanlar/hobilerim.md": {
+      "mtime": 1778271805,
+      "sig": "dc8912b99122a9c966923c6f1e912c725a28c0a4735a2fe09509d03a353be8b8",
+      "size": 799
+    },
+    "/home/turk/.openclaw-old/workspace/docs/tum-dokumanlar/is-para-kazanma.md": {
+      "mtime": 1778272722,
+      "sig": "8dd4a300a9e3d7f2b34341c9568ebb50337f8ee962fa35e6f9fe551fdd789212",
+      "size": 676
+    },
+    "/home/turk/.openclaw-old/workspace/docs/tum-dokumanlar/linear.md": {
+      "mtime": 1778271840,
+      "sig": "2fcb378f465215bfeaf04567e08a96cd8a10c78eafe3cd0858393d64443f0064",
+      "size": 903
+    },
+    "/home/turk/.openclaw-old/workspace/docs/tum-dokumanlar/musteriler.md": {
+      "mtime": 1778271778,
+      "sig": "3ba32675c88a152c963a700d0e9f70af609569eff8a7977bc7ccac0126bdab44",
+      "size": 519
+    },
+    "/home/turk/.openclaw-old/workspace/docs/tum-dokumanlar/notebooklm.md": {
+      "mtime": 1778271767,
+      "sig": "5291eb5c3f627fb53dc1309f4bb3ba62cfe46a33e365d4c2a68eed0371f2a42b",
+      "size": 1675
+    },
+    "/home/turk/.openclaw-old/workspace/docs/tum-dokumanlar/notion.md": {
+      "mtime": 1778271847,
+      "sig": "c99bab605339e9eeb4883d679317821705bb12ca70bf9389631b2959eadb3ba6",
+      "size": 825
+    },
+    "/home/turk/.openclaw-old/workspace/docs/tum-dokumanlar/odemeler.md": {
+      "mtime": 1778271790,
+      "sig": "c93f1c64107b2938437c00a0bc27cef2fbac359fc20c82f1c332a6b32398eaa6",
+      "size": 518
+    },
+    "/home/turk/.openclaw-old/workspace/docs/tum-dokumanlar/pipelines.md": {
+      "mtime": 1778271833,
+      "sig": "8912ce15c9335c1cd5c49bf45926859ba6e907a719096ceeeb3e4f3626d4acca",
+      "size": 1154
+    },
+    "/home/turk/.openclaw-old/workspace/docs/tum-dokumanlar/railway.md": {
+      "mtime": 1778271866,
+      "sig": "f2b795fb2c69a3a7d8847016f1397c67d970f683c151e35a68b69041794d3a5b",
+      "size": 702
+    },
+    "/home/turk/.openclaw-old/workspace/docs/tum-dokumanlar/skills.md": {
+      "mtime": 1778271755,
+      "sig": "e9df793dfc251695efd478f0e5586e14e5de7a08b0cb6c9b8202dabb1ae09de7",
+      "size": 1121
+    },
+    "/home/turk/.openclaw-old/workspace/docs/tum-dokumanlar/supabase.md": {
+      "mtime": 1778271852,
+      "sig": "8b0438be3a65bcbff688d77f043b77e9bec4d8ba6d06cb4aba7b0ee0a6de2d91",
+      "size": 583
+    },
+    "/home/turk/.openclaw-old/workspace/docs/tum-dokumanlar/tools.md": {
+      "mtime": 1778271739,
+      "sig": "f5d9fd25ded54600b595194725debd2a01ae3f33721dfd668f70c56a3eca0f17",
+      "size": 1627
+    },
+    "/home/turk/.openclaw-old/workspace/docs/tum-dokumanlar/vercel.md": {
+      "mtime": 1778271879,
+      "sig": "efada942ee881e863efdb0425ba2584b673bdc8a0bc056fa33a3f24f0bf2daf2",
+      "size": 830
+    },
+    "/home/turk/.openclaw-old/workspace/docs/vnc-komut.txt": {
+      "mtime": 1778269801,
+      "sig": "7eaa4188cce41c98a6a407d13f756a372cb3fb31845f2c4fb7bd1ae42f5433be",
+      "size": 65
+    },
+    "/home/turk/.openclaw-old/workspace/memory/.dreams/short-term-recall.json": {
+      "mtime": 1778339754,
+      "sig": "6c388a16e96af7b51b8e877521dec85843ced508ec1a5510d963b7aa17198bfe",
+      "size": 25454
+    },
+    "/home/turk/.openclaw-old/workspace/memory/2026-05-07.md": {
+      "mtime": 1778190031,
+      "sig": "a1294a9c8d8861c500c7862b855f33e2dba8636cb19c9e12a32a6f1a4946bdde",
+      "size": 1055
+    },
+    "/home/turk/.openclaw-old/workspace/memory/2026-05-08.md": {
+      "mtime": 1778281227,
+      "sig": "bb784e4c5d64fa6028f7454bf8589f277194c691bd73a96b1e3ef66396bbcb4d",
+      "size": 34325
+    },
+    "/home/turk/.openclaw-old/workspace/memory/2026-05-09.md": {
+      "mtime": 1778344441,
+      "sig": "5b7c6d930b3c1506d20bff6821b28bc3ed994d233b55c795df67849c1d378e8e",
+      "size": 3358
+    },
+    "/home/turk/.openclaw-old/workspace/memory/MCP.md": {
+      "mtime": 1778192098,
+      "sig": "d6aa7d5958e1a33529181d1831dfab6ea43e52b0343a313facac614930e9612d",
+      "size": 1582
+    },
+    "/home/turk/.openclaw-old/workspace/memory/tools/cligate-fixes.md": {
+      "mtime": 1778338100,
+      "sig": "f662c2071bee8ae102e70f3c8fe0f34fc46bcf795ccfe5f61d30b04be3f6012b",
+      "size": 5626
+    },
+    "/home/turk/.openclaw-old/workspace/patch_kilo.js": {
+      "mtime": 1778335392,
+      "sig": "a91937f8efe9c0be39e2d381a7f062c27fc9f7a5d8d760c0e4196d8679225bc9",
+      "size": 3010
+    },
+    "/home/turk/.openclaw-old/workspace/patch_kilo_stream.js": {
+      "mtime": 1778335520,
+      "sig": "3868a3478ee785e15e1177452fb194b1626a3035c37c757daa1c1d51730550bb",
+      "size": 730
+    },
+    "/home/turk/.openclaw-old/workspace/patch_openclaw_deepseek.js": {
+      "mtime": 1778339831,
+      "sig": "10c297bf1502ce85e4841ff149f2edc605c9688083fc07a60ae72878d1898d6b",
+      "size": 1498
+    },
+    "/home/turk/.openclaw-old/workspace/patch_routing.js": {
+      "mtime": 1778337973,
+      "sig": "1ef46b9deacab33fec04f3caf0904b78f8c5167c9c6c6967c05568302512ecfc",
+      "size": 724
+    },
+    "/home/turk/.openclaw-old/workspace/skills/opencode-controller/.clawhub/origin.json": {
+      "mtime": 1778285497,
+      "sig": "e3f6e3de1225071db535530e793caaa1954334aff6b59a668fbea3d7b66ac51c",
+      "size": 151
+    },
+    "/home/turk/.openclaw-old/workspace/skills/opencode-controller/SKILL.md": {
+      "mtime": 1778285497,
+      "sig": "6535df08ba8b0bbc3bfe383a5a975d1b1d9c0a998488fe63c1060c8cddf813fc",
+      "size": 1911
+    },
+    "/home/turk/.openclaw-old/workspace/skills/opencode-controller/_meta.json": {
+      "mtime": 1778285497,
+      "sig": "9d91280e53b3d3ff54e4b4118e80562b225f9311f3866117bea5ccda7b4eae26",
+      "size": 138
+    },
+    "/home/turk/.openclaw-old/workspace/skills/opencode-controller/assets/operator-prompts.md": {
+      "mtime": 1778285497,
+      "sig": "60117c58b9262d3324b0732045a5932d16a0dd92c6422cd56f31e1190a368f26",
+      "size": 382
+    },
+    "/home/turk/.openclaw-old/workspace/skills/opencode-controller/references/command-cheatsheet.md": {
+      "mtime": 1778285497,
+      "sig": "d136c673fd8b6fcb743a3dd5f711a6a83806ced9da2ef6a904d978c5222482af",
+      "size": 157
+    },
+    "/home/turk/.openclaw-old/workspace/skills/opencode-controller/references/failure-handling.md": {
+      "mtime": 1778285497,
+      "sig": "45b0e21a98ada757b12e8949bacdd6e2cdd5c9dee847aac05c5dcf54162b24ec",
+      "size": 305
+    },
+    "/home/turk/.openclaw-old/workspace/skills/opencode-controller/references/model-selection.md": {
+      "mtime": 1778285497,
+      "sig": "b7ca3d3b7fbde1826baa1a8c3e1a55e1f98aff6760e7a0ddda00a26a49630e52",
+      "size": 320
+    },
+    "/home/turk/.openclaw-old/workspace/skills/opencode-controller/references/plan-vs-build.md": {
+      "mtime": 1778285497,
+      "sig": "c623a45eee73bc15fd6c6cba2250a10e59e8ed248e111ea0d9560055b3b12539",
+      "size": 251
+    },
+    "/home/turk/.openclaw-old/workspace/skills/opencode-controller/references/question-handling.md": {
+      "mtime": 1778285497,
+      "sig": "52f38809f3da11c4928475d4bdd089b2f00045ff0e8db6ac938d1e5eebbae26a",
+      "size": 195
+    },
+    "/home/turk/.openclaw-old/workspace/skills/opencode-controller/references/session-management.md": {
+      "mtime": 1778285497,
+      "sig": "7bf5b2dbdc53767e1c2f15803621764ca12f5592fcb25c5f85e636312386cc5e",
+      "size": 328
+    },
+    "/home/turk/.openclaw-old/workspace/skills/opencode-controller/references/workflow.md": {
+      "mtime": 1778285497,
+      "sig": "25be91b320d14043a59186a5907653272ddd75a16dbff830c9cb904d220b8da2",
+      "size": 336
+    },
+    "/home/turk/.openclaw-old/workspace/test-edit.js": {
+      "mtime": 1778336689,
+      "sig": "66d395c0f7f12951ab5a5dcc1a9f686d4930d9e53e6fe3bdc78c8f47ed516c38",
+      "size": 31
+    },
+    "/home/turk/.openclaw-old/workspace/test-log.js": {
+      "mtime": 1778337036,
+      "sig": "e03f05022ce7840f88acbced408de2b60dcd8ef6d0bda48a777d77c86db4f559",
+      "size": 737
+    },
+    "/home/turk/.openclaw-old/workspace/test-req.js": {
+      "mtime": 1778337003,
+      "sig": "b4cff47b072189298422c8e40039a072dfe8826c20e9f6c2f465bfaf90d6e6bb",
+      "size": 323
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/.clawhub/lock.json": {
+      "mtime": 1778285497,
+      "sig": "9028539807fb9440d6889b0174704f0e589dfc226f0a188ee9d094c36ff20ec2",
+      "size": 805
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/.codebase-intelligence/.index_cache.json": {
+      "mtime": 1778194539,
+      "sig": "75452c7cc0cd21b93cef68aa21522a2550c27eca74520c6a114b270c9cf9cea6",
+      "size": 116221
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/.codebase-intelligence/indexer.py": {
+      "mtime": 1778194505,
+      "sig": "e8c742a94c853d3e664a779f7a8f96dfc843c45a86d7086bd520b6a2e4f22f00",
+      "size": 8145
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/.codebase-intelligence/main.py": {
+      "mtime": 1778194523,
+      "sig": "f226a7e432aad26a151416a1ceee921548e869bad89b66a7581fdf50ac6eed0e",
+      "size": 1110
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/.vercel/README.txt": {
+      "mtime": 1778279552,
+      "sig": "f5d1ed0f5032ae128931f46459b5faa1af6319fc2dfb3e7a5fe54a84bf93dbd6",
+      "size": 520
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/.vercel/project.json": {
+      "mtime": 1778279552,
+      "sig": "e810c28d7ec1e227d8966216883b1752f9cdf1e4fac4fcd3a35f5b15fe644cfb",
+      "size": 114
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/AGENTS.md": {
+      "mtime": 1778370114,
+      "sig": "15a9029fe5f260498b0ea3857003330adbb6307cc795442ce4e07d8c19849a80",
+      "size": 28150
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/MEMORY.md": {
+      "mtime": 1778328333,
+      "sig": "bfeaed271666faaf70371b43c9cae9edebc160d7aa5d3d2f7f87c412ff7b3a1a",
+      "size": 11241
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/TOOLS.md": {
+      "mtime": 1778339318,
+      "sig": "9b01171d85eb2de26a85a121e427371114424933133d71f47e461ae1a300e54b",
+      "size": 7152
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/antigravity-proxy/.vercel/README.txt": {
+      "mtime": 1778256739,
+      "sig": "f5d1ed0f5032ae128931f46459b5faa1af6319fc2dfb3e7a5fe54a84bf93dbd6",
+      "size": 520
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/antigravity-proxy/.vercel/project.json": {
+      "mtime": 1778256739,
+      "sig": "c79522280efd93061c78a26b8122a5472513a2c1ee7b07d32b0a428fd84759a6",
+      "size": 122
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/antigravity-proxy/api/[...path].js": {
+      "mtime": 1778256534,
+      "sig": "27d4d03746b8fd63999e29145891cc4878868a4322ae4294ae34795869e709c6",
+      "size": 1117
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/antigravity-proxy/package.json": {
+      "mtime": 1778249090,
+      "sig": "0ee4b55876551fb6a15baba37db10d80755e282d50aac00c30af1cf598578218",
+      "size": 75
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/antigravity-proxy/vercel.json": {
+      "mtime": 1778249177,
+      "sig": "7157d194916fe3f46cabfad246ddae698944896402ed89f134913dc5301e3254",
+      "size": 83
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/backups/2026-05-08T12-33-26Z/TOOLS.md": {
+      "mtime": 1778243612,
+      "sig": "a0a42057c5d0849afe1ee4529d50977705d0dab10438e2f516aa4e8372fd289b",
+      "size": 6048
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/backups/2026-05-08T12-33-26Z/credentials/telegram-default-allowFrom.json": {
+      "mtime": 1778243614,
+      "sig": "a062926a336f58de682b52a104a9d7f0fcb573de3e10d5c896c4f9b328369a3a",
+      "size": 57
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/backups/2026-05-08T12-33-26Z/credentials/telegram-pairing.json": {
+      "mtime": 1778243614,
+      "sig": "0acc80db40f45b5e408387c3f710ffacff957b9f5e170667a07c7f29f1b6d1fc",
+      "size": 37
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/backups/2026-05-08T12-33-26Z/openclaw.json": {
+      "mtime": 1778243610,
+      "sig": "d741ec63c1ccbc50d88682f7d7f081fa4aed38723481a0b188ee6c831f17ca82",
+      "size": 21330
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/cligate_res.txt": {
+      "mtime": 1778329069,
+      "sig": "b82753b8a7c35193067aecd1c0cf4f91ca75def633a7e31780f8e79db7b07171",
+      "size": 168
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/docs/DOKUMANLAR.md": {
+      "mtime": 1778271920,
+      "sig": "97e0654e71913d8e006116c9fa4ac09a243e3e212bcc8d00661244e1e311ff05",
+      "size": 3044
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/docs/tum-dokumanlar/00-README.md": {
+      "mtime": 1778268827,
+      "sig": "11924621f22042d2934c43b1619c91d2242b67cfed50b2fcbceccce935029b9a",
+      "size": 794
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/docs/tum-dokumanlar/agents.md": {
+      "mtime": 1778271747,
+      "sig": "cde94ec7fab43f9134066705de8c7b951ca3bc757561860b3a9db4cb684391b4",
+      "size": 1132
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/docs/tum-dokumanlar/aile.md": {
+      "mtime": 1778271820,
+      "sig": "7b6bfbcf9e3bc0572e9a78495b158419c20017d322633609f7b86092babc4d02",
+      "size": 414
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/docs/tum-dokumanlar/ben-ve-karakterim.md": {
+      "mtime": 1778272717,
+      "sig": "cb91889911742b365af1d27f72f9d7b3d3ad05e07ade35d6e91308b1c870d358",
+      "size": 871
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/docs/tum-dokumanlar/calisanlar.md": {
+      "mtime": 1778271784,
+      "sig": "72a9eb5ba2efa6feb8998a36455f7099bd4d2532407ec7523c9b898eeaae4248",
+      "size": 712
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/docs/tum-dokumanlar/cevre-network.md": {
+      "mtime": 1778271773,
+      "sig": "7f9867e02bedcd3a9c44f916fed887ab8ae49b264f7a281da5193c0599173e46",
+      "size": 586
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/docs/tum-dokumanlar/chatprd.md": {
+      "mtime": 1778271872,
+      "sig": "1c7b3e59eafe74b889c2a20f63469878c9d26d9268e5e355665c836ef4be0c72",
+      "size": 794
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/docs/tum-dokumanlar/docker.md": {
+      "mtime": 1778271859,
+      "sig": "bd812bbda9b912c6e710336a3ae663723318bf3a93c16e0edc6b49252fa523db",
+      "size": 1030
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/docs/tum-dokumanlar/github.md": {
+      "mtime": 1778271888,
+      "sig": "bc11990678e894e6307cf2b17ba29d531156ac06721720f6c01a5029c75003dc",
+      "size": 1477
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/docs/tum-dokumanlar/harcamalarim.md": {
+      "mtime": 1778271810,
+      "sig": "81429eb00852ff29379ead0dd4f85ddfbbcc1502b40ddb391181c73e598b9718",
+      "size": 492
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/docs/tum-dokumanlar/hobilerim.md": {
+      "mtime": 1778271805,
+      "sig": "dc8912b99122a9c966923c6f1e912c725a28c0a4735a2fe09509d03a353be8b8",
+      "size": 799
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/docs/tum-dokumanlar/is-para-kazanma.md": {
+      "mtime": 1778272722,
+      "sig": "8dd4a300a9e3d7f2b34341c9568ebb50337f8ee962fa35e6f9fe551fdd789212",
+      "size": 676
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/docs/tum-dokumanlar/linear.md": {
+      "mtime": 1778271840,
+      "sig": "2fcb378f465215bfeaf04567e08a96cd8a10c78eafe3cd0858393d64443f0064",
+      "size": 903
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/docs/tum-dokumanlar/musteriler.md": {
+      "mtime": 1778271778,
+      "sig": "3ba32675c88a152c963a700d0e9f70af609569eff8a7977bc7ccac0126bdab44",
+      "size": 519
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/docs/tum-dokumanlar/notebooklm.md": {
+      "mtime": 1778271767,
+      "sig": "5291eb5c3f627fb53dc1309f4bb3ba62cfe46a33e365d4c2a68eed0371f2a42b",
+      "size": 1675
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/docs/tum-dokumanlar/notion.md": {
+      "mtime": 1778271847,
+      "sig": "c99bab605339e9eeb4883d679317821705bb12ca70bf9389631b2959eadb3ba6",
+      "size": 825
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/docs/tum-dokumanlar/odemeler.md": {
+      "mtime": 1778271790,
+      "sig": "c93f1c64107b2938437c00a0bc27cef2fbac359fc20c82f1c332a6b32398eaa6",
+      "size": 518
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/docs/tum-dokumanlar/pipelines.md": {
+      "mtime": 1778271833,
+      "sig": "8912ce15c9335c1cd5c49bf45926859ba6e907a719096ceeeb3e4f3626d4acca",
+      "size": 1154
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/docs/tum-dokumanlar/railway.md": {
+      "mtime": 1778271866,
+      "sig": "f2b795fb2c69a3a7d8847016f1397c67d970f683c151e35a68b69041794d3a5b",
+      "size": 702
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/docs/tum-dokumanlar/skills.md": {
+      "mtime": 1778271755,
+      "sig": "e9df793dfc251695efd478f0e5586e14e5de7a08b0cb6c9b8202dabb1ae09de7",
+      "size": 1121
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/docs/tum-dokumanlar/supabase.md": {
+      "mtime": 1778271852,
+      "sig": "8b0438be3a65bcbff688d77f043b77e9bec4d8ba6d06cb4aba7b0ee0a6de2d91",
+      "size": 583
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/docs/tum-dokumanlar/tools.md": {
+      "mtime": 1778271739,
+      "sig": "f5d9fd25ded54600b595194725debd2a01ae3f33721dfd668f70c56a3eca0f17",
+      "size": 1627
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/docs/tum-dokumanlar/vercel.md": {
+      "mtime": 1778271879,
+      "sig": "efada942ee881e863efdb0425ba2584b673bdc8a0bc056fa33a3f24f0bf2daf2",
+      "size": 830
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/docs/vnc-komut.txt": {
+      "mtime": 1778269801,
+      "sig": "7eaa4188cce41c98a6a407d13f756a372cb3fb31845f2c4fb7bd1ae42f5433be",
+      "size": 65
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/memory/.dreams/short-term-recall.json": {
+      "mtime": 1778339754,
+      "sig": "6c388a16e96af7b51b8e877521dec85843ced508ec1a5510d963b7aa17198bfe",
+      "size": 25454
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/memory/2026-05-07.md": {
+      "mtime": 1778190031,
+      "sig": "a1294a9c8d8861c500c7862b855f33e2dba8636cb19c9e12a32a6f1a4946bdde",
+      "size": 1055
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/memory/2026-05-08.md": {
+      "mtime": 1778281227,
+      "sig": "bb784e4c5d64fa6028f7454bf8589f277194c691bd73a96b1e3ef66396bbcb4d",
+      "size": 34325
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/memory/2026-05-09.md": {
+      "mtime": 1778344441,
+      "sig": "5b7c6d930b3c1506d20bff6821b28bc3ed994d233b55c795df67849c1d378e8e",
+      "size": 3358
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/memory/MCP.md": {
+      "mtime": 1778192098,
+      "sig": "d6aa7d5958e1a33529181d1831dfab6ea43e52b0343a313facac614930e9612d",
+      "size": 1582
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/memory/tools/cligate-fixes.md": {
+      "mtime": 1778338100,
+      "sig": "f662c2071bee8ae102e70f3c8fe0f34fc46bcf795ccfe5f61d30b04be3f6012b",
+      "size": 5626
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/patch_kilo.js": {
+      "mtime": 1778335392,
+      "sig": "a91937f8efe9c0be39e2d381a7f062c27fc9f7a5d8d760c0e4196d8679225bc9",
+      "size": 3010
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/patch_kilo_stream.js": {
+      "mtime": 1778335520,
+      "sig": "3868a3478ee785e15e1177452fb194b1626a3035c37c757daa1c1d51730550bb",
+      "size": 730
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/patch_openclaw_deepseek.js": {
+      "mtime": 1778339831,
+      "sig": "10c297bf1502ce85e4841ff149f2edc605c9688083fc07a60ae72878d1898d6b",
+      "size": 1498
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/patch_routing.js": {
+      "mtime": 1778337973,
+      "sig": "1ef46b9deacab33fec04f3caf0904b78f8c5167c9c6c6967c05568302512ecfc",
+      "size": 724
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/skills/opencode-controller/.clawhub/origin.json": {
+      "mtime": 1778285497,
+      "sig": "e3f6e3de1225071db535530e793caaa1954334aff6b59a668fbea3d7b66ac51c",
+      "size": 151
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/skills/opencode-controller/SKILL.md": {
+      "mtime": 1778285497,
+      "sig": "6535df08ba8b0bbc3bfe383a5a975d1b1d9c0a998488fe63c1060c8cddf813fc",
+      "size": 1911
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/skills/opencode-controller/_meta.json": {
+      "mtime": 1778285497,
+      "sig": "9d91280e53b3d3ff54e4b4118e80562b225f9311f3866117bea5ccda7b4eae26",
+      "size": 138
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/skills/opencode-controller/assets/operator-prompts.md": {
+      "mtime": 1778285497,
+      "sig": "60117c58b9262d3324b0732045a5932d16a0dd92c6422cd56f31e1190a368f26",
+      "size": 382
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/skills/opencode-controller/references/command-cheatsheet.md": {
+      "mtime": 1778285497,
+      "sig": "d136c673fd8b6fcb743a3dd5f711a6a83806ced9da2ef6a904d978c5222482af",
+      "size": 157
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/skills/opencode-controller/references/failure-handling.md": {
+      "mtime": 1778285497,
+      "sig": "45b0e21a98ada757b12e8949bacdd6e2cdd5c9dee847aac05c5dcf54162b24ec",
+      "size": 305
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/skills/opencode-controller/references/model-selection.md": {
+      "mtime": 1778285497,
+      "sig": "b7ca3d3b7fbde1826baa1a8c3e1a55e1f98aff6760e7a0ddda00a26a49630e52",
+      "size": 320
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/skills/opencode-controller/references/plan-vs-build.md": {
+      "mtime": 1778285497,
+      "sig": "c623a45eee73bc15fd6c6cba2250a10e59e8ed248e111ea0d9560055b3b12539",
+      "size": 251
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/skills/opencode-controller/references/question-handling.md": {
+      "mtime": 1778285497,
+      "sig": "52f38809f3da11c4928475d4bdd089b2f00045ff0e8db6ac938d1e5eebbae26a",
+      "size": 195
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/skills/opencode-controller/references/session-management.md": {
+      "mtime": 1778285497,
+      "sig": "7bf5b2dbdc53767e1c2f15803621764ca12f5592fcb25c5f85e636312386cc5e",
+      "size": 328
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/skills/opencode-controller/references/workflow.md": {
+      "mtime": 1778285497,
+      "sig": "25be91b320d14043a59186a5907653272ddd75a16dbff830c9cb904d220b8da2",
+      "size": 336
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/test-edit.js": {
+      "mtime": 1778336689,
+      "sig": "66d395c0f7f12951ab5a5dcc1a9f686d4930d9e53e6fe3bdc78c8f47ed516c38",
+      "size": 31
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/test-log.js": {
+      "mtime": 1778337036,
+      "sig": "e03f05022ce7840f88acbced408de2b60dcd8ef6d0bda48a777d77c86db4f559",
+      "size": 737
+    },
+    "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/test-req.js": {
+      "mtime": 1778337003,
+      "sig": "b4cff47b072189298422c8e40039a072dfe8826c20e9f6c2f465bfaf90d6e6bb",
+      "size": 323
+    }
+  },
+  "lastRunEpoch": 1778427507,
+  "lastRunTs": 1778424520,
+  "lastRunUtc": "2026-05-10 14:41:14 UTC",
+  "lastSummary": {
+    "dirCount": 516,
+    "fileCount": 2187,
+    "newFindingsCount": 131,
+    "runTs": 1778424520,
+    "scannedFiles": 994,
+    "targets": [
+      "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace",
+      "/home/turk/.openclaw-old"
+    ]
+  },
+  "notes": "This state is compact. It does not store raw match lines or secret values.",
+  "patternSummary": [
+    {
+      "keyHints": [
+        "API",
+        "API_KEY",
+        "CONFIG_TOKEN",
+        "MEILISEARCH_KEY",
+        "NEO4J_PASSWORD",
+        "SAPISID",
+        "SUPABASE_ACCESS_TOKEN",
+        "TOKEN_DIR",
+        "TOKEN_FILE"
+      ],
+      "name": "backup-openclaw-old/workspace",
+      "path": "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace",
+      "topFiles": [
+        [
+          "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/projects/hologateaway/konusmagecmisi.md",
+          113
+        ],
+        [
+          "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/memory/2026-05-08.md",
+          29
+        ],
+        [
+          "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/backups/2026-05-08T12-33-26Z/openclaw.json",
+          19
+        ],
+        [
+          "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/skills/project-orchestrator/docs/guides/getting-started.md",
+          19
+        ],
+        [
+          "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/state/sessions/agent%3Aclaude%3Aacp%3Ad3b1e36d-0ee2-44c7-ae0b-049e53267233%3Aoneshot%3Ae85bd4cf-0b14-4606-8380-e0ddd5557244.json",
+          14
+        ],
+        [
+          "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/skills/project-orchestrator/docs/guides/multi-agent-workflow.md",
+          14
+        ],
+        [
+          "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/chatprd-mcp-proxy.js",
+          14
+        ],
+        [
+          "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/memory/.dreams/short-term-recall.json",
+          11
+        ],
+        [
+          "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/state/sessions/agent%3Aclaude%3Aacp%3Aa5eff0d6-a68a-4e19-9c35-95f21ccc3ddd%3Aoneshot%3A4461d8d4-ee58-4cfe-b614-05cf40e08ea2.json",
+          10
+        ],
+        [
+          "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/projects/hologateaway/src/holodb/llm/swarm_router.py",
+          8
+        ],
+        [
+          "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/projects/hologateaway/src/holodb/gateway/config.py",
+          8
+        ],
+        [
+          "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/state/sessions/agent%3Aclaude%3Aacp%3Af15c878e-36bf-4672-99aa-d57e35d52272%3Aoneshot%3Afcb3ff10-7d4f-4f78-b7e6-9efc9c469c35.json",
+          7
+        ],
+        [
+          "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/state/sessions/agent%3Aclaude%3Aacp%3Aa64a0a94-1d41-420f-b38c-4c4c53ea99ad%3Aoneshot%3Ade4337ab-be2b-4ff2-b216-fa7945bf6d89.json",
+          7
+        ],
+        [
+          "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/projects/hologateaway/src/holodb/gateway/server.py",
+          7
+        ],
+        [
+          "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/skills/project-orchestrator/docs/guides/knowledge-notes.md",
+          7
+        ],
+        [
+          "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/state/sessions/agent%3Aclaude%3Aacp%3Ae908a7a2-a5a2-4627-a7c3-ae0c622e5b9b%3Aoneshot%3A70cf16ac-adb7-4055-8d4d-6a31804d40e5.json",
+          6
+        ],
+        [
+          "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/state/sessions/agent%3Aclaude%3Aacp%3A1e636bc1-04d1-4b3b-881e-f5667d653b0f%3Aoneshot%3A7a96f5dc-081e-4474-8044-d1fea16e15dc.json",
+          6
+        ],
+        [
+          "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/projects/hologateaway/scripts/holo_cli.py",
+          6
+        ],
+        [
+          "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/skills/project-orchestrator/docs/api/reference.md",
+          6
+        ],
+        [
+          "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/gemini-cli-guide.md",
+          5
+        ],
+        [
+          "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/skills/project-orchestrator/src/chat/manager.rs",
+          5
+        ],
+        [
+          "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/skills/project-orchestrator/src/chat/config.rs",
+          5
+        ],
+        [
+          "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/TOOLS.md",
+          5
+        ],
+        [
+          "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/backups/2026-05-08T12-33-26Z/TOOLS.md",
+          4
+        ],
+        [
+          "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace/memory/tools/supabase.md",
+          4
+        ]
+      ],
+      "totalHits": 512,
+      "truncated": false,
+      "uniqueFiles": 123
+    },
+    {
+      "keyHints": [
+        "1PAPISID",
+        "3PAPISID",
+        "ABV_WEB_PASSWORD",
+        "ADMIN_TOKEN",
+        "ANTHROPIC_API_KEY",
+        "ANTHROPIC_AUTH_TOKEN",
+        "ANTIGRAVITY_KEY",
+        "API",
+        "APISID",
+        "API_KEY",
+        "API_PROVIDER_INTERNAL",
+        "API_REFERENCE",
+        "API_TIMEOUT_MS",
+        "API_TOKEN",
+        "API_TOKEN_GOES_HERE",
+        "AUTH",
+        "AUTHENTICATION",
+        "AUTHORIZATION",
+        "AUTH_DIR",
+        "AUTH_JSON_PATH",
+        "AUTH_PROFILES_PATH",
+        "AUTH_PROFILE_ALIASES",
+        "AUTH_STALE_MS",
+        "AUTH_STALE_THRESHOLD",
+        "AUTH_TOKEN",
+        "AUTO_LOGIN_PASSWORD",
+        "AWS_ACCESS_KEY_ID",
+        "AWS_SECRET_ACCESS_KEY",
+        "BURAYA_BILINEN_YUXOR_API_KEYI_YERLESTIR",
+        "CHECK_PASS",
+        "CLIENT_SECRET",
+        "CONFIG_KEY",
+        "CONFIG_TOKEN",
+        "DEEPSEEK_API_KEY",
+        "DISCORD_BOT_TOKEN",
+        "FILTER_KEY",
+        "FIRECRAWL_API_KEY",
+        "FIREWORKS_API_KEY",
+        "FRESH_TOKEN",
+        "FULL_KEY",
+        "GEMINI_API_KEY",
+        "GEMINI_KEY_HERE",
+        "GH_TOKEN",
+        "GITHUB_PERSONAL_ACCESS_TOKEN",
+        "GPG_KEY",
+        "GROQ_API_KEY",
+        "IO_KEY",
+        "JWT_SECRET",
+        "KEY",
+        "KEY1",
+        "KEY2",
+        "KEY_LENGTH",
+        "KILO_API_ERROR",
+        "KILO_API_URL",
+        "LINEAR_API_KEY",
+        "LOGIN_PASSWORD",
+        "MAX_KEY_RETRIES",
+        "MCP_REMOTE_TOKEN",
+        "MEILISEARCH_KEY",
+        "MISTRAL_API_KEY"
+      ],
+      "name": ".openclaw-old",
+      "path": "/home/turk/.openclaw-old",
+      "topFiles": [
+        [
+          "/home/turk/.openclaw-old/agents/main/sessions/c9a75e78-d0fb-4177-9be8-ef14687d6de5.jsonl.reset.2026-05-08T21-02-02.278Z",
+          231
+        ],
+        [
+          "/home/turk/.openclaw-old/agents/main/sessions/c9a75e78-d0fb-4177-9be8-ef14687d6de5.checkpoint.464e1fb8-dcad-4f79-b7a9-d5051b0e8b37.jsonl",
+          217
+        ],
+        [
+          "/home/turk/.openclaw-old/agents/planner/sessions/84bdfd76-857b-4dc0-b61e-8521c835a18d.jsonl",
+          210
+        ],
+        [
+          "/home/turk/.openclaw-old/agents/planner/sessions/84bdfd76-857b-4dc0-b61e-8521c835a18d.jsonl.bak-352739-1778196783414",
+          210
+        ],
+        [
+          "/home/turk/.openclaw-old/completions/openclaw.zsh",
+          203
+        ],
+        [
+          "/home/turk/.openclaw-old/completions/openclaw.fish",
+          202
+        ],
+        [
+          "/home/turk/.openclaw-old/agents/planner/sessions/84bdfd76-857b-4dc0-b61e-8521c835a18d.jsonl.bak-328868-1778190133690",
+          201
+        ],
+        [
+          "/home/turk/.openclaw-old/agents/main/sessions/c9a75e78-d0fb-4177-9be8-ef14687d6de5.jsonl.bak-447345-1778263271909",
+          157
+        ],
+        [
+          "/home/turk/.openclaw-old/agents/main/sessions/c9a75e78-d0fb-4177-9be8-ef14687d6de5.jsonl.bak-447345-1778263299765",
+          157
+        ],
+        [
+          "/home/turk/.openclaw-old/agents/main/sessions/c9a75e78-d0fb-4177-9be8-ef14687d6de5.jsonl.bak-444821-1778260283125",
+          153
+        ],
+        [
+          "/home/turk/.openclaw-old/agents/main/sessions/c9a75e78-d0fb-4177-9be8-ef14687d6de5.checkpoint.ba3938d8-9df8-4410-b3b3-b0241d112053.jsonl",
+          152
+        ],
+        [
+          "/home/turk/.openclaw-old/agents/main/sessions/c9a75e78-d0fb-4177-9be8-ef14687d6de5.jsonl.bak-440084-1778258287021",
+          146
+        ],
+        [
+          "/home/turk/.openclaw-old/agents/planner/sessions/84bdfd76-857b-4dc0-b61e-8521c835a18d.checkpoint.38b5f6ad-67fd-416e-8d12-d2e470b786f3.jsonl",
+          144
+        ],
+        [
+          "/home/turk/.openclaw-old/agents/planner/sessions/84bdfd76-857b-4dc0-b61e-8521c835a18d.checkpoint.9b3c9e21-a9e2-4748-b768-f8a5d4d2159d.jsonl",
+          142
+        ],
+        [
+          "/home/turk/.openclaw-old/agents/planner/sessions/84bdfd76-857b-4dc0-b61e-8521c835a18d.checkpoint.55036956-1ac8-4722-b8b9-5233352e1704.jsonl",
+          141
+        ],
+        [
+          "/home/turk/.openclaw-old/agents/main/sessions/c9a75e78-d0fb-4177-9be8-ef14687d6de5.trajectory.jsonl",
+          141
+        ],
+        [
+          "/home/turk/.openclaw-old/agents/main/sessions/a81cfa21-b4c2-46e8-84ae-738997f453b1.trajectory.jsonl",
+          138
+        ],
+        [
+          "/home/turk/.openclaw-old/agents/main/sessions/05af33a3-82a3-4c20-adbf-21e22b5b11df.jsonl",
+          133
+        ],
+        [
+          "/home/turk/.openclaw-old/agents/main/sessions/2a2b2a9a-bb5a-4007-912e-e0acef2b6963.trajectory.jsonl",
+          126
+        ],
+        [
+          "/home/turk/.openclaw-old/agents/main/sessions/242ebb10-2db0-4eba-89c4-8f065e6c88db.trajectory.jsonl",
+          124
+        ],
+        [
+          "/home/turk/.openclaw-old/agents/planner/sessions/84bdfd76-857b-4dc0-b61e-8521c835a18d.trajectory.jsonl",
+          120
+        ],
+        [
+          "/home/turk/.openclaw-old/workspace/projects/hologateaway/konusmagecmisi.md",
+          113
+        ],
+        [
+          "/home/turk/.openclaw-old/agents/main/sessions/f49c16b3-2219-46a5-84ca-13e7e17071a9.trajectory.jsonl",
+          99
+        ],
+        [
+          "/home/turk/.openclaw-old/agents/main/sessions/2a2b2a9a-bb5a-4007-912e-e0acef2b6963.jsonl.reset.2026-05-09T08-11-36.336Z",
+          92
+        ],
+        [
+          "/home/turk/.openclaw-old/agents/main/sessions/2a2b2a9a-bb5a-4007-912e-e0acef2b6963.checkpoint.37a29c4b-9fbd-4130-9fbe-90db6dc0b4be.jsonl",
+          91
+        ]
+      ],
+      "totalHits": 7260,
+      "truncated": false,
+      "uniqueFiles": 389
+    }
+  ],
+  "scanned": [
+    {
+      "dirs": 290,
+      "files": 785,
+      "name": "backup-openclaw-old/workspace",
+      "path": "/home/turk/.openclaw/workspace/backup-openclaw-old/workspace"
+    },
+    {
+      "dirs": 4377,
+      "files": 45908,
+      "name": ".openclaw-old",
+      "path": "/home/turk/.openclaw-old"
+    }
+  ],
+  "schemaVersion": 2,
+  "seenFindingIds": [
+    "0224a6f22b4d4f6543dc6fb21aeb98493c2ea37107277d61ac80c5acf22830ec",
+    "0258849dd8083420513506beaf2e9e2059f81de7580b593c6b8eb6522b8743ec",
+    "0382f0585433d1660081f9230e420e3a33165d73d16bfed08404ddbc3c216a06",
+    "04161285088c60d2d2eba1a47c38061cd93b85da666c47996f1a9b9d773cdc4f",
+    "08918c84f8a7b507709fa5aed857e21f404b5902d16716f90ba8855c7f91ba02",
+    "0a01cf66e50848abd93ee372221e757546699c5a6e95a099f99a2a9068a846e6",
+    "0d5ff43d61a53e8726941c6fab125126781091608c335cfea285e54d8083886a",
+    "1425ec9922282550cd9ff39bdd0b3f5516dbbeb18c952d9198c942a88098514d",
+    "1a7803b3e306a4f4359651aff8f6d2a53ef8acc7f674234e22f91a0e7460c51f",
+    "1c808a9afcc675cb7b5eb8bb4772e5d519386f454004b0b24d612e3b626adfb5",
+    "2758cdedb6f6bc8235f1658bd908ed28d011480e51e2b4f137ebd9f7d6ad8503",
+    "291b61039d1a0cdf00698703c26654d70ee525c1f717d6dff1e52646b6e1923e",
+    "2c60d3cf2d0782e2b8a06d1aaa94b946c0349fe1c702d04b3012436e0c846c39",
+    "2fbfb4d2daca8de2da560ae6c546c05d1a88aa8fa798d346af803e2a74160a92",
+    "3266f5988b030cd5ffe33090cc2ab00d7127f4fee9c86b89a4a87fc8867a658b",
+    "38b21c86afcd989c05d8e67da642019e076d399d7b7e1d93367b07c3a8bb20cf",
+    "393bdf0c8ebeaf84b2bdd56d6640906c070621c9c6b161e967e68a8821b85fa8",
+    "3a12eddfadd861f77f501220566414aa49a1a5c4efb40aa31e422e4fd907176c",
+    "3a17c2337fb1b82d6311f19c4c0c8cfd49e2e684bf2a8b681b4550c584058f06",
+    "3f0219b3b883478092a59f30b225d5aa7c727bd5a851731fe4c9db11b6b7d227",
+    "433fbd4bff65555131ad0f3818b3de3d4c0b36aa616ffa3e7cb0eb3a307fe92e",
+    "437c0caf6b571551d778a78751db9a912a088a6a0f3bf9a7fbd634790d1c438a",
+    "44705fa711da9a0e6f483dff024131dd588caa7e8dd2ea15125a5de2cc163184",
+    "451638e99f4af4ef4414034bbfc0ec0e28580c72d05f91efd87571b12877dcc2",
+    "453e5fd466cc95af12b9bb14a6ef46d1e345440294e0f836fe14bb8d9973ad56",
+    "47c4550956461fd555e1aced9b7bd1a06e2eb3e0ea9c039e05ab4decc487ab63",
+    "47dc4b2ebfdeda97e5a00c65fac49c96ce9c8360ce64f91c1837642dab82bce5",
+    "496cd56a155e93124d3dde253e4cdeb270a075cef6f12c8e7d4027daf57dc7f9",
+    "4ba1213a7e6fb27380c13735271be53a832d8b3929cccf1afaed1c19781e0557",
+    "4c3dc0dc3df1fc6b0512db094781cc9bb57033443eae07b9dfb885dc90081ad3",
+    "4ef4601599cc73226d1a7f458f1df24c6f6eb1a2bddb3b5c7e203167f3273f88",
+    "4f19295c6808e9d215c8fd315a1fe521b16bdebf2c19aace2230c31533a19399",
+    "4f842e3e0c94f0e8b715b5c60495f9177b70b8d685665e97a5308237987ff6c1",
+    "5093b1390e17d7732175eaf65a540065a1e2f8f11be0d1f783d8c1629284b526",
+    "540047fdf602e19032c56df57b9cd2de9e7c330a0f0c90c0e79045e225543d18",
+    "554d3691383ef8dbd8a8824482f77d3b66d245ccaaa1293c56fa624298fb592a",
+    "58d625c1a8519639e0c50e5f627c3179eaaf3a34f76434feed956b51514e6324",
+    "58f929f328140e27d5848d89091deef8f3643a385b9058dcbfe6289c6cdd1737",
+    "5a3e270f0c63cfccee7dd2ea447781b5d1f6f929440a6b2df57b85977db49bdb",
+    "5a6ef24b9bfcd1d62814ab0b753eaa67f8750bee65d982a6027b31ee4f5f9581",
+    "5b393833701702ce83be6b728126f20cf48f1e873a543735f1a06a3a2ecd60d2",
+    "5b6e0d431100fd3f36670c3528f14da3a515468547ed739e4fd3c9fe3a90e121",
+    "6064ae506948ffdc1e775469279f6c3588bf4e81c98065800c3d500de5f84cf9",
+    "60f24224c0cdebe1a4fa63afccbf98e12fcded68b8cf089158a4459fe5ad0b15",
+    "63c632dd4d889bc12c20053c8aebc851f5798c0964d097251ef36244496e980a",
+    "69a2142506450e0fec23de5bcc2b23b99df5385757103178b3620977a9eabf04",
+    "6dfe7134c6b06c409b58b6ffa0c720509f8a917cb2658c1656cfcd7067f2d62f",
+    "6e5eb780755d3c3028e2f57fbd944463998c2352dad30691c6ab8d67ce758ce6",
+    "6eea5aef3f9b7fb3d7f106b9de683afb94ae4fbe5ab1a4cd4ffe6960ff9fdd94",
+    "74264b5e0231cd5041a504ea43b69a3fb731350783d399769854be9fb4d4bdf4",
+    "7925fd81e6de3e56415aa83ace231e33a1dd991a6255c2f105f6a6e291a1d013",
+    "7e19f75ebd8e1ea6773a1cf626e87c1b468729ac85641a9d267ee1c8252b4e68",
+    "8121141c636dcbd242d8fb2e85ef54b9b7559eb65bdd537f26470f8b489d6a05",
+    "81a400cb82634827d6812382ed30f92b21c36eed8de08cd9dec4c2b861c6f7d5",
+    "81d2590cac8ef35f197dd746027a762626942f98b59185f8a5a32e26196c35e5",
+    "833573b52603b0edf61b4400bd561650dc800fe508eaa9c75b16a7fcb6f143de",
+    "834ba5ef7a61f5721702c8021f88e38899da9965b09bfcdf00a25f14fc28d67b",
+    "83a5f33a3a4522d2fd65add41e8087c457f8c11d2773c3bc423cccd0a75aabc9",
+    "8560270d754a444c28260788559b78ffc55f4079535bb471ca221586d1c5b9b0",
+    "860a96164a510a6e50883e5111427a08c41148a493ad4d93a6a2df526a36a8d5",
+    "86b06059d9267028acd3314e1a15c2199ef93bfb65d1ab9166320aa3b1f6d2d8",
+    "8a3840087100ba4ccb499578d3b0052c955f09c11daed2559e1b9cae3ed40a99",
+    "8cbec260eb9c0ae63b9610973b1f2d02cc009ea45bf15168925a56c6c97de6de",
+    "8ea327352a6cc86414c2660f01a21659638e6a45973bb3a49cf9e079bc370612",
+    "8eac97528eaa7f40722edee626cd4562f0ecbeb2d48efdbcd38615225d90558a",
+    "8f091c802eea345181765cba5b68cf0039b8b2cc9f73f5cfea16a18f2961b9a4",
+    "8f8545dc9dbbf4c76ee92886aa11676bdaddce01538472a643c22f3c5060b158",
+    "92d004d03ee34aacdbea20f377e1e260a23a3839e9d4ae76a6cde4c72c15e375",
+    "931ae02927dfb5591a69227d8c91cf7d07a207775bc04dc2158ec4bc43c6fc9d",
+    "97e82b31e45ffe3897aa8b7b4619bedf85837df1781cb0ebce8b10cae2b5787f",
+    "9c990f623f00ce18601128352b507148b26b4895698a41f6e18f7ed980ceb9c0",
+    "9d5248cff5184b6e2a36a62898452b9035dc85a1d37cd25e990fa7e359ff3da1",
+    "9d6b927c505c5ba5c9b56c6de375dbc6403fef8ac83cdfdf3a7b1b8fadbbb8b5",
+    "9e7cc16d24500248ec61bca62e7bdbfeaf25913f108af931f605acb4e97e7d6f",
+    "a160a3e16cf8d5e9dd44a337bbfef27cd5321a87e37cff10ccecd417600cbdc4",
+    "a1d4a47792dcbdbc9701fad5646318dac523853358371d41516a2a8d56d88343",
+    "a3b15918293ecd01635599ff52c1a80fdb4078965b16661216281ca7c17944f8",
+    "a4be652716a80d086ebc9ce4e8c12e0cb656d8fcde09929adb3c4a8d1016d4d0",
+    "a4f867ce59a4e54a7afc8de608de2b6a75552a1a8026c5c897f8ce71eb3159d4",
+    "aaf6a5599aed18c443a601149bf6ea3227089108e646672d6766aa48325648ef",
+    "ab48222c824519c77f3184476ca435d2dbad1d7a5e8b8f31f5a48ec517fa1873",
+    "ae629e942d768085612c76692e9ebcd7738730ae26f1fd0966bb76c35a134a5a",
+    "af5349c112c9da68f54629b33898523195f4a18f792804b6c25c5e71de804742",
+    "b065f782a5933d6e0c1b2b81f1892247f48d99fff0db5fdb1fd6c74166704e3f",
+    "b17a303377f635b53d3c0db3d42a427d052d70c0bea91ce5931ce2749a7815bf",
+    "b1b19074da3f2bdc91ceca2c794d192bd1e79682c79dfcd0ec4cdbdc358283c2",
+    "b6df18b96f242d29c04adfd90b17e8656aefb4e2171c7fdfa59b177b3c0899bb",
+    "b91fe242be9e5b6c35fd240fb0cd9c5d6af493f8413995e418c3d523bfa0be35",
+    "b999cc594b00a08ad6bb71fb65e6ee75d2e0360521ff2ab6d8d47c0ad7877f15",
+    "baa3cc53afb5a685359140c4d523f341a29080c751c46525febfc4e2aecf706d",
+    "bd4441023bd6526d4ea0fcd126a04d01cbe7ced4548ee9e869f3459eeb91226a",
+    "be808dc17cafd9111a3e77120753c7d5b0446fba39e6231cbf76a29bf8a02da3",
+    "c16c6510055101e72dcda2e6dd592098736b787ec978713ea0fa09ff50c31b71",
+    "c3236b9da311d4410deb3bfabc8116399490102b8fca9a2297ccbd1b3ccbbfc7",
+    "c4e1222fd01c40719f89aab0513e3208e573e4fd379c942894e7aa6fc5d41dbd",
+    "c6a8cd70e8741bc193761abe16be2333c83b98a449ef3ee86aea519b155b556a",
+    "c6b2f1b9ee17e346a7f20e9af30fafbc58c9c12f9e4bb9c900d77a36fa12dc69",
+    "c7142a8317e858ff2385e0c1f6104fec9fc4693e7866582b360efc3289103aa1",
+    "c8b43b9ec0c0597d99f73e6d13234fa137a328b6c27870df73f25a8145dbc2b7",
+    "c90da81d0a03fe01359215d257c8ac1fa215007d14d009b263f89f7ebf1e65d6",
+    "cd2d44be1b64fd7052a8b9a253634e46f7fde6c1d2bd2bda9e381ac9cab32507",
+    "d11e7d324e8c1fc6be1a38e3cf460ec66085af3525f5dc9661d5fed6f4920530",
+    "d3289225c00a294ccb5d92085050b11b527cf96e7ad3cbb96dda333eec36e9fd",
+    "d614b06e162330a133615dd4ce1ef5f0258f613c9cc287205d934c740f1a87cf",
+    "d68dd5bb6140a9b1534b42bc2fff43a8582feeb14367e521a2a0a88f5ccd1bfb",
+    "dd86b383838d724721ef30fab294c5dc0606f8c240a8206a3326914f4711984d",
+    "dddb0e9a238a71cc5b9c653186de6e761519eb49187f19581064247389036ca1",
+    "df7711cbd9425a8fc1e7736c1944e1c115890af647429f2723a1b1c585332c00",
+    "e23be42c5d84cc860b81b4f953ee9f56ac9ced3c582dfd546094aa7129bf3c17",
+    "e25fc0a5322942f46162bebb0c0fa34d773d263ef04d546bc2fd1c50578c8da1",
+    "e29dff9c1f0c188a7fc615e0c2dcbabd51b4aeb3fffc20364035ae5c07260141",
+    "e3af21359c7005f526564f9ee71588b5ebeb348c5d9c5796b314824376dab866",
+    "e59635635d981a60dc4a727338c3832d4d91ba33a32c20604f2dc9a8f25f05db",
+    "e6d1582d53e1220e8d4082485c82ac2676b1287d973c272f68cd47148b0374a8",
+    "e734968006d093e26c8f6982442a5d18836f8bd4fe06beacd3fa6263634ded80",
+    "e834d141e12ddc29976cbf6613a4540c6002c09799a978ec7b7a562215978188",
+    "e8bd94660f2a9df506ef122824df80be767dc4e348a8b48f50011badbcf361ab",
+    "eaf8be4e938a1f0114b9ae01e7717a9036eda597878c66162f31c051fb35b228",
+    "eb2bd32d45835d1c23d0e9f3d7ec001705a83737f3b6a1de7ebe196ddd219eea",
+    "eb7f67da7a75d34c80dc0a61e9f5b31c33b5dda1918eb2866264056f0214b888",
+    "ebdb47f10e7ede527b86bae5b715fd4d4c0abc86e17b48450c365927a08ea96c",
+    "ed65f7b5b314569886d57760dfd906f95fc3414d856f7711d5f5ef4d1f1a24e6",
+    "eec33213ab3af54e9433e9096c28e3aaadf35a55a3a9b674097aa004f2387430",
+    "f02a672dd3449d5b791b30f6dc9aab29bec420af6b8f65fc586761844935f0e6",
+    "f3517edf0e2341da859ce11ab3e1599e4b9293df1d5c070b9eab9b1c5d136538",
+    "f3fb44a8360a3bf7863223e8fb896aae11b4b7f34919bad5aa2554c3960d4db0",
+    "f51f0bf9a67c51f01f39bcfcae47872ddf5eaf434723cada944163e68176e6f4",
+    "f88cbeabe0fe9771a1db49dcadaf7d3e3c75eebb8f2523e05e1a8648f8ef31e3",
+    "f90f6f2778c559f727755fe396a693a540a672ebcc162faf1aee2321b5f9dee9",
+    "fd8c908fa2991d9c4976dfe0eeb6a164ba9dd789dc21d7fadbdd6c6c0d2f709e",
+    "fdc57619d0f5024c990b413648d3020ed946d97d7dbc1829ce4e9a995c558e04"
+  ]
+}
