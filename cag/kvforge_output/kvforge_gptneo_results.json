@@ -1,0 +1,27 @@
+{
+  "model": "KVForge v2 GPT-Neo 1.3B (v4 fp16)",
+  "config": {
+    "layers": 24,
+    "heads": 16,
+    "hidden": 2048,
+    "seed_dim": 64,
+    "seed_encoder_hidden": 512,
+    "compression": "64\u00d7",
+    "dtype": "fp16",
+    "seq_len": 256,
+    "batch_size": 1,
+    "grad_accum": 8,
+    "eff_batch": 8,
+    "grad_scaler": false,
+    "loss_scale": 128.0,
+    "max_steps": 1000,
+    "lr": 0.0001
+  },
+  "results": {
+    "best_val_loss": Infinity,
+    "best_val_ppl": 485165195.4,
+    "training_time_min": 58.0,
+    "total_params": 1468252672,
+    "trainable_params": 1468252672
+  }
+}

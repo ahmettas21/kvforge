@@ -1,0 +1,66 @@
+[{"stream_name":"stdout","time":12.319297346,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 799.0/799.0 MB 2.3 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":18.381412856,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.1/7.1 MB 2.3 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":18.870887042,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 23.7/23.7 MB 80.2 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":19.194207266,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 823.6/823.6 kB 53.5 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":19.56813428,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.1/14.1 MB 97.0 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":26.071416165,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 664.8/664.8 MB 2.8 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":32.799965228,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 410.6/410.6 MB 4.5 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":35.730106639,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 121.6/121.6 MB 15.3 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":36.853566904,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.5/56.5 MB 34.1 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":38.32225069,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 124.2/124.2 MB 15.4 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":41.103009636,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 196.0/196.0 MB 9.5 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":44.002137846,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 176.2/176.2 MB 8.9 MB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":49.813156414,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 99.1/99.1 kB 18.1 kB/s eta 0:00:00\n"}
+,{"stream_name":"stdout","time":52.366542586,"data":"     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 209.5/209.5 MB 8.9 MB/s eta 0:00:00\n"}
+,{"stream_name":"stderr","time":157.386210181,"data":"ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\n"}
+,{"stream_name":"stderr","time":157.3862877,"data":"torchaudio 2.10.0+cu128 requires torch==2.10.0, but you have torch 2.4.0+cu121 which is incompatible.\n"}
+,{"stream_name":"stderr","time":166.096845725,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":175.32515242,"data":"\rGenerating test split:   0%|          | 0/4358 [00:00\u003c?, ? examples/s]\rGenerating test split: 100%|██████████| 4358/4358 [00:00\u003c00:00, 86452.68 examples/s]\n"}
+,{"stream_name":"stderr","time":177.710854437,"data":"\rGenerating train split:   0%|          | 0/1801350 [00:00\u003c?, ? examples/s]\rGenerating train split:   3%|▎         | 58000/1801350 [00:00\u003c00:03, 569922.32 examples/s]\rGenerating train split:   8%|▊         | 143000/1801350 [00:00\u003c00:02, 730335.20 examples/s]\rGenerating train split:  14%|█▍        | 251000/1801350 [00:00\u003c00:02, 721153.46 examples/s]\rGenerating train split:  19%|█▉        | 339000/1801350 [00:00\u003c00:01, 772275.05 examples/s]\rGenerating train split:  25%|██▌       | 454000/1801350 [00:00\u003c00:01, 767033.94 examples/s]\rGenerating train split:  30%|███       | 544000/1801350 [00:00\u003c00:01, 800806.22 examples/s]\rGenerating train split:  36%|███▋      | 653000/1801350 [00:00\u003c00:01, 750833.26 examples/s]\rGenerating train split:  42%|████▏     | 749000/1801350 [00:01\u003c00:01, 702088.69 examples/s]\rGenerating train split:  46%|████▌     | 824000/1801350 [00:01\u003c00:01, 710544.61 examples/s]\rGenerating train split:  50%|█████     | 901675/1801350 [00:01\u003c00:01, 687463.98 examples/s]\rGenerating train split:  55%|█████▍    | 988675/1801350 [00:01\u003c00:01, 731839.71 examples/s]\rGenerating train split:  60%|█████▉    | 1073675/1801350 [00:01\u003c00:00, 761418.49 examples/s]\rGenerating train split:  66%|██████▌   | 1185675/1801350 [00:01\u003c00:00, 751682.97 examples/s]\rGenerating train split:  71%|███████   | 1271675/1801350 [00:01\u003c00:00, 776985.59 examples/s]\rGenerating train split:  77%|███████▋  | 1383675/1801350 [00:01\u003c00:00, 762781.20 examples/s]\rGenerating train split:  81%|████████▏ | 1467675/1801350 [00:01\u003c00:00, 779766.73 examples/s]\rGenerating train split:  88%|████████▊ | 1583675/1801350 [00:02\u003c00:00, 774612.30 examples/s]\rGenerating train split:  93%|█████████▎| 1669675/1801350 [00:02\u003c00:00, 771673.67 examples/s]\rGenerating train split:  98%|█████████▊| 1756675/1801350 [00:02\u003c00:00, 794136.64 examples/s]\rGenerating train split: 100%|██████████| 1801350/1801350 [00:02\u003c00:00, 755315.04 examples/s]\n"}
+,{"stream_name":"stderr","time":177.719295112,"data":"\rGenerating validation split:   0%|          | 0/3760 [00:00\u003c?, ? examples/s]\rGenerating validation split: 100%|██████████| 3760/3760 [00:00\u003c00:00, 569109.13 examples/s]\n"}
+,{"stream_name":"stdout","time":177.908414015,"data":"WikiText-103: 50000 lines written\n"}
+,{"stream_name":"stdout","time":187.733619977,"data":"============================================================\n"}
+,{"stream_name":"stdout","time":187.733676466,"data":"KVForge v2 — GPT-Neo 2.7B Training\n"}
+,{"stream_name":"stdout","time":187.733680953,"data":"============================================================\n"}
+,{"stream_name":"stdout","time":187.768379634,"data":"Device: cuda\n"}
+,{"stream_name":"stdout","time":187.788519418,"data":"GPU: Tesla P100-PCIE-16GB\n"}
+,{"stream_name":"stdout","time":187.788550705,"data":"VRAM: 17.1GB\n"}
+,{"stream_name":"stderr","time":203.239432368,"data":"Token indices sequence length is longer than the specified maximum sequence length for this model (3251178 \u003e 1024). Running this sequence through the model will result in indexing errors\n"}
+,{"stream_name":"stdout","time":203.636902633,"data":"  Tokenler: 3,251,178\n"}
+,{"stream_name":"stdout","time":203.972918252,"data":"  Ornek: 6349\n"}
+,{"stream_name":"stdout","time":204.044896724,"data":"Train: 5714, Val: 634\n"}
+,{"stream_name":"stdout","time":236.832971432,"data":"\n"}
+,{"stream_name":"stdout","time":236.833029759,"data":"Model: 1926.0M total, 1926.0M trainable\n"}
+,{"stream_name":"stdout","time":236.833034455,"data":"  Compression: 80× (5120 → 64)\n"}
+,{"stream_name":"stderr","time":241.816546918,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":241.81660193,"data":"  File \"/kaggle/src/script.py\", line 406, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":241.816885851,"data":"    train()\n"}
+,{"stream_name":"stderr","time":241.816976229,"data":"  File \"/kaggle/src/script.py\", line 322, in train\n"}
+,{"stream_name":"stderr","time":241.817229514,"data":"    loss, _, recon = model(batch, labels=batch, return_seed=True)\n"}
+,{"stream_name":"stderr","time":241.817405564,"data":"                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":241.817461054,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1553, in _wrapped_call_impl\n"}
+,{"stream_name":"stderr","time":241.81796,"data":"    return self._call_impl(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":241.818041445,"data":"           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":241.818048941,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1562, in _call_impl\n"}
+,{"stream_name":"stderr","time":241.818455349,"data":"    return forward_call(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":241.818523034,"data":"           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":241.818529572,"data":"  File \"/kaggle/src/script.py\", line 204, in forward\n"}
+,{"stream_name":"stderr","time":241.818776409,"data":"    logits = self.head(x)\n"}
+,{"stream_name":"stderr","time":241.818845973,"data":"             ^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":241.818852543,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1553, in _wrapped_call_impl\n"}
+,{"stream_name":"stderr","time":241.819260996,"data":"    return self._call_impl(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":241.819325178,"data":"           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":241.819330989,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py\", line 1562, in _call_impl\n"}
+,{"stream_name":"stderr","time":241.819782647,"data":"    return forward_call(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":241.81985486600001,"data":"           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":241.819860789,"data":"  File \"/usr/local/lib/python3.12/dist-packages/torch/nn/modules/linear.py\", line 117, in forward\n"}
+,{"stream_name":"stderr","time":241.820077429,"data":"    return F.linear(input, self.weight, self.bias)\n"}
+,{"stream_name":"stderr","time":241.82015482,"data":"           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":241.820205405,"data":"torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 198.00 MiB. GPU 0 has a total capacity of 15.89 GiB of which 33.12 MiB is free. Process 3004 has 15.85 GiB memory in use. Of the allocated memory 15.54 GiB is allocated by PyTorch, and 23.95 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)\n"}
+,{"stream_name":"stderr","time":245.111460615,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":245.111491954,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":245.331063269,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":245.331114142,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":245.960216883,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":247.181746508,"data":"[NbConvertApp] Writing 355682 bytes to __results__.html\n"}
+]
