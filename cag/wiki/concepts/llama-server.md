@@ -1,6 +1,4 @@
-# QT45
-
-(auto)
+# llama-server
 
 (auto)
 
