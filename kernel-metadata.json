@@ -1,0 +1,13 @@
+{
+  "id": "turk/kvforge-coto-training",
+  "title": "KVForge CoTo Progressive Training",
+  "code_file": "scripts/train_full_v2.py",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": []
+}

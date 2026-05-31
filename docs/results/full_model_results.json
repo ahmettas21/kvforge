@@ -1,0 +1,44 @@
+{
+  "full_model_results": {
+    "dataset": "Tiny Shakespeare (GPT2 tokenizer)",
+    "device": "Tesla P100-PCIE-16GB (Kaggle)",
+    "config": {
+      "max_seq_len": 256,
+      "batch_size": 8,
+      "num_epochs": 5,
+      "learning_rate": 3e-4,
+      "optimizer": "AdamW",
+      "scheduler": "CosineAnnealingLR",
+      "mixed_precision": true
+    },
+    "models": {
+      "vanilla_gpt2": {
+        "params": 123_800_000,
+        "kv_cache_compression": "1× (no compression)",
+        "best_val_loss": 4.8752,
+        "best_val_ppl": 131.0,
+        "training_time_min": 7.5,
+        "notes": "Standart GPT2-small multi-head attention"
+      },
+      "kvforge_v2": {
+        "params": 167_500_000,
+        "kv_cache_compression": "24× (768d→64d seed)",
+        "best_val_loss": 4.6897,
+        "best_val_ppl": 108.8,
+        "training_time_min": 10.8,
+        "seed_dim": 64,
+        "encoder_input": "4×d_model (contextual: cat(K_{i-1}, V_{i-1}, K_i, V_i))",
+        "notes": "ContextualSeedAttention — encoder 3072→768→64, decoder 64→768→1536"
+      }
+    },
+    "comparison": {
+      "ppl_improvement": 131.0 - 108.8,
+      "ppl_improvement_pct": 17.0,
+      "compression_factor": 24,
+      "parameter_overhead": 167_500_000 - 123_800_000,
+      "parameter_overhead_pct": 35.3,
+      "training_time_overhead_min": 10.8 - 7.5,
+      "training_time_overhead_pct": 44.0
+    }
+  }
+}
