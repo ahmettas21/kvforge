@@ -145,18 +145,29 @@ def main():
             out_q   = model(rest[:, :1], use_cache=True, past_key_values=qcache)
             mse = F.mse_loss(out_q.logits, out_ref.logits).item()
 
-            # Continue with requantization
+            # Continue with requantization — collect logits for all steps
             pk = qcache
+            all_logits = []
+            all_labels = []
             for i in range(rest.size(1)):
                 out = model(rest[:, i:i+1], use_cache=True, past_key_values=pk)
+                all_logits.append(out.logits[:, 0, :])  # last (only) token
+                if i < rest.size(1) - 1:
+                    all_labels.append(rest[:, i+1])
                 pk = qz.apply(out.past_key_values)
 
-            # PPL on full sequence
-            full = torch.cat([pref, rest], dim=-1)
-            logits = model(full).logits
-            sl = logits[..., :-1, :].reshape(-1, logits.size(-1))
-            lb = full[..., 1:].reshape(-1)
-            ppl_val = math.exp(F.cross_entropy(sl, lb, reduction="mean").item())
+            # PPL with quantized cache: loss = cross_entropy over generated tokens
+            if len(all_labels) > 0:
+                logits_stacked = torch.stack(all_logits[:-1], dim=1)  # [1, T-1, V]
+                labels_stacked = torch.stack(all_labels, dim=1)      # [1, T-1]
+                loss = F.cross_entropy(
+                    logits_stacked.reshape(-1, logits_stacked.size(-1)),
+                    labels_stacked.reshape(-1),
+                    reduction="mean"
+                )
+                ppl_val = math.exp(loss.item())
+            else:
+                ppl_val = avg_ref
 
             ratio, orig_mb, comp_mb = qz.ratio(cache)
             s_res.append({"ppl": ppl_val, "mse": mse, "ratio": ratio, "comp_mb": comp_mb})
