@@ -1,0 +1,13 @@
+{
+  "id": "ilkerturk/gpt2-minikv-poc",
+  "title": "GPT-2 MiniKV KV Cache Compression PoC",
+  "code_file": "gpt2_minikv_kaggle.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": []
+}
