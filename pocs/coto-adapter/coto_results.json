@@ -1,0 +1,22 @@
+{
+  "isolated_ad0": {
+    "task0": 0.17,
+    "task1": 0.1
+  },
+  "isolated_ad1": {
+    "task0": 0.15,
+    "task1": 0.05
+  },
+  "baseline_merged": {
+    "task0": 0.02,
+    "task1": 0.05
+  },
+  "coto_individual": {
+    "task0": 0.1,
+    "task1": 0.17
+  },
+  "coto_merged": {
+    "task0": 0.01,
+    "task1": 0.02
+  }
+}

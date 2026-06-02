@@ -1,0 +1,95 @@
+{
+  "config": {
+    "hidden_size": 256,
+    "num_layers": 4,
+    "num_heads": 4,
+    "prefill_len": 64,
+    "gen_len": 64
+  },
+  "tests": [
+    {
+      "name": "FP16 (baseline)",
+      "bit_config": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "cache_mb": 0.5,
+      "ratio": 1.0,
+      "mse": 0.0
+    },
+    {
+      "name": "Uniform 8-bit",
+      "bit_config": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "cache_mb": 0.125,
+      "ratio": 4.0,
+      "mse": 0.015767890959978104
+    },
+    {
+      "name": "Uniform 4-bit",
+      "bit_config": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "cache_mb": 0.125,
+      "ratio": 4.0,
+      "mse": 0.017541659995913506
+    },
+    {
+      "name": "Aggressive 2-bit",
+      "bit_config": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "cache_mb": 0.125,
+      "ratio": 4.0,
+      "mse": 0.1195797324180603
+    },
+    {
+      "name": "Layer-discrim 8-8-4-4",
+      "bit_config": [
+        8,
+        8,
+        4,
+        4
+      ],
+      "cache_mb": 0.125,
+      "ratio": 4.0,
+      "mse": 0.016147430986166
+    },
+    {
+      "name": "Layer-discrim 8-4-4-2",
+      "bit_config": [
+        8,
+        4,
+        4,
+        2
+      ],
+      "cache_mb": 0.125,
+      "ratio": 4.0,
+      "mse": 0.038390085101127625
+    },
+    {
+      "name": "Layer-discrim 4-4-2-2",
+      "bit_config": [
+        4,
+        4,
+        2,
+        2
+      ],
+      "cache_mb": 0.125,
+      "ratio": 4.0,
+      "mse": 0.058643486350774765
+    }
+  ]
+}
