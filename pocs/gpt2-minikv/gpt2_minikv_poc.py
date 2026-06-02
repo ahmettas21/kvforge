@@ -3,23 +3,12 @@
 GPT-2 MiniKV KV Cache Compression PoC
 ======================================
 Layer-discriminative quantization on GPT-2's KV cache.
-Uses DynamicCache API (transformers >=4.49).
-
-Method: prefill → quantize KV cache → dequantize → measure logit MSE + PPL.
+Uses DynamicCache API (transformers >=5.9).
 """
 
 import json, math, time
 import torch, torch.nn.functional as F
 from transformers import AutoTokenizer, AutoModelForCausalLM, DynamicCache
-
-
-def tokenize(texts, tokenizer, max_len=196):
-    result = []
-    for t in texts:
-        ids = tokenizer(t, return_tensors="pt", truncation=True, max_length=max_len).input_ids
-        if ids.size(1) > 64:
-            result.append(ids)
-    return result
 
 
 @torch.no_grad()
@@ -52,11 +41,10 @@ class Quantizer:
         return q if st["bits"] >= 16 else q.float() * st["s"] + st["zp"]
 
     def apply(self, cache: DynamicCache):
-        """Quantize all layers in a DynamicCache, return quantized copy."""
         qc = DynamicCache()
         for li in range(self.n):
-            k = cache.key_cache[li]
-            v = cache.value_cache[li]
+            k = cache.layers[li].keys
+            v = cache.layers[li].values
             qk, _ = self.quantize(k, li)
             qv, _ = self.quantize(v, li)
             dk, dv = self.dequant(qk, li), self.dequant(qv, li)
@@ -65,19 +53,19 @@ class Quantizer:
 
     def ratio(self, cache: DynamicCache):
         orig = sum(
-            cache.key_cache[li].numel() * cache.key_cache[li].element_size() +
-            cache.value_cache[li].numel() * cache.value_cache[li].element_size()
+            cache.layers[li].keys.numel() * cache.layers[li].keys.element_size() +
+            cache.layers[li].values.numel() * cache.layers[li].values.element_size()
             for li in range(self.n)
         )
         q_total = 0
         for li in range(self.n):
-            k = cache.key_cache[li]
-            v = cache.value_cache[li]
+            k = cache.layers[li].keys
+            v = cache.layers[li].values
             b = self.bc[li]
             if b >= 16:
                 q_total += k.numel()*k.element_size() + v.numel()*v.element_size()
             else:
-                q_total += k.numel() + v.numel()  # uint8
+                q_total += k.numel() + v.numel()
         return orig / q_total if q_total > 0 else 1.0, orig / (1024**2), q_total / (1024**2)
 
 
@@ -96,27 +84,28 @@ def main():
     model = model.to(dev).eval()
     cfg = model.config
     nl = cfg.n_layer
-    print(f"({time.time()-t0:.1f}s) {nl}L {cfg.n_embd}D")
+    print(f"({time.time()-t0:.1f}s) {nl}L {cfg.n_embd}D  {model.num_parameters():,}p")
 
     texts = [
-        ("The transformer architecture revolutionized natural language processing by introducing "
-         "self-attention mechanisms that capture long-range dependencies in text. These models "
-         "process sequences in parallel making training much more efficient than recurrent "
-         "neural networks. Later advances like GPT BERT and T5 showed that scaling up these "
-         "architectures leads to remarkable improvements across many language tasks. The key "
-         "innovation was the self-attention mechanism which computes weighted representations "
-         "of all positions in the input sequence allowing the model to understand context."),
-        ("Large language models face a critical bottleneck during text generation: the key-value "
-         "cache grows linearly with sequence length. For billion-parameter models serving "
-         "thousands of concurrent users this memory cost becomes substantial. Techniques like "
-         "quantization pruning and sparse attention have been developed to address this challenge. "
-         "The most promising approaches include KV cache quantization which reduces memory "
-         "footprint with minimal quality loss and attention pruning which removes redundant heads."),
+        "The transformer architecture revolutionized natural language processing by introducing "
+        "self-attention mechanisms that capture long-range dependencies in text. These models "
+        "process sequences in parallel making training much more efficient than recurrent "
+        "neural networks. Later advances like GPT BERT and T5 showed that scaling up these "
+        "architectures leads to remarkable improvements across many language tasks.",
+        "Large language models face a critical bottleneck during text generation: the key-value "
+        "cache grows linearly with sequence length. For billion-parameter models serving "
+        "thousands of concurrent users this memory cost becomes substantial. Techniques like "
+        "quantization pruning and sparse attention have been developed to address this challenge.",
     ]
-    encoded = tokenize(texts, tok)
+
+    encoded = []
+    for t in texts:
+        ids = tok(t, return_tensors="pt", truncation=True, max_length=196).input_ids
+        if ids.size(1) > 64:
+            encoded.append(ids)
     if not encoded:
         print("No valid samples"); return
-    print(f"  Samples: {len(encoded)} ({encoded[0].size(1)}-{encoded[-1].size(1)} tokens)")
+    print(f"  Samples: {len(encoded)} ({[ids.size(1) for ids in encoded]})")
 
     # Reference PPL
     print("  Ref PPL...", end=" ", flush=True)
@@ -124,13 +113,12 @@ def main():
     avg_ref = sum(refs) / len(refs)
     print(f"{avg_ref:.4f}")
 
-    # Test configurations
     tests = [
         ("Uniform 8-bit",       [8] * nl),
         ("Uniform 4-bit",       [4] * nl),
         ("Uniform 2-bit",       [2] * nl),
         ("Layer 8×6 + 4×6",     [8] * (nl//2) + [4] * (nl - nl//2)),
-        ("Layer 8×4 + 4×4 + 2×4", [8,8,8,8] + [4,4,4,4] + [2,2,2,2]),
+        ("Layer 8×4+4×4+2×4",   [8]*4 + [4]*4 + [2]*4),
     ]
 
     print(f"\n  {'Method':<28} {'PPL':<10} {'ΔPPL':<10} {'Ratio':<10} {'MSE':<12}")
@@ -141,57 +129,58 @@ def main():
     for name, bc in tests:
         qz = Quantizer(nl, bc)
         print(f"\n  [{name}]  bits={sorted(set(bc))}", flush=True)
-
         s_res = []
+
         for ids in encoded:
             ids = ids.to(dev)
             pf = min(48, ids.size(1)//2)
             pref, rest = ids[:, :pf], ids[:, pf:]
 
-            # Prefill
             out = model(pref, use_cache=True, past_key_values=None)
-            cache = out.past_key_values  # DynamicCache
+            cache = out.past_key_values
 
-            # Quantize
+            # MSE on first continuation token
             qcache = qz.apply(cache)
-
-            # MSE: compare logit difference on first rest token
             out_ref = model(rest[:, :1], use_cache=True, past_key_values=cache)
-            out_q = model(rest[:, :1], use_cache=True, past_key_values=qcache)
+            out_q   = model(rest[:, :1], use_cache=True, past_key_values=qcache)
             mse = F.mse_loss(out_q.logits, out_ref.logits).item()
 
-            # Continue generation with quantized cache to measure PPL
-            # (quantize after each forward)
+            # Continue with requantization
             pk = qcache
             for i in range(rest.size(1)):
                 out = model(rest[:, i:i+1], use_cache=True, past_key_values=pk)
-                pk_new = out.past_key_values
-                pk = qz.apply(pk_new)
+                pk = qz.apply(out.past_key_values)
 
-            ppl_val, _ = ppl(model, ids), None
+            # PPL on full sequence
+            full = torch.cat([pref, rest], dim=-1)
+            logits = model(full).logits
+            sl = logits[..., :-1, :].reshape(-1, logits.size(-1))
+            lb = full[..., 1:].reshape(-1)
+            ppl_val = math.exp(F.cross_entropy(sl, lb, reduction="mean").item())
 
             ratio, orig_mb, comp_mb = qz.ratio(cache)
-            s_res.append({"ppl": ppl_val, "mse": mse, "ratio": ratio, "orig_mb": orig_mb, "comp_mb": comp_mb})
+            s_res.append({"ppl": ppl_val, "mse": mse, "ratio": ratio, "comp_mb": comp_mb})
 
         avg_ppl = sum(s["ppl"] for s in s_res) / len(s_res)
         avg_mse = sum(s["mse"] for s in s_res) / len(s_res)
         avg_ratio = sum(s["ratio"] for s in s_res) / len(s_res)
-        print(f"  {'':<28} {avg_ppl:<10.4f} {avg_ppl-avg_ref:<+10.4f} {avg_ratio:<10.2f}x {avg_mse:<12.6e}")
-        results["tests"].append({"name": name, "bits": bc, "ppl": avg_ppl, "delta": avg_ppl-avg_ref, "ratio": avg_ratio, "mse": avg_mse})
+        avg_mb = sum(s["comp_mb"] for s in s_res) / len(s_res)
+        print(f"  {'':<28} {avg_ppl:<10.4f} {avg_ppl-avg_ref:<+10.4f} {avg_ratio:<10.2f}x {avg_mse:<12.6e}  {avg_mb:.4f}MB")
+        results["tests"].append({"name": name, "ppl": avg_ppl, "delta": avg_ppl-avg_ref, "ratio": avg_ratio, "mse": avg_mse, "comp_mb": avg_mb})
 
-    # Print summary
-    print("\n" + "=" * 60)
+    # Summary
+    print("\n" + "=" * 65)
     print("  RESULTS")
-    print("=" * 60 + "\n")
+    print("=" * 65 + "\n")
     print(f"  Reference avg PPL: {avg_ref:.4f}\n")
-    print(f"  {'Method':<28} {'PPL':<10} {'Δ':<8} {'Ratio':<8} {'MSE':<12}")
-    print(f"  {'-'*28} {'-'*10} {'-'*8} {'-'*8} {'-'*12}")
+    print(f"  {'Method':<28} {'PPL':<10} {'Δ':<8} {'Ratio':<10} {'MSE':<15}")
+    print(f"  {'-'*28} {'-'*10} {'-'*8} {'-'*10} {'-'*15}")
     for t in results["tests"]:
-        print(f"  {t['name']:<28} {t['ppl']:<10.4f} {t['delta']:<+8.4f} {t['ratio']:<8.2f}x {t['mse']:<12.6e}")
+        print(f"  {t['name']:<28} {t['ppl']:<10.4f} {t['delta']:<+8.4f} {t['ratio']:<10.2f}x {t['mse']:<15.6e}")
 
     with open("gpt2_results.json", "w") as f:
         json.dump(results, f, indent=2)
-    print(f"\n  → gpt2_results.json  ✅")
+    print(f"\n  → gpt2_results.json ✅")
 
 
 if __name__ == "__main__":
