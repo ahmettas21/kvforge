@@ -147,7 +147,7 @@ We evaluate base model perplexity across context lengths on Qwen2.5-0.5B using W
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth]{../assets/kvforge_base_ppl.png}
+\includegraphics[width=0.85\textwidth]{kvforge_base_ppl.png}
 \caption{Base model perplexity as a function of context length (Qwen2.5-0.5B, 64--4096 tokens). PPL decreases monotonically from 14.86 to 1.39, confirming that Base Encode prefill imposes no quality ceiling under long-context deployment.}
 \label{fig:base-ppl}
 \end{figure}
@@ -176,7 +176,7 @@ Len & ProLAD(on) & Baseline(on) & Base(off) & ProLAD ratio & Baseline ratio \\
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{../assets/kvforge_wikitext_bench.png}
+\includegraphics[width=0.9\textwidth]{kvforge_wikitext_bench.png}
 \caption{In-domain LoRA perplexity comparison. Left: ProLAD vs Baseline PPL(on). Right: absolute quality gap (LoRA on minus off), showing consistent 25--40\% reduction}.}
 \label{fig:wikitext}
 \end{figure}
