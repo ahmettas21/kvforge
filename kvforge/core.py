@@ -236,6 +236,161 @@ class KvForgeModel:
             sv = (mxv - mnv).clamp(1e-8) / (2**bits - 1)
             dv = (((v - mnv) / sv).round().clamp(0, 2**bits - 1).float() * sv + mnv).to(v.dtype)
             dc.update(dk, dv, dk.size(2))
+
+    # ── Layer-Discriminative Bit Allocation ────────────────────
+
+    def _get_layer_bits(self, li: int, n_layers: int, scheme: str = "uniform",
+                        target_bits: int = 4) -> int:
+        """
+        Return bit width for layer `li` based on allocation scheme.
+
+        Schemes:
+        - 'uniform': target_bits for all layers (baseline)
+        - 'linear_increase': 2-bit early → 8-bit late  (early layers quantize more)
+        - 'linear_decrease': 8-bit early → 2-bit late  (late layers quantize more)
+        - 'extreme_decrease': late layers quantize most (layers 0-2: 8, 3-6: 4, 7-11: 2) for GPT-2
+        """
+        if scheme == "uniform":
+            return target_bits
+        elif scheme == "linear_increase":
+            # Early = aggressive quant, late = preserve
+            min_b, max_b = 2, min(8, target_bits * 2)
+            ratio = li / max(n_layers - 1, 1)
+            return max(min_b, int(min_b + (max_b - min_b) * ratio))
+        elif scheme == "linear_decrease":
+            # Early = preserve, late = aggressive quant
+            min_b, max_b = 2, min(8, target_bits * 2)
+            ratio = li / max(n_layers - 1, 1)
+            return max(min_b, int(max_b - (max_b - min_b) * ratio))
+        elif scheme == "extreme_decrease":
+            # Explicit zone-based
+            if li < 0.25 * n_layers: return min(8, target_bits * 2)
+            elif li < 0.5 * n_layers: return target_bits
+            elif li < 0.75 * n_layers: return max(2, target_bits // 2)
+            else: return 2
+        return target_bits
+
+    @torch.no_grad()
+    def compress_past_layerwise(self, past, scheme: str = "uniform",
+                                 target_bits: int = 4) -> object:
+        """KV cache compression with per-layer bit allocation."""
+        n_layers = len(past)
+        dc = DynamicCache()
+        for li, layer in enumerate(past):
+            bits = self._get_layer_bits(li, n_layers, scheme, target_bits)
+            if bits >= 16:
+                dc.update(layer[0], layer[1], layer[0].size(2))
+                continue
+            k, v = layer[0], layer[1]
+            # Quantize K
+            mnk, mxk = k.min(-1, True).values, k.max(-1, True).values
+            sk = (mxk - mnk).clamp(1e-8) / (2**bits - 1)
+            dk = (((k - mnk) / sk).round().clamp(0, 2**bits - 1).float() * sk + mnk).to(k.dtype)
+            # Quantize V
+            mnv, mxv = v.min(-1, True).values, v.max(-1, True).values
+            sv = (mxv - mnv).clamp(1e-8) / (2**bits - 1)
+            dv = (((v - mnv) / sv).round().clamp(0, 2**bits - 1).float() * sv + mnv).to(v.dtype)
+            dc.update(dk, dv, dk.size(2))
+        return dc
+
+    # ── Cross-Model KV Cache Reuse ────────────────────────────
+
+    @classmethod
+    def cross_decode(cls, past, model_obj, last_token: torch.Tensor,
+                     n_tokens: int = 12) -> torch.Tensor:
+        """
+        Decode using a KV cache from a DIFFERENT model instance.
+        
+        This is the core of cross-model KV-cache reuse:
+        - Prefill with Model A, get KV cache
+        - Decode with Model B (different LoRA/weights) using Model A's cache
+        - Both models share the same base architecture (e.g., both are GPT-2)
+        """
+        model_obj.set_mode('lora_decode')
+        with torch.no_grad():
+            for _ in range(n_tokens):
+                out = model_obj.base(last_token, past_key_values=past, use_cache=True)
+                past = out.past_key_values
+                last_token = out.logits[:, -1:].argmax(dim=-1)
+        model_obj.set_mode('off')
+        return last_token
+
+    # ── Enhanced benchmark with layerwise compression ────────
+
+    @torch.no_grad()
+    def benchmark_layerwise(self, texts: List[str],
+                             schemes: List[str] = None,
+                             target_bits: int = 4,
+                             modes: List[str] = None) -> List[dict]:
+        """Benchmark different layer-wise bit allocation schemes."""
+        if schemes is None:
+            schemes = ["uniform", "linear_increase", "linear_decrease", "extreme_decrease"]
+        if modes is None:
+            modes = ['full_lora', 'base_encode_lora_decode']
+        self._load_tokenizer()
+        results = []
+
+        for text in texts:
+            for mode in modes:
+                for scheme in schemes:
+                    inp = self.tokenizer(text, return_tensors="pt", truncation=True,
+                                         max_length=128).to(self.device)
+                    inp_ids = inp["input_ids"]
+
+                    # Prefill
+                    self.set_mode('base_encode' if mode == 'base_encode_lora_decode' else 'full_lora')
+                    t0 = time.time()
+                    out = self.base.generate(
+                        input_ids=inp_ids, max_new_tokens=1, use_cache=True,
+                        pad_token_id=self.tokenizer.eos_token_id,
+                        do_sample=False, return_dict_in_generate=True)
+                    past = out.past_key_values
+                    tp = time.time() - t0
+
+                    # Layer-wise compress
+                    past_c = self.compress_past_layerwise(past, scheme, target_bits)
+
+                    # Decode
+                    if mode == 'base_encode_lora_decode':
+                        self.set_mode('lora_decode')
+                    t0 = time.time()
+                    last_tok = out.sequences[:, -1:]
+                    for _ in range(12):
+                        out_d = self.base(last_tok, past_key_values=past_c, use_cache=True)
+                        past_c = out_d.past_key_values
+                        last_tok = out_d.logits[:, -1:].argmax(dim=-1)
+                    td = time.time() - t0
+                    self.set_mode('off')
+
+                    # Cache size with per-layer accounting
+                    total_bytes = 0
+                    bits_log = []
+                    for li, layer in enumerate(past_c):
+                        bits = self._get_layer_bits(li, len(past_c), scheme, target_bits)
+                        bits_log.append(bits)
+                        k, v = past_c[li][0], past_c[li][1]
+                        total_bytes += k.numel() * (bits / 8) + v.numel() * (bits / 8)
+                    cache_mb = total_bytes / (1024**2)
+
+                    # PPL
+                    with torch.no_grad():
+                        out_b = self.base(inp_ids)
+                    loss = F.cross_entropy(out_b.logits[0, :-1, :], inp_ids[0, 1:])
+                    ppl = math.exp(loss.item())
+
+                    print(f"  {mode:<25} {scheme:<20} bits={target_bits}  "
+                          f"Pre:{tp*1000:>6.1f}ms  Dec:{td*1000:>6.1f}ms  "
+                          f"Cache:{cache_mb:>7.4f}MB  PPL:{ppl:.2f}  "
+                          f"LayerBits:{bits_log[:4]}...{bits_log[-4:]}")
+                    results.append({
+                        "mode": mode, "scheme": scheme, "target_bits": target_bits,
+                        "prefill_ms": round(tp*1000, 2), "decode_ms": round(td*1000, 2),
+                        "cache_mb": round(cache_mb, 4), "perplexity": round(ppl, 4),
+                        "layer_bits": bits_log,
+                    })
+
+        return results
+
         return dc
 
     @torch.no_grad()
