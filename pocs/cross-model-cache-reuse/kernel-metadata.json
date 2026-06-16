@@ -1,6 +1,6 @@
 {
-  "id": "ilkerturk/cross-model-kv-cache-reuse-poc",
-  "title": "KvForge — Cross-Model KV Cache Reuse",
+  "id": "ilkerturk/kvforge-cross-model-kv-cache-reuse",
+  "title": "KvForge Cross-Model KV Cache Reuse",
   "code_file": "cross_model_cache_reuse.ipynb",
   "language": "python",
   "kernel_type": "notebook",
