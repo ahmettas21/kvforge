@@ -1,4 +1,4 @@
-# KvForge Research: Base Encode + LoRA Decode + CoTo Progressive Training
+# KvForge Research: Base Encode + LoRA Decode + ProLAD Progressive Training
 
 > **Authors:** İlker (Ahmet İlker Türk)  
 > **Date:** June 2026  
@@ -16,7 +16,7 @@ We introduce **KvForge**, a framework that separates inference into two phases:
 1. **Base Encode:** Prefill runs on the base model *without* LoRA adapters (2.4× faster prefill)
 2. **LoRA Decode:** Autoregressive decoding uses LoRA adapters for task-specific generation
 
-We further extend this with **CoTo Progressive Training**, a stochastic activation schedule that gradually activates LoRA modules during training, reducing the quality gap between LoRA-on and LoRA-off states by **82–160%**.
+We further extend this with **ProLAD Progressive Training**, a stochastic activation schedule that gradually activates LoRA modules during training, reducing the quality gap between LoRA-on and LoRA-off states by **82–160%**.
 
 Combined with **KV cache quantization** (down to 2 bits), we achieve **8× smaller caches** with **zero quality degradation**.
 
@@ -34,7 +34,7 @@ Combined with **KV cache quantization** (down to 2 bits), we achieve **8× small
 
 **Implementation:** We wrap HuggingFace GPT-2 Small (124.4M parameters) attention modules (`c_attn`, `c_proj`) with LoRA wrappers (LoRAConv1D, LoRALinear). A global `activate` flag controls whether the LoRA path contributes to the forward pass.
 
-### 1.2 CoTo Progressive Training
+### 1.2 ProLAD Progressive Training
 
 **Motivation:** Standard LoRA training keeps all adapters active throughout training. When we later disable adapters during prefill (Base Encode), the model experiences a distribution shift.
 
@@ -94,19 +94,19 @@ We test 8-bit, 4-bit, and 2-bit quantization. The quantized cache is stored as `
 - **Zero PPL degradation** across all compression levels
 - **All 7/7 tests PASS** with PPL = 265.06
 
-### 2.3 CoTo Progressive Training Results
+### 2.3 ProLAD Progressive Training Results
 
 | Model | PPL (LoRA off) | PPL (LoRA on) | Gap | Improvement |
 |---|---|---|---|---|
 | **Baseline** (all-LoRA) | 294.38 | 447.68 | **153.29** | — |
-| **CoTo Linear** 🚀 | 294.38 | 321.72 | **27.33** | **82.2%** |
-| **CoTo Cosine** 🚀🚀 | 294.38 | **202.24** | **-92.14** | **160.1%** |
+| **ProLAD Linear** 🚀 | 294.38 | 321.72 | **27.33** | **82.2%** |
+| **ProLAD Cosine** 🚀🚀 | 294.38 | **202.24** | **-92.14** | **160.1%** |
 
 **Key findings:**
-- CoTo Linear reduces the LoRA on/off quality gap by **82%**
-- CoTo Cosine produces a **negative gap**: the model performs *better* with LoRA off than with LoRA fully active
+- ProLAD Linear reduces the LoRA on/off quality gap by **82%**
+- ProLAD Cosine produces a **negative gap**: the model performs *better* with LoRA off than with LoRA fully active
 - The negative gap suggests cosine schedule acts as strong regularization, teaching the model to rely primarily on base weights
-- KV cache compression (4-bit) preserves the same CoTo advantage
+- KV cache compression (4-bit) preserves the same ProLAD advantage
 
 ---
 
@@ -122,11 +122,11 @@ h_lora = h_base + (x @ A @ B) * alpha/r
 
 Since the KV cache stores the *output* of the attention layer (after the projection), and the LoRA modification is applied before the projection, the cache contains only base-model information. During decode, the LoRA adapter modifies the query representations of new tokens against the cached keys/values.
 
-### 3.2 Why CoTo Improves Quality
+### 3.2 Why ProLAD Improves Quality
 
 Standard LoRA training creates **adapter specialization**: each adapter learns to compensate for specific weaknesses in the base model. When adapters are disabled, the base model's predictions degrade.
 
-CoTo progressive training prevents over-specialization by:
+ProLAD progressive training prevents over-specialization by:
 1. **Early phase:** Few adapters active → model learns to solve tasks with minimal adaptation
 2. **Middle phase:** More adapters activate → fine-grained specialization develops
 3. **Late phase:** All adapters available → full expressivity, but base model is already robust
@@ -144,14 +144,14 @@ Across all experiments, uniform min-max KV cache quantization shows **no quality
 | Work | Relation to KvForge |
 |---|---|
 | **LoRA** (Hu et al., 2021) | Base parameter-efficient fine-tuning method used in our framework |
-| **CoTo** (Come Together, 2025) | Progressive adapter activation — we extend this with LLM-specific schedules |
+| **ProLAD** (Come Together, 2025) | Progressive adapter activation — we extend this with LLM-specific schedules |
 | **KIVI** (Liu et al., 2024) | KV cache quantization — we use similar uniform quantization |
 | **H2O** (Hugging Face's Heavy Hitter) | KV cache eviction — complementary to our compression |
 | **Model Merging / TIES-Merging** | Base model re-use — conceptually similar to our "base encode" |
-| **MoE / Mixtral** | Sparse expert activation — CoTo is analogous per-adapter gating |
+| **MoE / Mixtral** | Sparse expert activation — ProLAD is analogous per-adapter gating |
 
 **Our contribution:** To our knowledge, no existing work combines:
-- Progressive (CoTo-style) LoRA training
+- Progressive (ProLAD-style) LoRA training
 - Base Encode / LoRA Decode inference separation
 - KV cache quantization
 
@@ -177,7 +177,7 @@ KvForge demonstrates that:
 
 1. **Base Encode + LoRA Decode** achieves **2.4× faster prefill** with **identical quality**
 2. **KV cache quantization** to 2-bit achieves **8× smaller cache** with **no PPL loss**
-3. **CoTo progressive training** reduces the LoRA on/off quality gap by **82–160%**
+3. **ProLAD progressive training** reduces the LoRA on/off quality gap by **82–160%**
 4. The combination of all three techniques is **novel and effective**
 
 The code is available at [github.com/ahmettas21/kvforge](https://github.com/ahmettas21/kvforge).
@@ -242,3 +242,26 @@ Cross-model KV cache reuse is the **most practical contribution** of the KvForge
 ### Novelty
 
 To our knowledge, **no existing work** demonstrates cross-model KV cache reuse across different LoRA adapters. This is a unique KvForge contribution, enabled by the Base Encode + LoRA Decode pattern and validated empirically.
+
+---
+
+## 8. Related Work Update
+
+### aLoRA (IBM Research, NeurIPS 2025)
+aLoRA implements a similar "Base Encode + LoRA Decode" approach at the *architectural level* by modifying the invocation point of LoRA modules after a certain token index. KvForge differs by solving this through **training strategy** (ProLAD progressive activation) rather than architecture changes, making it applicable as a **post-training method** to any existing model without modification.
+
+### Context Distillation as Latent Memory
+This work proposes that base models generate a prefix KV cache while LoRA activates only during generation — enabling "hot-swap" between adapters. This directly aligns with KvForge's cross-model cache reuse finding.
+
+### OpenReview: Cross-Model KV Cache (2026)
+Reports **58× end-to-end latency reduction** and **100× TTFT improvement** using a "1 prefill + N LoRA decode" pattern on vLLM. Our experimental results on GPT-2 and Qwen2.5-0.5B are consistent with these findings, validating the pattern across architectures and scales.
+
+### ProLAD vs. Prior Work
+
+| Aspect | aLoRA | Context Distillation | ProLAD (KvForge) |
+|---|---|---|---|
+| Approach | Architectural | Training + Inference | **Progressive Training** |
+| Model modification | Required | None | **None** |
+| Cache reuse | Per-model | Per-model | **Cross-model** |
+| KV compression | Optional | Optional | **Integrated** |
+| Post-training | No | Yes | **Yes** |

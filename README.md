@@ -2,7 +2,7 @@
 
 **Efficient LLM Inference with Base Encode + LoRA Decode**
 
-KvForge is a research framework for efficient LLM inference that uses a novel **Base Encode + LoRA Decode** pattern combined with progressive training (CoTo) and KV cache compression.
+KvForge is a research framework for efficient LLM inference that uses a novel **Base Encode + LoRA Decode** pattern combined with progressive training (ProLAD) and KV cache compression.
 
 ## Core Idea
 
@@ -19,11 +19,11 @@ This provides **2.4× faster prefill** and **up to 8× smaller KV cache** with *
 |---|---|---|---|---|
 | Full LoRA (baseline) | 1× | 1× | 1× | — |
 | **Base Encode + LoRA Decode** 🚀 | **2.4× faster** | ≈1× | **8× smaller** | **Identical PPL** |
-| + CoTo Progressive Training | **2.4× faster** | ≈1× | **8× smaller** | **Better PPL when LoRA off!** |
+| + ProLAD Progressive Training | **2.4× faster** | ≈1× | **8× smaller** | **Better PPL when LoRA off!** |
 
 ## Key Results
 
-| Metric | Before CoTo | After CoTo | Improvement |
+| Metric | Before ProLAD | After ProLAD | Improvement |
 |---|---|---|---|
 | LoRA on/off quality gap | 153.29 PPL | 27.33 PPL (Linear) | **82% better** |
 | LoRA off quality (Cosine) | 294.38 PPL | **202.24 PPL** (better than LoRA on!) | **160% better** |

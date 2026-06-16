@@ -1,7 +1,7 @@
 {
-  "id": "ilkerturk/base-encode-lora-decode-kvforge-poc",
-  "title": "KvForge v3 - ProLAD Progressive LoRA",
-  "code_file": "be_ld_kaggle.ipynb",
+  "id": "ilkerturk/kvforge-layer-discriminative-bits",
+  "title": "KvForge Layer-Discriminative Bits",
+  "code_file": "layer_bits_kaggle.ipynb",
   "language": "python",
   "kernel_type": "notebook",
   "is_private": false,
