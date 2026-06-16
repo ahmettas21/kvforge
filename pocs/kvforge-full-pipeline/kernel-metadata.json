@@ -1,0 +1,13 @@
+{
+  "id": "ilkerturk/kvforge-v4-qwen",
+  "title": "KvForge V4 Qwen",
+  "code_file": "kvforge_full_pipeline.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": []
+}
