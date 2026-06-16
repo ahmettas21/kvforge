@@ -1,4 +1,5 @@
 \documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
 
 % ---- ArXiv style ----
 \usepackage[margin=1in]{geometry}
@@ -26,7 +27,7 @@
 \begin{abstract}
 Large Language Models (LLMs) rely on Key-Value (KV) caches to avoid recomputing token representations during autoregressive generation. Parameter-efficient fine-tuning methods such as LoRA (Low-Rank Adaptation) add lightweight adapters to attention projections, but executing these adapters during the compute-heavy prefill phase adds overhead with no benefit and, more critically, introduces a stability risk under long-context deployment.
 
-We demonstrate that standard LoRA fine-tuning exhibits catastrophic perplexity collapse under long-context inference -- perplexity exceeding 12,000 at 1,024 tokens while the base model achieves PPL $\approx 24$ with LoRA disabled. This collapse has been independently documented by LongLoRA~\cite{longlora} even at rank~256. We treat this not as a bug but as an \textbf{architectural signal}: base-only prefill is not merely a speed optimization -- it is a stability requirement for long-context deployment.
+We demonstrate that standard LoRA fine-tuning exhibits catastrophic perplexity collapse under long-context inference -- perplexity exceeding 12,000 at 1,024 tokens while the base model achieves PPL $\approx 21{-}35$ with LoRA disabled. This collapse has been independently documented by LongLoRA~\cite{longlora} even at rank~256. We treat this not as a bug but as an \textbf{architectural signal}: base-only prefill is not merely a speed optimization -- it is a stability requirement for long-context deployment.
 
 We introduce \textbf{KvForge}, a framework that separates inference into two phases: (1) \textbf{Base Encode}: prefill runs on the base model without LoRA adapters, producing a stable KV cache; and (2) \textbf{LoRA Decode}: autoregressive decoding uses task-specific LoRA adapters. Since the KV cache stores only base model activations, it is by definition free from LoRA's distribution shift -- the collapse is a decode-time phenomenon constrained to the new tokens LoRA processes during generation, not to the cached context.
 
@@ -68,7 +69,7 @@ In Base Encode mode, we set all adapter activation flags to~False during prefill
 
 Standard LoRA training keeps all adapters active throughout training, creating \textbf{adapter specialization}: each module learns to compensate for specific weaknesses in the base model. When adapters are subsequently disabled (as in Base Encode), the model experiences a distribution shift.
 
-We introduce progressive activation schedules that control which subset of LoRA modules is active during each training step. Three schedules were tested:
+Our ProLAD schedule is inspired by but distinct from concurrent work on progressive LoRA activation~\cite{coto}, which targets generalization rather than KV cache compatibility. We introduce progressive activation schedules that control which subset of LoRA modules is active during each training step. Three schedules were tested:
 
 \begin{itemize}
     \item \textbf{Immediate (baseline):} All modules active from step~0.
@@ -95,7 +96,7 @@ where $b \in \{2, 4, 8\}$ is the bit width. Quantized caches are stored as \text
 \subsection{Base Encode + LoRA Decode}
 \label{sec:be-ld-results}
 
-We evaluated GPT-2 Small (124.4M parameters) with LoRA rank~8 injected into 24 attention modules (12 layers $\times$ $c\_attn + c\_proj$). All 7/7 tests pass with identical perplexity (265.06):
+We evaluated GPT-2 Small (124.4M parameters) with LoRA rank~8 injected into 24 attention modules (12 layers $\times$ \texttt{c\_attn} + \texttt{c\_proj}). All 7/7 tests pass with identical perplexity (265.06):
 
 \begin{table}[H]
 \centering
@@ -189,7 +190,7 @@ Since the KV cache stores base model projections, it can be shared across differ
 \text{Speedup} = \frac{N \cdot (T_p + T_d)}{T_p + N \cdot T_d}
 \]
 
-where $T_p$ is prefill time and $T_d$ is decode time per token. For $N=50$, this yields 2.0$\times$ total throughput improvement. We verified this empirically on GPT-2 Small and Qwen2.5-0.5B using both FP16 and 4-bit compressed caches.
+where $T_p$ is prefill time and $T_d$ is decode time per token. For $N=50$, this yields 2.0$\times$ total throughput improvement. We verified this empirically on GPT-2 Small and Qwen2.5-0.5B using both FP16 and 4-bit compressed caches (see Table~\ref{tab:be-ld} for prefill/decode timing baselines).
 
 \section{Related Work}
 \label{sec:related}
@@ -198,7 +199,7 @@ where $T_p$ is prefill time and $T_d$ is decode time per token. For $N=50$, this
 Implements Base Encode + LoRA Decode at the \emph{architectural level} by modifying the invocation point after a fixed token index. KvForge achieves the same effect through training strategy (ProLAD), requiring no architecture changes and supporting post-training application.
 
 \paragraph{LongLoRA (Chen et al., 2024).}
-Addresses long-context LoRA collapse through shifted attention windows (S$^2$-Attention) and embedding/normalization fine-tuning. LongLoRA documents the same collapse we observe, but requires architectural modification and retraining per context length. KvForGE requires neither: any short-trained LoRA adapter is compatible with long contexts via base-only prefill, with no retraining.
+Addresses long-context LoRA collapse through shifted attention windows (S$^2$-Attention) and embedding/normalization fine-tuning. LongLoRA documents the same collapse we observe, but requires architectural modification and retraining per context length. KvForge requires neither: any short-trained LoRA adapter is compatible with long contexts via base-only prefill, with no retraining.
 
 \paragraph{Context Distillation as Latent Memory.}
 Proposes base-model prefix KV cache with LoRA-only generation, aligning with our cross-model cache reuse finding.
