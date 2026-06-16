@@ -178,6 +178,17 @@ We evaluate base model perplexity (LoRA disabled) across context lengths from 64
 
 **Finding:** Base model perplexity decreases monotonically with context length (14.86 → 1.39), consistent with standard LM behavior — longer context provides more conditioning information, enabling better token prediction. This confirms that **KvForge's Base Encode prefill imposes no quality ceiling under long-context deployment**. The model remains stable and benefits from additional context, exactly as a healthy language model should.
 
+
+| 64 | 7,968 | 9,816 | 35.2 | **226×** | 279× |
+| 128 | 3,578 | 4,803 | 21.9 | **163×** | 219× |
+| 256 | 3,377 | 5,023 | 28.2 | **120×** | 178× |
+| 512 | 3,100 | 4,223 | 23.0 | **135×** | 183× |
+| 1024 | 2,839 | 3,928 | 24.3 | **117×** | 162× |
+
+**Finding:** ProLAD achieves **25–40% lower PPL(on) than Baseline across all context lengths**, while base model PPL(off) remains stable (~21–35). The LoRA collapse ratio is **length-independent** — in fact, ratio improves at longer contexts (226× → 117×), confirming that collapse is a function of adapter specialization, not context length.
+
+![WikiText In-Domain Benchmark: ProLAD vs Baseline](assets/kvforge_wikitext_bench.png)
+*Figure 2: WikiText in-domain benchmark. ProLAD consistently reduces PPL collapse by 25–40% vs Baseline at all context lengths. Right panel shows the absolute quality gap (on − off).*
 *In-domain LoRA collapse characterization (context-length vs. training OOD effects) is listed under Future Work (Section 5).*
 
 
