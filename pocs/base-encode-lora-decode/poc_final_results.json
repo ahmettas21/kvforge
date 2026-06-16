@@ -1,0 +1,46 @@
+{
+  "results": [
+    {
+      "name": "Full LoRA FP16 (baseline)",
+      "prefill_ms": 3.29,
+      "decode_ms": 18.69,
+      "cache_mb": 0.0156,
+      "perplexity": 1125.1509
+    },
+    {
+      "name": "Base Encode + LoRA Decode FP16",
+      "prefill_ms": 2.22,
+      "decode_ms": 18.11,
+      "cache_mb": 0.0156,
+      "perplexity": 1214.8322
+    },
+    {
+      "name": "Full LoRA 4-bit",
+      "prefill_ms": 3.22,
+      "decode_ms": 18.51,
+      "cache_mb": 0.0156,
+      "perplexity": 1208.7696
+    },
+    {
+      "name": "Base Encode + LoRA Decode 4-bit",
+      "prefill_ms": 2.49,
+      "decode_ms": 18.09,
+      "cache_mb": 0.0156,
+      "perplexity": 1241.1174
+    },
+    {
+      "name": "Base Encode + LoRA Decode 3-bit",
+      "prefill_ms": 2.19,
+      "decode_ms": 17.13,
+      "cache_mb": 0.0156,
+      "perplexity": 978.1104
+    },
+    {
+      "name": "Base Encode + LoRA Decode 2-bit",
+      "prefill_ms": 2.25,
+      "decode_ms": 17.34,
+      "cache_mb": 0.0156,
+      "perplexity": 1140.3001
+    }
+  ]
+}

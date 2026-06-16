@@ -1,0 +1,101 @@
+{
+  "config": {
+    "hidden_size": 256,
+    "num_layers": 4,
+    "num_heads": 4,
+    "prefill_len": 64,
+    "lora_rank": 8
+  },
+  "results": [
+    {
+      "name": "Full LoRA FP16 (baseline)",
+      "mode": "full_lora",
+      "bit_config": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "prefill_ms": 872.57,
+      "decode_ms": 70.84,
+      "total_ms": 943.4,
+      "cache_mb": 0.5,
+      "perplexity": 6.868529888883287e+108
+    },
+    {
+      "name": "Base Encode + LoRA Decode FP16",
+      "mode": "base_encode_lora_decode",
+      "bit_config": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "prefill_ms": 59.51,
+      "decode_ms": 71.98,
+      "total_ms": 131.49,
+      "cache_mb": 0.5,
+      "perplexity": 6.868529888883287e+108
+    },
+    {
+      "name": "Full LoRA 8-bit",
+      "mode": "full_lora",
+      "bit_config": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "prefill_ms": 57.1,
+      "decode_ms": 69.74,
+      "total_ms": 126.85,
+      "cache_mb": 0.125,
+      "perplexity": 6.761424147864077e+108
+    },
+    {
+      "name": "Base Encode + LoRA Decode 8-bit",
+      "mode": "base_encode_lora_decode",
+      "bit_config": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "prefill_ms": 53.91,
+      "decode_ms": 80.83,
+      "total_ms": 134.75,
+      "cache_mb": 0.125,
+      "perplexity": 6.761424147864077e+108
+    },
+    {
+      "name": "Base Encode + LoRA Decode 4-bit",
+      "mode": "base_encode_lora_decode",
+      "bit_config": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "prefill_ms": 38.53,
+      "decode_ms": 66.5,
+      "total_ms": 105.03,
+      "cache_mb": 0.125,
+      "perplexity": 6.717820785463651e+108
+    },
+    {
+      "name": "L-Discrim 8,8,4,4 + LoRA Decode",
+      "mode": "base_encode_lora_decode",
+      "bit_config": [
+        8,
+        8,
+        4,
+        4
+      ],
+      "prefill_ms": 40.16,
+      "decode_ms": 70.2,
+      "total_ms": 110.36,
+      "cache_mb": 0.125,
+      "perplexity": 6.777951698060425e+108
+    }
+  ]
+}

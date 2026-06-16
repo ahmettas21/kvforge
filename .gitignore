@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Checkpoints
+*.pt
+*.pth
+*.safetensors
+
+# Logs
+*.log
+wandb/
+
+# Kaggle
+.kaggle/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# System
+.DS_Store
+Thumbs.db
+
+# Large files (not committed)
+wikitext.txt
+*.bin
+*.onnx
