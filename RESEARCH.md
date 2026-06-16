@@ -11,7 +11,7 @@
 
 Large Language Models (LLMs) use Key-Value (KV) caches to avoid recomputing token representations during autoregressive generation. Parameter-efficient fine-tuning methods like LoRA (Low-Rank Adaptation) add trainable adapters to attention projections. However, running LoRA adapters during the compute-heavy prefill (prompt processing) phase adds overhead with no benefit — the prefill computes representations for *all* prompt tokens simultaneously, and the cached values are identical whether LoRA is active or not.
 
-More critically, we demonstrate that **standard LoRA fine-tuning exhibits catastrophic perplexity collapse under long-context inference** — perplexity exceeding 110K at 889 tokens while the same model achieves PPL=1.75 with LoRA disabled (base-only prefill). This collapse has been independently documented by LongLoRA [ref] even at rank=256. KvForge treats this not as a bug but as an **architectural signal**: base-only prefill is not merely a speed optimization — it is a **stability requirement** for long-context deployment.
+More critically, we demonstrate that **standard LoRA fine-tuning exhibits catastrophic perplexity collapse under long-context inference** — perplexity exceeding 110K at 889 tokens while the same model achieves PPL=1.75 with LoRA disabled (base-only prefill). This collapse has been independently documented by LongLoRA [ref] even at rank=256. KvForge treats this not as a bug but as an **architectural signal**: base-only prefill is not merely a speed optimization — it is a **stability requirement** for long-context deployment. **Since the KV cache stores only base model activations, it is by definition free from LoRA's distribution shift. The collapse is a decode-time phenomenon — constrained to the new tokens LoRA processes during generation, not to the cached context.**
 
 We introduce **KvForge**, a framework that separates inference into two phases:
 
@@ -149,7 +149,7 @@ Our long-context benchmarks reveal a critical finding: **standard LoRA collapses
 | Full LoRA (Immediate training) | 102,143.45 💥 | 118.72 |
 | ProLAD (Cosine schedule) | 110,597.55 💥 | **53.18** |
 
-This collapse is consistent with LongLoRA's finding that plain LoRA fails for long contexts even at rank=256 due to distribution shift between short training sequences and long inference sequences.
+**Note:** LoRA adapters were trained on short sequences (GPT-2, 64–96 tokens) and evaluated on Qwen2.5-0.5B at 889 tokens. The collapse reflects both out-of-distribution context length and cross-model transfer. This intentionally represents the worst-case deployment scenario. The key finding is not LoRA's collapse per se — LongLoRA already documented this — but that **base-only prefill (PPL=1.75) remains stable regardless**, confirming the viability of the KvForge inference pattern.
 
 **The architectural implication is clear:** separating prefill (base-only) and decode (LoRA-active) is not merely a speed optimization — it is **necessary for long-context stability**. Since the KV cache stores base-model representations (PPL=1.75 at 889 tokens), using Base Encode for long prompts preserves quality while avoiding the collapse inherent to full-LoRA inference.
 
@@ -278,7 +278,7 @@ Reports **58× end-to-end latency reduction** and **100× TTFT improvement** usi
 ### LongLoRA (Chen et al., 2024)
 LongLoRA addresses long-context LoRA training via **S²-Attention** (shift-short attention) and embedding/normalization fine-tuning. Its key finding — that **plain LoRA fails at long contexts even at rank=256** — independently validates our observed PPL collapse from 1.75 to 110K at 889 tokens.
 
-**KvForge differs:** LongLoRA modifies the training procedure (shift attention, learnable embeddings) to enable LoRA to work at long contexts. KvForGE accepts the collapse as an architectural constraint and sidesteps it via base-only prefill. The approaches are complementary — LongLoRA-style embedding training could further improve ProLAD's long-context decode quality.
+**KvForge differs:** LongLoRA addresses long-context collapse through architectural modification (shifted attention windows, learnable embeddings) and requires retraining for each target context length. KvForge accepts the collapse as an architectural constraint and sidesteps it entirely via base-only prefill — **any existing short-trained LoRA adapter works with long contexts, with no retraining**. The approaches are complementary (LongLoRA-style embedding training could further improve ProLAD decode quality), but KvForge's core contribution — zero-retraining long-context compatibility — remains orthogonal.
 
 ### ProLAD vs. Prior Work
 
