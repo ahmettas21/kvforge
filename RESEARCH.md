@@ -160,6 +160,10 @@ Our long-context benchmarks reveal a critical finding: **standard LoRA collapses
 
 ## 3.5 Context Length Scaling: Base Encode Stability
 
+
+![Base Encode PPL Stable Across Context Lengths](assets/kvforge_base_ppl.png)
+*Figure 1: Base model perplexity as a function of context length (Qwen2.5-0.5B, 64–4096 tokens). PPL decreases monotonically from 14.86 to 1.39 as context increases.*
+
 We evaluate base model perplexity (LoRA disabled) across context lengths from 64 to 4096 tokens on Qwen2.5-0.5B, using Wikipedia-style coherent text. The goal is to verify that Base Encode prefill remains stable under long-context deployment.
 
 | Context Length | Base PPL | Prefill Time (CPU ms) |
