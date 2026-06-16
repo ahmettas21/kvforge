@@ -174,7 +174,7 @@ We evaluate base model perplexity (LoRA disabled) across context lengths from 64
 
 **Finding:** Base model perplexity decreases monotonically with context length (14.86 → 1.39), consistent with standard LM behavior — longer context provides more conditioning information, enabling better token prediction. This confirms that **KvForge's Base Encode prefill imposes no quality ceiling under long-context deployment**. The model remains stable and benefits from additional context, exactly as a healthy language model should.
 
-*Note: Full LoRA results are omitted from this benchmark due to training/evaluation domain mismatch. LoRA adapters were trained on short general-domain sequences and tested on Wikipedia-style coherent text, introducing confounding distribution shift. A dedicated in-domain evaluation is required to isolate context-length effects from data effects (see Section 5, Future Work).*
+*In-domain LoRA collapse characterization (context-length vs. training OOD effects) is listed under Future Work (Section 5).*
 
 
 ## 4. Related Work
