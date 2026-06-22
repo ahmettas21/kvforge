@@ -1,7 +1,7 @@
 {
-  "id": "ilkerturk/kvforge-star-kv-lora-rkr",
-  "title": "KvForge + STAR-KV + LoRA-RKR",
-  "code_file": "kvforge_starkv_lora_rkr.ipynb",
+  "id": "ilkerturk/kvforge-kalora",
+  "title": "KvForge KALoRA Training",
+  "code_file": "kvforge_kalora_train.ipynb",
   "language": "python",
   "kernel_type": "notebook",
   "is_private": true,
