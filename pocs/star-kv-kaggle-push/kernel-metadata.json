@@ -1,13 +1,1 @@
-{
-  "id": "ilkerturk/kvforge-kalora",
-  "title": "KvForge KALoRA Training",
-  "code_file": "kvforge_kalora_train.ipynb",
-  "language": "python",
-  "kernel_type": "notebook",
-  "is_private": true,
-  "enable_gpu": true,
-  "enable_internet": true,
-  "dataset_sources": [],
-  "competition_sources": [],
-  "kernel_sources": []
-}
+{"id":"ilkerturk/kalora-multirank-v10","title":"KALoRA Multi-Rank v10","code_file":"kvforge_ppl_bench.ipynb","language":"python","kernel_type":"notebook","is_private":true,"enable_gpu":true,"enable_internet":true,"dataset_sources":[],"competition_sources":[],"kernel_sources":[]}
