@@ -1,0 +1,13 @@
+{
+  "id": "ilkerturk/kvforge-star-kv",
+  "title": "KvForge + STAR-KV Low-Rank Compression",
+  "code_file": "star_kv_benchmark.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": []
+}
