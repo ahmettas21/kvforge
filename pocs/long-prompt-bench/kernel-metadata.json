@@ -1,0 +1,13 @@
+{
+  "id": "ilkerturk/prolad-long-prompt-v2",
+  "title": "ProLAD Long Prompt V2",
+  "code_file": "long_prompt_bench.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": []
+}

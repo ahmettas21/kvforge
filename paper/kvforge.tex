@@ -210,6 +210,12 @@ Reports 58$\times$ end-to-end latency reduction using ``1 prefill + N LoRA decod
 \paragraph{KV Cache Compression (KIVI, H2O, GEAR).}
 We use uniform min-max quantization similar to these works; our contribution is the integration with Base Encode and ProLAD training, not the compression scheme itself.
 
+
+\paragraph{Training Stability and Progressive Normalization (2025--2026).}
+Extended normalization strategies --- applying LayerNorm or RMSNorm to additional Transformer components such as projection and FC2 layers beyond the standard QK/V attention heads --- have been shown to improve PPL stability and permit up to 1.5$\times$ higher learning rates when combined with softmax capping~\cite{extended_norm}. Concurrently, the \emph{stability gap} in continual pre-training has been identified as a key challenge~\cite{stability_gap}: models fine-tuned on short contexts exhibit catastrophic PPL spikes when deployed on longer sequences. Multi-epoch fine-tuning on small, high-quality subsets with mixed-domain data regimes has been proposed as a mitigation strategy. FLM-101B~\cite{flm101b} demonstrates that progressive model growth from smaller initial configurations can achieve significant FLOPs savings while maintaining competitive PPL, aligning with our ProLAD approach of gradual adapter activation.
+
+\paragraph{LoRA-Aware KV Cache Compression.}
+Recent work~\cite{rethinking_lora} has systematically studied the interaction between KV cache compression and LoRA adapters, finding that adapter contribution increases monotonically with compression rate. At aggressive compression ratios ($>75\%$), document-level LoRA recovers 13--21 ROUGE-L points that would otherwise be lost, and the optimal pattern is \emph{base encode + LoRA decode} --- the same separation we adopt. Compression techniques such as MiniKV~\cite{minikv} achieve 50--90\% memory reduction via 2-bit quantization and low-rank projections with negligible accuracy loss, and entropy-guided methods~\cite{entropyinfer} achieve 2.39$\times$ speedup at $>100$k tokens. These findings validate our architectural choice and suggest that progressive adapter training (ProLAD) combined with aggressive KV cache compression is a naturally synergistic direction.
 \section{Conclusion}
 \label{sec:conclusion}
 
@@ -261,6 +267,35 @@ IBM Research.
 ``aLoRA: Adaptive LoRA for Efficient Inference.''
 NeurIPS, 2025.
 
+
+\bibitem{extended_norm}
+Methods of Improving LLM Training Stability via Extended Normalization.
+arXiv preprint, 2025.
+
+\bibitem{stability_gap}
+Efficient Continual Pre-training by Mitigating the Stability Gap.
+arXiv:2406.14833, 2024.
+
+\bibitem{flm101b}
+FLM-101B: A Progressive Growth Language Model.
+arXiv preprint, 2023.
+
+\bibitem{rethinking_lora}
+C.~Zuo et al.
+``Rethinking LoRA Memory Through the Lens of KV Cache Compression.''
+arXiv:2606.05698, June 2026.
+
+\bibitem{minikv}
+MiniKV: KV Cache Compression in Depth Dimension.
+arXiv:2409.0366, 2024.
+
+\bibitem{entropyinfer}
+EntropyInfer: Entropy-Guided Adaptive Inference for Efficient KV Cache Compression.
+arXiv:2606.09508, 2026.
+
+\bibitem{cross_model_reuse}
+Efficient Multi-Adapter LLM Serving via Cross-Model KV-Cache Reuse with Activated LoRA.
+arXiv:2512.17910, 2025.
 \end{thebibliography}
 
 \end{document}

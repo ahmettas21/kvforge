@@ -1,0 +1,29 @@
+{
+  "id": "ilkerturk/prolad-wikitext-in-domain-benchmark",
+  "title": "ProLAD WikiText In-Domain Benchmark",
+  "code_file": "wikitext_bench.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": []
+}
+{
+  "id": "ilkerturk/prolad-wikitext-in-domain-benchmark",
+  "title": "ProLAD WikiText In-Domain Benchmark",
+  "code_file": "wikitext_bench.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": []
+}
+EOF
+
+ls -la

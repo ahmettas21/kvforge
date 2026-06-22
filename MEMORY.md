@@ -68,3 +68,31 @@
 - Connected services: Gmail, GitHub, Linear, Notion, Vercel, Google Drive, Railway, N8n.io
 - Disconnected: Box, Figma, Intercom, Supabase, WhatsApp, LinearB, Google Sheets, PostHog, Hubspot
 - Cloud MCP: `api.getmembrane.com/mcp/integrate-anything`
+
+---
+
+## Araştırma Güncellemesi — 2026-06-20
+
+**Perplexity MCP (pwm)** ile 3 konu araştırıldı. Detay: `workspace/memory/ai-news-2026-06-20.md`
+
+### Öne Çıkanlar
+
+1. **PPL Stabilizasyonu & Progressive Training:**
+   - Ultra-low-bit quantization + corrective pathway hibriti trend — quantizasyon artık "yapısal regularizasyon" olarak görülüyor
+   - Domain-specialized continual pretraining (CPT) ile LoRA high-rank adapter'lar PPL düşüşü sağlıyor
+   - Stabilite odaklı fine-tuning: replay buffer + parameter-efficient tuning kombinasyonları
+
+2. **CoTo (Come Together) — 2026 Gelişmeleri:**
+   - Progressive activation: adapter aktivasyon olasılığı kademeli artırılıyor
+   - Dynamic runtime merging: inference sırasında adapter'lar arası interpolasyon
+   - Budget-aware merging: teorik performans garantileri (yeni 2026 makaleleri)
+   - Diverse LoRA variantları ile uyumluluk arttı
+
+3. **KV Cache Compression + Adapter Eğitimi:**
+   - Cross-model KV cache reuse: adapter switch'te cache invalidation sorununu çözüyor
+   - Layer/head adaptive compression: kritik token koruma + agresif sıkıştırma
+   - Quantization + selective eviction hibriti en pratik yaklaşım
+
+### Sonuç
+
+KvForge (Base Encode + LoRA Decode + CoTo progressive training + 2-bit KV compression) literatürdeki **CoTo + KV cache compression** boşluğunu dolduran özgün bir yaklaşım. Rakip çalışma bulunamadı — hibrit yaklaşım hala keşfedilmemiş durumda.

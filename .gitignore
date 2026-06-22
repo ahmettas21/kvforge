@@ -30,3 +30,4 @@ Thumbs.db
 wikitext.txt
 *.bin
 *.onnx
+*.bak
