@@ -1,1 +1,14 @@
-{"id":"ilkerturk/kalora-multirank-v10","title":"KALoRA Multi-Rank v10","code_file":"kvforge_ppl_bench.ipynb","language":"python","kernel_type":"notebook","is_private":true,"enable_gpu":true,"enable_internet":true,"dataset_sources":[],"competition_sources":[],"kernel_sources":[]}
+{
+  "id": "ilkerturk/kalora-v2-gelu-crosshead",
+  "title": "KALoRA v2 GELU CrossHead",
+  "code_file": "kalora_gelu_bench.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}
